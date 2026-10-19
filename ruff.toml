@@ -7,3 +7,6 @@ ignore = ["D203", "D213", "D413"]
 
 [lint.pydocstyle]
 convention = "google"
+
+[lint.isort]
+lines-between-types = 1
