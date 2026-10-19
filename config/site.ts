@@ -4,10 +4,10 @@ import { getDict } from "@/i18n/ui";
 
 // 사이트 전체에 한 번만 정의하는 값.
 export const site = {
-  // 실제 서비스 주소. Cloudflare Pages 주소가 정해지면 여기를 고치거나
+  // 실제 서비스 주소(Cloudflare Pages 프로젝트 menu-recommand). 도메인을 바꾸면 여기를 고치거나
   // 빌드 환경 변수 NEXT_PUBLIC_SITE_URL로 덮어쓴다.
   url: (
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://menu-recommand.pages.dev"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://menu-recommand-b9q.pages.dev"
   ).replace(/\/$/, ""),
   // Google AdSense 게시자 ID(공개 값). public/ads.txt 에도 같은 번호가 들어 있다.
   adsenseClient: "ca-pub-4035979084834637",

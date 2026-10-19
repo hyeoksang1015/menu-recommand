@@ -74,5 +74,5 @@ GitHub `main`에 푸시하면 Cloudflare Pages가 빌드합니다. 대시보드�
 - Framework preset: None, Build command: `npm run build`, Root directory: 비움
 - 출력 폴더는 `wrangler.toml`의 `pages_build_output_dir = "./out"`이 정한다. 이 파일을 지우면 소스 폴더 전체가 올라가 첫 화면이 404가 된다.
 - `.node-version`의 22를 빌드 Node 버전으로 쓴다.
-- 실제 주소가 `https://menu-recommand.pages.dev`와 다르면 환경 변수 `NEXT_PUBLIC_SITE_URL`을 설정하거나 `config/site.ts`를 고친다(canonical, hreflang, sitemap, 공유 링크에 쓰임).
+- 실제 주소가 `https://menu-recommand-b9q.pages.dev`와 다르면 환경 변수 `NEXT_PUBLIC_SITE_URL`을 설정하거나 `config/site.ts`를 고친다(canonical, hreflang, sitemap, 공유 링크에 쓰임).
 - `scripts/fix-export.mjs`는 Windows 빌드에서만 생기는 Next.js 내보내기 경로 문제를 고친다. Linux 빌드에서는 아무것도 하지 않는다.
