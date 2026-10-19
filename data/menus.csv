@@ -1,0 +1,26 @@
+id,name,category,allergens,price,spice,heavy,oily,hot
+kimchi-jjigae,김치찌개,korean,pork|soy,9000,2,0.6,0.4,1
+doenjang-jjigae,된장찌개,korean,soy|shellfish,9000,1,0.5,0.2,1
+bibimbap,비빔밥,korean,egg|soy,9500,2,0.6,0.3,1
+mul-naengmyeon,물냉면,korean,wheat|beef|egg,11000,0,0.4,0.1,0
+jjajangmyeon,짜장면,chinese,wheat|soy|pork,8000,0,0.8,0.7,1
+jjamppong,짬뽕,chinese,wheat|crustacean|shellfish|pork,10000,4,0.7,0.5,1
+tangsuyuk,탕수육,chinese,wheat|pork|egg,12000,0,0.8,0.9,1
+mapo-tofu-rice,마파두부밥,chinese,soy|pork,9500,3,0.6,0.6,1
+sushi-set,모둠초밥,japanese,fish|crustacean|soy|egg,16000,0,0.4,0.2,0
+tonkatsu,돈카츠,japanese,wheat|egg|pork|milk,11000,0,0.8,0.8,1
+udon,우동,japanese,wheat|fish|soy,8500,0,0.5,0.2,1
+tonkotsu-ramen,돈코츠라멘,japanese,wheat|pork|soy|egg,11000,1,0.8,0.7,1
+cream-pasta,크림파스타,western,wheat|milk|pork,14000,0,0.7,0.8,1
+tomato-pasta,토마토파스타,western,wheat,13000,0,0.6,0.4,1
+caesar-salad,시저샐러드,western,egg|milk|fish|wheat,11000,0,0.2,0.4,0
+tteokbokki,떡볶이,snack,wheat|soy,5000,3,0.5,0.3,1
+gimbap,김밥,snack,egg|soy,4000,0,0.4,0.2,0
+ramyeon,라면,snack,wheat|soy,4500,3,0.5,0.5,1
+pho,쌀국수,asian,beef|fish,11000,1,0.5,0.2,1
+pad-thai,팟타이,asian,egg|nuts|crustacean|fish|soy,13000,1,0.6,0.6,1
+cheeseburger,치즈버거 세트,fastfood,wheat|milk|egg|beef|soy,9500,0,0.8,0.8,1
+fried-chicken,후라이드치킨,fastfood,wheat|chicken,12000,0,0.9,0.9,1
+pepperoni-pizza,페퍼로니피자,fastfood,wheat|milk|pork,12000,0,0.9,0.8,1
+samgyeopsal,삼겹살,grill,pork,16000,0,0.9,0.9,1
+dakgalbi,닭갈비,grill,chicken|soy|wheat,14000,3,0.8,0.6,1

@@ -1,0 +1,411 @@
+{
+ "categories": [
+  {
+   "key": "korean",
+   "label": "한식",
+   "emoji": "🍲",
+   "bit": 1
+  },
+  {
+   "key": "chinese",
+   "label": "중식",
+   "emoji": "🥟",
+   "bit": 2
+  },
+  {
+   "key": "japanese",
+   "label": "일식",
+   "emoji": "🍣",
+   "bit": 4
+  },
+  {
+   "key": "western",
+   "label": "양식",
+   "emoji": "🍝",
+   "bit": 8
+  },
+  {
+   "key": "snack",
+   "label": "분식",
+   "emoji": "🍢",
+   "bit": 16
+  },
+  {
+   "key": "asian",
+   "label": "아시안",
+   "emoji": "🍜",
+   "bit": 32
+  },
+  {
+   "key": "fastfood",
+   "label": "패스트푸드",
+   "emoji": "🍔",
+   "bit": 64
+  },
+  {
+   "key": "grill",
+   "label": "고기·구이",
+   "emoji": "🥩",
+   "bit": 128
+  }
+ ],
+ "allergens": [
+  {
+   "key": "milk",
+   "label": "우유",
+   "bit": 1
+  },
+  {
+   "key": "egg",
+   "label": "달걀",
+   "bit": 2
+  },
+  {
+   "key": "wheat",
+   "label": "밀",
+   "bit": 4
+  },
+  {
+   "key": "soy",
+   "label": "대두",
+   "bit": 8
+  },
+  {
+   "key": "nuts",
+   "label": "땅콩·견과",
+   "bit": 16
+  },
+  {
+   "key": "crustacean",
+   "label": "새우·게",
+   "bit": 32
+  },
+  {
+   "key": "shellfish",
+   "label": "조개류",
+   "bit": 64
+  },
+  {
+   "key": "fish",
+   "label": "생선",
+   "bit": 128
+  },
+  {
+   "key": "pork",
+   "label": "돼지고기",
+   "bit": 256
+  },
+  {
+   "key": "beef",
+   "label": "소고기",
+   "bit": 512
+  },
+  {
+   "key": "chicken",
+   "label": "닭고기",
+   "bit": 1024
+  }
+ ],
+ "menus": [
+  {
+   "id": "kimchi-jjigae",
+   "name": "김치찌개",
+   "category": "korean",
+   "category_bit": 1,
+   "allergen_mask": 264,
+   "price": 9000,
+   "spice": 2,
+   "heavy": 0.6,
+   "oily": 0.4,
+   "hot": true
+  },
+  {
+   "id": "doenjang-jjigae",
+   "name": "된장찌개",
+   "category": "korean",
+   "category_bit": 1,
+   "allergen_mask": 72,
+   "price": 9000,
+   "spice": 1,
+   "heavy": 0.5,
+   "oily": 0.2,
+   "hot": true
+  },
+  {
+   "id": "bibimbap",
+   "name": "비빔밥",
+   "category": "korean",
+   "category_bit": 1,
+   "allergen_mask": 10,
+   "price": 9500,
+   "spice": 2,
+   "heavy": 0.6,
+   "oily": 0.3,
+   "hot": true
+  },
+  {
+   "id": "mul-naengmyeon",
+   "name": "물냉면",
+   "category": "korean",
+   "category_bit": 1,
+   "allergen_mask": 518,
+   "price": 11000,
+   "spice": 0,
+   "heavy": 0.4,
+   "oily": 0.1,
+   "hot": false
+  },
+  {
+   "id": "jjajangmyeon",
+   "name": "짜장면",
+   "category": "chinese",
+   "category_bit": 2,
+   "allergen_mask": 268,
+   "price": 8000,
+   "spice": 0,
+   "heavy": 0.8,
+   "oily": 0.7,
+   "hot": true
+  },
+  {
+   "id": "jjamppong",
+   "name": "짬뽕",
+   "category": "chinese",
+   "category_bit": 2,
+   "allergen_mask": 356,
+   "price": 10000,
+   "spice": 4,
+   "heavy": 0.7,
+   "oily": 0.5,
+   "hot": true
+  },
+  {
+   "id": "tangsuyuk",
+   "name": "탕수육",
+   "category": "chinese",
+   "category_bit": 2,
+   "allergen_mask": 262,
+   "price": 12000,
+   "spice": 0,
+   "heavy": 0.8,
+   "oily": 0.9,
+   "hot": true
+  },
+  {
+   "id": "mapo-tofu-rice",
+   "name": "마파두부밥",
+   "category": "chinese",
+   "category_bit": 2,
+   "allergen_mask": 264,
+   "price": 9500,
+   "spice": 3,
+   "heavy": 0.6,
+   "oily": 0.6,
+   "hot": true
+  },
+  {
+   "id": "sushi-set",
+   "name": "모둠초밥",
+   "category": "japanese",
+   "category_bit": 4,
+   "allergen_mask": 170,
+   "price": 16000,
+   "spice": 0,
+   "heavy": 0.4,
+   "oily": 0.2,
+   "hot": false
+  },
+  {
+   "id": "tonkatsu",
+   "name": "돈카츠",
+   "category": "japanese",
+   "category_bit": 4,
+   "allergen_mask": 263,
+   "price": 11000,
+   "spice": 0,
+   "heavy": 0.8,
+   "oily": 0.8,
+   "hot": true
+  },
+  {
+   "id": "udon",
+   "name": "우동",
+   "category": "japanese",
+   "category_bit": 4,
+   "allergen_mask": 140,
+   "price": 8500,
+   "spice": 0,
+   "heavy": 0.5,
+   "oily": 0.2,
+   "hot": true
+  },
+  {
+   "id": "tonkotsu-ramen",
+   "name": "돈코츠라멘",
+   "category": "japanese",
+   "category_bit": 4,
+   "allergen_mask": 270,
+   "price": 11000,
+   "spice": 1,
+   "heavy": 0.8,
+   "oily": 0.7,
+   "hot": true
+  },
+  {
+   "id": "cream-pasta",
+   "name": "크림파스타",
+   "category": "western",
+   "category_bit": 8,
+   "allergen_mask": 261,
+   "price": 14000,
+   "spice": 0,
+   "heavy": 0.7,
+   "oily": 0.8,
+   "hot": true
+  },
+  {
+   "id": "tomato-pasta",
+   "name": "토마토파스타",
+   "category": "western",
+   "category_bit": 8,
+   "allergen_mask": 4,
+   "price": 13000,
+   "spice": 0,
+   "heavy": 0.6,
+   "oily": 0.4,
+   "hot": true
+  },
+  {
+   "id": "caesar-salad",
+   "name": "시저샐러드",
+   "category": "western",
+   "category_bit": 8,
+   "allergen_mask": 135,
+   "price": 11000,
+   "spice": 0,
+   "heavy": 0.2,
+   "oily": 0.4,
+   "hot": false
+  },
+  {
+   "id": "tteokbokki",
+   "name": "떡볶이",
+   "category": "snack",
+   "category_bit": 16,
+   "allergen_mask": 12,
+   "price": 5000,
+   "spice": 3,
+   "heavy": 0.5,
+   "oily": 0.3,
+   "hot": true
+  },
+  {
+   "id": "gimbap",
+   "name": "김밥",
+   "category": "snack",
+   "category_bit": 16,
+   "allergen_mask": 10,
+   "price": 4000,
+   "spice": 0,
+   "heavy": 0.4,
+   "oily": 0.2,
+   "hot": false
+  },
+  {
+   "id": "ramyeon",
+   "name": "라면",
+   "category": "snack",
+   "category_bit": 16,
+   "allergen_mask": 12,
+   "price": 4500,
+   "spice": 3,
+   "heavy": 0.5,
+   "oily": 0.5,
+   "hot": true
+  },
+  {
+   "id": "pho",
+   "name": "쌀국수",
+   "category": "asian",
+   "category_bit": 32,
+   "allergen_mask": 640,
+   "price": 11000,
+   "spice": 1,
+   "heavy": 0.5,
+   "oily": 0.2,
+   "hot": true
+  },
+  {
+   "id": "pad-thai",
+   "name": "팟타이",
+   "category": "asian",
+   "category_bit": 32,
+   "allergen_mask": 186,
+   "price": 13000,
+   "spice": 1,
+   "heavy": 0.6,
+   "oily": 0.6,
+   "hot": true
+  },
+  {
+   "id": "cheeseburger",
+   "name": "치즈버거 세트",
+   "category": "fastfood",
+   "category_bit": 64,
+   "allergen_mask": 527,
+   "price": 9500,
+   "spice": 0,
+   "heavy": 0.8,
+   "oily": 0.8,
+   "hot": true
+  },
+  {
+   "id": "fried-chicken",
+   "name": "후라이드치킨",
+   "category": "fastfood",
+   "category_bit": 64,
+   "allergen_mask": 1028,
+   "price": 12000,
+   "spice": 0,
+   "heavy": 0.9,
+   "oily": 0.9,
+   "hot": true
+  },
+  {
+   "id": "pepperoni-pizza",
+   "name": "페퍼로니피자",
+   "category": "fastfood",
+   "category_bit": 64,
+   "allergen_mask": 261,
+   "price": 12000,
+   "spice": 0,
+   "heavy": 0.9,
+   "oily": 0.8,
+   "hot": true
+  },
+  {
+   "id": "samgyeopsal",
+   "name": "삼겹살",
+   "category": "grill",
+   "category_bit": 128,
+   "allergen_mask": 256,
+   "price": 16000,
+   "spice": 0,
+   "heavy": 0.9,
+   "oily": 0.9,
+   "hot": true
+  },
+  {
+   "id": "dakgalbi",
+   "name": "닭갈비",
+   "category": "grill",
+   "category_bit": 128,
+   "allergen_mask": 1036,
+   "price": 14000,
+   "spice": 3,
+   "heavy": 0.8,
+   "oily": 0.6,
+   "hot": true
+  }
+ ]
+}
