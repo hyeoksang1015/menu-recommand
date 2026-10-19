@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* 색·간격 토큰. 화면 코드에서는 이 이름(bg-brand, p-gutter 등)만 쓴다. */
+@theme {
+  --color-paper: #fff8f1;
+  --color-card: #ffffff;
+  --color-ink: #231f1c;
+  --color-muted: #625850;
+  --color-brand: #c2410c;
+  --color-brand-dark: #9a3412;
+  --color-soft: #ffeadb;
+  --color-line: #eadfd3;
+  --spacing-gutter: 1rem;
+  --font-sans:
+    "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex min-h-12 cursor-pointer items-center justify-center rounded-full px-6 text-center font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-brand text-white hover:bg-brand-dark;
+  }
+  .btn-ghost {
+    @apply border border-line bg-card text-ink hover:bg-soft;
+  }
+  .chip {
+    @apply inline-flex min-h-10 cursor-pointer items-center rounded-full border border-line bg-card px-4 text-sm font-semibold transition-colors hover:bg-soft aria-pressed:border-brand aria-pressed:bg-brand aria-pressed:text-white;
+  }
+  .card {
+    @apply rounded-3xl border border-line bg-card p-5;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full bg-soft px-2.5 py-0.5 text-xs font-semibold text-brand-dark;
+  }
+  .text-link {
+    @apply font-semibold text-brand underline underline-offset-4 hover:text-brand-dark;
+  }
+}

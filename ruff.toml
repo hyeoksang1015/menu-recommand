@@ -1,0 +1,9 @@
+# PEP8 79열, import 정렬(같은 구역 안에서 import 문 먼저, from 문 그다음), 큰따옴표.
+line-length = 79
+
+[lint]
+select = ["E", "W", "F", "I", "D", "ANN", "Q"]
+ignore = ["D203", "D213", "D413"]
+
+[lint.pydocstyle]
+convention = "google"
