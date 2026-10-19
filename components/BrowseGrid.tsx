@@ -40,15 +40,15 @@ export default function BrowseGrid() {
       <p className="mt-1 mb-5 min-h-6 text-muted">
         {hydrated && (
           <>
-            후보 <strong data-testid="candidate-count">{count}</strong>개 중 잘
-            맞는 순서로 {Math.min(K, count)}개예요.
+            후보 <strong data-testid="candidate-count">{count}</strong>개 중
+            상위 {Math.min(K, count)}개예요.
           </>
         )}
       </p>
       {!hydrated ? (
         <ul className="grid grid-cols-2 gap-3" aria-hidden>
-          {Array.from({ length: 6 }, (_, i) => (
-            <li key={i} className="card h-48 animate-pulse" />
+          {Array.from({ length: K }, (_, i) => (
+            <li key={i} className="card min-h-46 animate-pulse" />
           ))}
         </ul>
       ) : items.length === 0 ? (
@@ -65,7 +65,7 @@ export default function BrowseGrid() {
               <button
                 type="button"
                 onClick={() => setChosen(menu)}
-                className="card flex h-full w-full cursor-pointer flex-col items-center gap-2 p-4 text-center hover:bg-soft"
+                className="card flex h-full min-h-46 w-full cursor-pointer flex-col items-center gap-2 p-4 text-center hover:bg-soft"
               >
                 <MenuThumb menu={menu} size="h-16 w-16 text-3xl" />
                 <span className="font-bold">{menu.name}</span>

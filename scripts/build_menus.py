@@ -38,7 +38,7 @@ ALLERGENS: list[tuple[str, str]] = [
     ("soy", "대두"),
     ("nuts", "땅콩·견과"),
     ("crustacean", "새우·게"),
-    ("shellfish", "조개류"),
+    ("shellfish", "조개·오징어류"),
     ("fish", "생선"),
     ("pork", "돼지고기"),
     ("beef", "소고기"),

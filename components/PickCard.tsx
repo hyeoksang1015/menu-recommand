@@ -5,7 +5,8 @@ import type { Menu, ReasonCode, Slot } from "@/lib/engine/types";
 import { reasonLabel, SLOT_LABEL, SPICE, won } from "@/lib/labels";
 import { CATEGORY_BY_KEY } from "@/lib/menus";
 
-export const CARD_HEIGHT = "min-h-44";
+// 저장값을 불러오기 전 자리표시와 실제 카드의 높이를 맞춰 화면 밀림(CLS)을 막는다. 모바일에서 잰 실제 높이(216px).
+export const CARD_HEIGHT = "min-h-54";
 
 // 사진 자리는 이미지 방식이 정해질 때까지(spec 12절) 카테고리 이모지로 채운다.
 export function MenuThumb({
