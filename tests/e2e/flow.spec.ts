@@ -85,3 +85,51 @@ test("rejecting a pick recomputes right away", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByText(/최근 먹은 1개 제외/)).toBeVisible();
 });
+
+test("browse, confirm, share and record a meal", async ({ page, context }) => {
+  await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+  // 공유 창이 없는 브라우저의 클립보드 대체 경로를 검사한다.
+  await page.addInitScript(() =>
+    Object.defineProperty(navigator, "share", { value: undefined }),
+  );
+  const total = await toPicks(page);
+  await page.getByRole("link", { name: "직접 고를래요" }).click();
+  await expect(page).toHaveURL(/\/browse\/$/);
+  await expect(page.getByTestId("candidate-count")).toHaveText(String(total));
+  const grid = page.getByRole("list").last().getByRole("button");
+  await expect(grid).toHaveCount(Math.min(12, total));
+
+  const name = (await grid.first().locator("span.font-bold").textContent())!;
+  await grid.first().click();
+  const sheet = page.getByRole("dialog", { name: "오늘 메뉴 확정!" });
+  await expect(sheet).toBeVisible();
+  await expect(sheet.getByRole("link", { name: /카카오맵/ })).toHaveAttribute(
+    "href",
+    `https://map.kakao.com/link/search/${encodeURIComponent(name)}`,
+  );
+  await sheet.getByRole("button", { name: "공유하기" }).click();
+  await expect(sheet.getByRole("status")).toHaveText("공유 문구를 복사했어요.");
+  expect(await page.evaluate(() => navigator.clipboard.readText())).toContain(
+    `오늘은 ${name}!`,
+  );
+  await sheet.getByRole("button", { name: "먹은 걸로 기록" }).click();
+  await expect(sheet.getByRole("status")).toContainText("기록했어요");
+  await sheet.getByRole("button", { name: "닫기" }).click();
+
+  await page.goto("/");
+  await expect(page.getByTestId("candidate-count")).toHaveText(
+    String(total - 1),
+  );
+  await page.getByRole("button", { name: "3개 골라줘" }).click();
+  await expect(cards(page)).toHaveCount(3);
+  expect(await names(page)).not.toContain(name);
+});
+
+test("about page lists every menu without JavaScript", async ({ browser }) => {
+  const page = await browser.newPage({ javaScriptEnabled: false });
+  await page.goto("http://localhost:3100/about/");
+  await expect(
+    page.getByRole("heading", { name: /전체 메뉴 \d+개/ }),
+  ).toBeVisible();
+  await expect(page.getByText(/김치찌개 · 약/)).toBeVisible();
+});
