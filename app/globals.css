@@ -51,3 +51,10 @@ body {
     @apply font-semibold text-brand underline underline-offset-4 hover:text-brand-dark;
   }
 }
+
+/* 코치마크가 가리키는 영역 */
+.coach-target {
+  outline: 3px dashed var(--color-brand);
+  outline-offset: 6px;
+  border-radius: 1.5rem;
+}

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import StoreHydrator from "@/components/StoreHydrator";
 import { site } from "@/config/site";
 import "./globals.css";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko" className="h-full antialiased">
       <body className="flex min-h-full flex-col">
+        <StoreHydrator />
         <header className="mx-auto flex w-full max-w-xl items-center justify-between px-gutter py-4">
           <Link href="/" className="text-lg font-extrabold">
             🍚 {site.name}

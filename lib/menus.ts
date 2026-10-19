@@ -53,3 +53,4 @@ export const {
   menus: MENUS,
 } = DataSchema.parse(raw);
 export const CATEGORY_BY_KEY = new Map(CATEGORIES.map((c) => [c.key, c]));
+export const MENU_BY_ID = new Map(MENUS.map((m) => [m.id, m]));
