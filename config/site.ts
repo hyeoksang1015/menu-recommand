@@ -55,6 +55,11 @@ export function pageMeta(
   };
 }
 
+// 애드센스 사이트 확인 태그 <meta name="google-adsense-account">. 모든 페이지 <head>에 들어간다.
+export const adsenseVerification = {
+  "google-adsense-account": site.adsenseClient,
+};
+
 // 루트 레이아웃 공통 메타데이터(제목 틀, 기본 설명).
 export function rootMeta(lang: Locale): Metadata {
   const t = getDict(lang).site;
@@ -62,6 +67,7 @@ export function rootMeta(lang: Locale): Metadata {
     metadataBase: new URL(site.url),
     title: { default: t.name, template: `%s | ${t.name}` },
     description: t.description,
+    other: adsenseVerification,
   };
 }
 

@@ -189,6 +189,9 @@ test("English pages and the language switcher", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("lang", "ja");
 });
 
+const META =
+  '<meta name="google-adsense-account" content="ca-pub-4035979084834637"/>';
+
 test("AdSense tag sits in the head of content pages but not on the 404 page", async ({
   request,
 }) => {
@@ -200,13 +203,15 @@ test("AdSense tag sits in the head of content pages but not on the 404 page", as
   ]) {
     const html = await (await request.get(path)).text();
     const head = html.slice(0, html.indexOf("</head>"));
+    expect(head, path).toContain(META);
     expect(head, path).toContain(
       'src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4035979084834637" crossorigin="anonymous"',
     );
   }
-  expect(await (await request.get("/404.html")).text()).not.toContain(
-    "adsbygoogle",
-  );
+  // 404에는 광고 스크립트를 넣지 않지만 사이트 확인 메타 태그는 둔다.
+  const notFound = await (await request.get("/404.html")).text();
+  expect(notFound).not.toContain("adsbygoogle");
+  expect(notFound.slice(0, notFound.indexOf("</head>"))).toContain(META);
   expect(await (await request.get("/ads.txt")).text()).toContain(
     "google.com, pub-4035979084834637, DIRECT, f08c47fec0942fa0",
   );

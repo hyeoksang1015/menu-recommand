@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { adsenseVerification } from "@/config/site";
 import { PAGE_TEXT } from "@/content/pages";
 import { LOCALES, href } from "@/i18n/config";
 import "./globals.css";
@@ -8,6 +9,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "404 | 골라주께",
   robots: { index: false, follow: true },
+  // 광고 스크립트는 넣지 않지만, 사이트 확인 메타 태그는 모든 페이지에 둔다.
+  other: adsenseVerification,
 };
 
 export default function GlobalNotFound() {
