@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
+import { useI18n } from "@/components/I18nProvider";
 
-// 화면 아래에서 올라오는 시트. 네이티브 <dialog>라 포커스 가두기와 Esc 닫기를 브라우저가 해 준다.
+// 화면 아래에서 올라오는 시트. 네이티브 <dialog>라 포커스 가두기와 Esc {t.common.close}를 브라우저가 해 준다.
 export default function Sheet({
   open,
   onClose,
@@ -14,6 +15,7 @@ export default function Sheet({
   title: string;
   children: ReactNode;
 }) {
+  const { t } = useI18n();
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     const d = ref.current;
@@ -35,7 +37,7 @@ export default function Sheet({
           onClick={onClose}
           className="btn btn-ghost min-h-10 px-4 text-sm"
         >
-          닫기
+          {t.common.close}
         </button>
       </div>
       <div className="mt-4">{children}</div>

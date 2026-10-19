@@ -1,33 +1,65 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { useShallow } from "zustand/react/shallow";
 import Chips from "@/components/Chips";
-import { COMPANIES, MOODS, recentIds, type Inputs } from "@/config/mood";
+import Fmt from "@/components/Fmt";
+import { useI18n } from "@/components/I18nProvider";
+import { COMPANY_KEYS, MOOD_KEYS, recentIds, type Inputs } from "@/config/mood";
+import { fmt, href } from "@/i18n/config";
 import { passes } from "@/lib/engine/engine";
 import { budgetLabel } from "@/lib/labels";
-import { ALLERGENS, CATEGORIES, MENU_BY_ID, MENUS } from "@/lib/menus";
+import {
+  ALLERGENS,
+  CATEGORIES,
+  MENU_BY_ID,
+  MENUS,
+  menuName,
+} from "@/lib/menus";
 import { currentQuery, useMenuStore } from "@/lib/store";
 
 const HUNGER_STEPS = 4;
-const HUNGER_TEXT = [
-  "아주 가볍게",
-  "가볍게",
-  "적당히",
-  "든든하게",
-  "아주 든든하게",
-];
 const BUDGET = { min: 5000, max: 45000, step: 5000 };
 const ANY = "any";
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 function toggle(list: string[], key: string) {
   if (key === ANY) return [];
   return list.includes(key) ? list.filter((k) => k !== key) : [...list, key];
 }
 
+// 빼주께·맞춰주께 카드. 제목과 한 줄 설명을 붙여 접지 않고 처음부터 보여 준다.
+function Panel({
+  id,
+  title,
+  lead,
+  coach,
+  children,
+}: {
+  id: string;
+  title: string;
+  lead: string;
+  coach: string;
+  children: ReactNode;
+}) {
+  return (
+    <section aria-labelledby={id} data-coach={coach} className="card space-y-6">
+      <header>
+        <h2 id={id} className="text-xl font-extrabold text-brand">
+          {title}
+        </h2>
+        <p className="mt-1 text-sm text-muted">{lead}</p>
+      </header>
+      {children}
+    </section>
+  );
+}
+
 export default function InputPanel() {
   const router = useRouter();
+  const { lang, t } = useI18n();
+  const h = t.home;
   const {
     inputs,
     eaten,
@@ -57,110 +89,116 @@ export default function InputPanel() {
     const q = currentQuery({ inputs, eaten, query, skipped }, now);
     return MENUS.filter((m) => passes(m, q)).length;
   }, [inputs, eaten, query, skipped, now]);
-  const excludedCount =
-    inputs.banAllergens.length + inputs.banCategories.length + recent.length;
+  const anyChip = { key: ANY, label: h.any };
+  const budgetText =
+    inputs.budget === null
+      ? h.any
+      : fmt(h.budgetUpTo, { amount: budgetLabel(inputs.budget, lang) });
 
   return (
     <form
-      className="space-y-8"
+      className="space-y-5"
       onSubmit={(e) => {
         e.preventDefault();
         start();
-        router.push("/picks/");
+        router.push(href(lang, "/picks/"));
       }}
     >
-      <details data-coach="exclude" className="card">
-        <summary className="cursor-pointer font-bold">
-          먼저, 빼야 할 것
-          {excludedCount > 0 ? ` (${excludedCount}개 제외 중)` : ""}
-        </summary>
-        <div className="mt-4 space-y-5">
-          <fieldset>
-            <legend className="mb-2 text-sm font-semibold">못 먹는 재료</legend>
-            <Chips
-              label="못 먹는 재료"
-              options={[{ key: ANY, label: "상관없어" }, ...ALLERGENS]}
-              value={inputs.banAllergens.length ? inputs.banAllergens : [ANY]}
-              onChange={(k) =>
-                set({ banAllergens: toggle(inputs.banAllergens, k) })
-              }
-            />
-            <p className="mt-2 text-xs text-muted">
-              재료 정보는 일반적인 조리법 기준의 참고용이에요. 알레르기가 있다면
-              꼭 식당에 확인하세요.
-            </p>
-          </fieldset>
-          <fieldset>
-            <legend className="mb-2 text-sm font-semibold">
-              오늘은 빼고 싶은 종류
-            </legend>
-            <Chips
-              label="빼고 싶은 종류"
-              options={[{ key: ANY, label: "상관없어" }, ...CATEGORIES]}
-              value={inputs.banCategories.length ? inputs.banCategories : [ANY]}
-              onChange={(k) =>
-                set({ banCategories: toggle(inputs.banCategories, k) })
-              }
-            />
-          </fieldset>
-          <fieldset>
-            <legend className="mb-2 text-sm font-semibold">어제 먹은 것</legend>
-            {recent.length > 0 && (
-              <ul className="mb-2 flex flex-wrap gap-2">
-                {recent.map((id) => (
+      <Panel
+        id="exclude-title"
+        title={h.exclude}
+        lead={h.excludeLead}
+        coach="exclude"
+      >
+        <fieldset>
+          <legend className="mb-2 text-sm font-semibold">{h.allergens}</legend>
+          <Chips
+            label={h.allergens}
+            options={[
+              anyChip,
+              ...ALLERGENS.map((a) => ({ key: a.key, label: a.label[lang] })),
+            ]}
+            value={inputs.banAllergens.length ? inputs.banAllergens : [ANY]}
+            onChange={(k) =>
+              set({ banAllergens: toggle(inputs.banAllergens, k) })
+            }
+          />
+          <p className="mt-2 text-xs text-muted">{h.allergenNote}</p>
+        </fieldset>
+        <fieldset>
+          <legend className="mb-2 text-sm font-semibold">{h.categories}</legend>
+          <Chips
+            label={h.categoriesAria}
+            options={[
+              anyChip,
+              ...CATEGORIES.map((c) => ({ key: c.key, label: c.label[lang] })),
+            ]}
+            value={inputs.banCategories.length ? inputs.banCategories : [ANY]}
+            onChange={(k) =>
+              set({ banCategories: toggle(inputs.banCategories, k) })
+            }
+          />
+        </fieldset>
+        <fieldset>
+          <legend className="mb-2 text-sm font-semibold">{h.recent}</legend>
+          {recent.length > 0 && (
+            <ul className="mb-2 flex flex-wrap gap-2">
+              {recent.map((id) => {
+                const m = MENU_BY_ID.get(id);
+                const name = m ? menuName(m, lang) : id;
+                return (
                   <li key={id}>
                     <button
                       type="button"
                       className="chip"
                       aria-pressed
-                      aria-label={`${MENU_BY_ID.get(id)?.name} 다시 포함`}
+                      aria-label={fmt(h.recentRemove, { name })}
                       onClick={() => removeEaten(id)}
                     >
-                      {MENU_BY_ID.get(id)?.name} ✕
+                      {name} ✕
                     </button>
                   </li>
+                );
+              })}
+            </ul>
+          )}
+          <select
+            aria-label={h.recentAdd}
+            className="min-h-10 w-full rounded-xl border border-line bg-card px-3"
+            value=""
+            onChange={(e) =>
+              e.target.value && recordEaten(e.target.value, Date.now() - DAY_MS)
+            }
+          >
+            <option value="">{h.recentPlaceholder}</option>
+            {CATEGORIES.map((c) => (
+              <optgroup key={c.key} label={c.label[lang]}>
+                {MENUS.filter(
+                  (m) => m.category === c.key && !recent.includes(m.id),
+                ).map((m) => (
+                  <option key={m.id} value={m.id}>
+                    {menuName(m, lang)}
+                  </option>
                 ))}
-              </ul>
-            )}
-            <select
-              aria-label="어제 먹은 메뉴 추가"
-              className="min-h-10 w-full rounded-xl border border-line bg-card px-3"
-              value=""
-              onChange={(e) =>
-                e.target.value &&
-                recordEaten(e.target.value, Date.now() - 24 * 60 * 60 * 1000)
-              }
-            >
-              <option value="">메뉴를 골라 추가 (없으면 상관없어)</option>
-              {CATEGORIES.map((c) => (
-                <optgroup key={c.key} label={c.label}>
-                  {MENUS.filter(
-                    (m) => m.category === c.key && !recent.includes(m.id),
-                  ).map((m) => (
-                    <option key={m.id} value={m.id}>
-                      {m.name}
-                    </option>
-                  ))}
-                </optgroup>
-              ))}
-            </select>
-          </fieldset>
-        </div>
-      </details>
+              </optgroup>
+            ))}
+          </select>
+        </fieldset>
+      </Panel>
 
-      <div data-coach="state" className="space-y-8">
+      <Panel id="match-title" title={h.match} lead={h.matchLead} coach="state">
         <div role="group" aria-labelledby="hunger-label">
-          <div className="mb-2 flex items-center justify-between">
+          <div className="mb-2 flex items-center justify-between gap-2">
             <p id="hunger-label" className="font-bold">
-              얼마나 배고파요?
+              {h.hunger}
             </p>
             <button
               type="button"
-              className="chip min-h-8 px-3 text-xs"
+              className="chip min-h-8 shrink-0 px-3 text-xs"
               aria-pressed={inputs.hunger === null}
               onClick={() => set({ hunger: null })}
             >
-              상관없어
+              {h.any}
             </button>
           </div>
           <input
@@ -173,11 +211,11 @@ export default function InputPanel() {
                 ? HUNGER_STEPS / 2
                 : inputs.hunger * HUNGER_STEPS
             }
-            aria-label="배고픈 정도"
+            aria-label={h.hungerAria}
             aria-valuetext={
               inputs.hunger === null
-                ? "상관없어"
-                : HUNGER_TEXT[inputs.hunger * HUNGER_STEPS]
+                ? h.any
+                : h.hungerText[inputs.hunger * HUNGER_STEPS]
             }
             onChange={(e) =>
               set({ hunger: Number(e.target.value) / HUNGER_STEPS })
@@ -185,49 +223,48 @@ export default function InputPanel() {
             className={`w-full accent-brand ${inputs.hunger === null ? "opacity-40" : ""}`}
           />
           <div className="flex justify-between text-xs text-muted" aria-hidden>
-            <span>가볍게</span>
-            <span>적당히</span>
-            <span>든든하게</span>
+            {h.hungerEnds.map((label) => (
+              <span key={label}>{label}</span>
+            ))}
           </div>
         </div>
 
         <fieldset>
-          <legend className="mb-2 font-bold">오늘 기분은?</legend>
+          <legend className="mb-2 font-bold">{h.mood}</legend>
           <Chips
-            label="오늘 기분"
-            options={MOODS}
+            label={h.moodAria}
+            options={MOOD_KEYS.map((k) => ({ key: k, label: h.moods[k] }))}
             value={inputs.mood}
             onChange={(mood) => set({ mood })}
           />
         </fieldset>
 
         <fieldset>
-          <legend className="mb-2 font-bold">누구랑 먹어요?</legend>
+          <legend className="mb-2 font-bold">{h.company}</legend>
           <Chips
-            label="동행"
-            options={COMPANIES}
+            label={h.companyAria}
+            options={COMPANY_KEYS.map((k) => ({
+              key: k,
+              label: h.companies[k],
+            }))}
             value={inputs.company}
             onChange={(company) => set({ company })}
           />
         </fieldset>
 
         <div role="group" aria-labelledby="budget-label">
-          <div className="mb-2 flex items-center justify-between">
+          <div className="mb-2 flex items-center justify-between gap-2">
             <p id="budget-label" className="font-bold">
-              1인 예산{" "}
-              <span className="font-normal text-muted">
-                {inputs.budget === null
-                  ? "상관없어"
-                  : `${budgetLabel(inputs.budget)}까지`}
-              </span>
+              {h.budget}{" "}
+              <span className="font-normal text-muted">{budgetText}</span>
             </p>
             <button
               type="button"
-              className="chip min-h-8 px-3 text-xs"
+              className="chip min-h-8 shrink-0 px-3 text-xs"
               aria-pressed={inputs.budget === null}
               onClick={() => set({ budget: null })}
             >
-              상관없어
+              {h.any}
             </button>
           </div>
           <input
@@ -236,33 +273,34 @@ export default function InputPanel() {
             max={BUDGET.max}
             step={BUDGET.step}
             value={inputs.budget ?? BUDGET.max}
-            aria-label="1인 예산"
-            aria-valuetext={
-              inputs.budget === null
-                ? "상관없어"
-                : `${budgetLabel(inputs.budget)}까지`
-            }
+            aria-label={h.budget}
+            aria-valuetext={budgetText}
             onChange={(e) => set({ budget: Number(e.target.value) })}
             className={`w-full accent-brand ${inputs.budget === null ? "opacity-40" : ""}`}
           />
           <div className="flex justify-between text-xs text-muted" aria-hidden>
-            <span>{budgetLabel(BUDGET.min)}</span>
-            <span>{budgetLabel((BUDGET.min + BUDGET.max) / 2)}</span>
-            <span>{budgetLabel(BUDGET.max)}</span>
+            <span>{budgetLabel(BUDGET.min, lang)}</span>
+            <span>{budgetLabel((BUDGET.min + BUDGET.max) / 2, lang)}</span>
+            <span>{budgetLabel(BUDGET.max, lang)}</span>
           </div>
         </div>
-      </div>
+      </Panel>
 
       <div
         data-coach="start"
         className="sticky bottom-0 -mx-gutter border-t border-line bg-paper/95 px-gutter pt-3 pb-4 backdrop-blur"
       >
         <p className="mb-2 text-center text-sm" aria-live="polite">
-          지금 후보 <strong data-testid="candidate-count">{count}</strong>개
+          <Fmt
+            template={h.count}
+            values={{
+              count: <strong data-testid="candidate-count">{count}</strong>,
+            }}
+          />
           {recent.length > 0 && (
             <span className="text-muted">
               {" "}
-              · 최근 먹은 {recent.length}개 제외
+              · {fmt(h.recentExcluded, { count: recent.length })}
             </span>
           )}
         </p>
@@ -271,12 +309,10 @@ export default function InputPanel() {
           className="btn btn-primary w-full text-lg"
           disabled={count === 0}
         >
-          {count === 0 ? "조건에 맞는 메뉴가 없어요" : "3개 골라줘"}
+          {count === 0 ? h.none : h.start}
         </button>
         <p className="mt-2 text-center text-xs text-muted">
-          {count === 0
-            ? "빼는 조건이나 예산을 조금 풀어 보세요."
-            : "다 고르면 3개 골라드려요. 안 골라도 괜찮아요."}
+          {count === 0 ? h.noneHint : h.hint}
         </p>
       </div>
     </form>

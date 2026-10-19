@@ -5,7 +5,9 @@ problem is reported with its CSV line number, and the script exits with
 status 1 without writing anything if any row is invalid.
 
 Categories and allergens are defined only here; the JSON carries them so
-the site reads labels and bits from one place.
+the site reads labels and bits from one place. Photo credits come from
+data/photos.csv (written by fetch_photos.py); a menu gets a photo only if
+its webp file exists in public/photos/.
 """
 
 import csv
@@ -18,35 +20,45 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "data" / "menus.csv"
 JSON_PATH = ROOT / "public" / "menus.json"
+PHOTOS_CSV = ROOT / "data" / "photos.csv"
+PHOTO_DIR = ROOT / "public" / "photos"
+PHOTO_COLUMNS = ["id", "file", "author", "license", "license_url"]
 
-# (key, label, emoji). The list index is the bit position.
-CATEGORIES: list[tuple[str, str, str]] = [
-    ("korean", "한식", "🍲"),
-    ("chinese", "중식", "🥟"),
-    ("japanese", "일식", "🍣"),
-    ("western", "양식", "🍝"),
-    ("snack", "분식", "🍢"),
-    ("asian", "아시안", "🍜"),
-    ("fastfood", "패스트푸드", "🍔"),
-    ("grill", "고기·구이", "🥩"),
+# Site languages. The CSV has name (ko) plus name_<lang> for the others.
+LOCALES = ("ko", "en", "ja", "zh")
+NAME_COLUMNS = ["name"] + [f"name_{lang}" for lang in LOCALES[1:]]
+
+# (key, emoji, labels in LOCALES order). The list index is the bit.
+CATEGORIES: list[tuple[str, str, tuple[str, ...]]] = [
+    ("korean", "🍲", ("한식", "Korean", "韓国料理", "韩餐")),
+    ("chinese", "🥟", ("중식", "Chinese", "中華料理", "中餐")),
+    ("japanese", "🍣", ("일식", "Japanese", "和食", "日料")),
+    ("western", "🍝", ("양식", "Western", "洋食", "西餐")),
+    ("snack", "🍢", ("분식", "Korean Snacks", "粉食", "韩式小吃")),
+    ("asian", "🍜", ("아시안", "Asian", "アジア料理", "亚洲菜")),
+    ("fastfood", "🍔", ("패스트푸드", "Fast Food", "ファストフード", "快餐")),
+    ("grill", "🥩", ("고기·구이", "BBQ & Grill", "焼肉・グリル", "烤肉")),
 ]
-# (key, label). The list index is the bit position.
-ALLERGENS: list[tuple[str, str]] = [
-    ("milk", "우유"),
-    ("egg", "달걀"),
-    ("wheat", "밀"),
-    ("soy", "대두"),
-    ("nuts", "땅콩·견과"),
-    ("crustacean", "새우·게"),
-    ("shellfish", "조개·오징어류"),
-    ("fish", "생선"),
-    ("pork", "돼지고기"),
-    ("beef", "소고기"),
-    ("chicken", "닭고기"),
+# (key, labels in LOCALES order). The list index is the bit position.
+ALLERGENS: list[tuple[str, tuple[str, ...]]] = [
+    ("milk", ("우유", "Milk", "乳", "牛奶")),
+    ("egg", ("달걀", "Egg", "卵", "鸡蛋")),
+    ("wheat", ("밀", "Wheat", "小麦", "小麦")),
+    ("soy", ("대두", "Soy", "大豆", "大豆")),
+    ("nuts", ("땅콩·견과", "Peanuts & nuts", "落花生・ナッツ", "花生·坚果")),
+    ("crustacean", ("새우·게", "Shrimp & crab", "エビ・カニ", "虾·蟹")),
+    (
+        "shellfish",
+        ("조개·오징어류", "Shellfish & squid", "貝・イカ", "贝类·鱿鱼"),
+    ),
+    ("fish", ("생선", "Fish", "魚", "鱼")),
+    ("pork", ("돼지고기", "Pork", "豚肉", "猪肉")),
+    ("beef", ("소고기", "Beef", "牛肉", "牛肉")),
+    ("chicken", ("닭고기", "Chicken", "鶏肉", "鸡肉")),
 ]
 COLUMNS = [
     "id",
-    "name",
+    *NAME_COLUMNS,
     "category",
     "allergens",
     "price",
@@ -57,6 +69,18 @@ COLUMNS = [
 ]
 CATEGORY_BIT = {key: 1 << i for i, (key, _, _) in enumerate(CATEGORIES)}
 ALLERGEN_BIT = {key: 1 << i for i, (key, _) in enumerate(ALLERGENS)}
+
+
+def labels(names: tuple[str, ...]) -> dict[str, str]:
+    """Map label tuples to {locale: label}.
+
+    Args:
+        names: Labels in LOCALES order.
+
+    Returns:
+        Labels keyed by locale.
+    """
+    return dict(zip(LOCALES, names, strict=True))
 
 
 def parse_rows(
@@ -118,7 +142,7 @@ def parse_rows(
         menus.append(
             {
                 "id": menu_id,
-                "name": row["name"].strip(),
+                **{c: row[c].strip() for c in NAME_COLUMNS},
                 "category": category,
                 "category_bit": CATEGORY_BIT[category],
                 "allergen_mask": mask,
@@ -130,6 +154,42 @@ def parse_rows(
             }
         )
     return menus, errors
+
+
+def attach_photos(
+    menus: list[dict[str, Any]],
+    rows: list[dict[str, str]],
+    photo_dir: Path = PHOTO_DIR,
+) -> list[str]:
+    """Add photo credits to menus whose webp file exists.
+
+    Time complexity: O(N + P) with a dict lookup per photo row.
+
+    Args:
+        menus: Parsed menus; each gets a "photo" key (dict or None).
+        rows: Rows of data/photos.csv. Row i is on CSV line i + 2.
+        photo_dir: Folder holding {id}.webp files.
+
+    Returns:
+        Error messages; empty when every row is usable.
+    """
+    by_id = {m["id"]: m for m in menus}
+    for m in menus:
+        m["photo"] = None
+    errors: list[str] = []
+    for index, row in enumerate(rows):
+        line = index + 2
+        missing = [c for c in PHOTO_COLUMNS if not row.get(c)]
+        if missing:
+            errors.append(f"photos line {line}: missing {', '.join(missing)}")
+            continue
+        menu = by_id.get(row["id"])
+        if menu is None:
+            errors.append(f"photos line {line}: unknown id {row['id']!r}")
+            continue
+        if (photo_dir / f"{row['id']}.webp").exists():
+            menu["photo"] = {c: row[c] for c in PHOTO_COLUMNS[1:]}
+    return errors
 
 
 def _int(text: str) -> int | None:
@@ -175,18 +235,29 @@ def main() -> int:
             print(f"header must be: {','.join(COLUMNS)}", file=sys.stderr)
             return 1
         menus, errors = parse_rows(list(reader))
+    photo_rows: list[dict[str, str]] = []
+    if PHOTOS_CSV.exists():
+        with PHOTOS_CSV.open(encoding="utf-8-sig", newline="") as f:
+            photo_rows = list(csv.DictReader(f))
+    errors += attach_photos(menus, photo_rows)
     if errors:
         print("\n".join(errors), file=sys.stderr)
         print(f"{len(errors)} problem(s); nothing written.", file=sys.stderr)
         return 1
     payload = {
+        "locales": list(LOCALES),
         "categories": [
-            {"key": k, "label": label, "emoji": e, "bit": CATEGORY_BIT[k]}
-            for k, label, e in CATEGORIES
+            {
+                "key": k,
+                "emoji": e,
+                "bit": CATEGORY_BIT[k],
+                "label": labels(names),
+            }
+            for k, e, names in CATEGORIES
         ],
         "allergens": [
-            {"key": k, "label": label, "bit": ALLERGEN_BIT[k]}
-            for k, label in ALLERGENS
+            {"key": k, "bit": ALLERGEN_BIT[k], "label": labels(names)}
+            for k, names in ALLERGENS
         ],
         "menus": menus,
     }

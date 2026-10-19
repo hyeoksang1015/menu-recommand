@@ -1,13 +1,19 @@
-"""Tests for build_menus.parse_rows and the committed CSV."""
+"""Tests for build_menus parsing, photo merging and the committed CSV."""
 
 import csv
+import tempfile
 import unittest
 
-from build_menus import CSV_PATH, parse_rows
+from pathlib import Path
+
+from build_menus import CSV_PATH, attach_photos, parse_rows
 
 VALID = {
     "id": "x",
     "name": "테스트",
+    "name_en": "Test",
+    "name_ja": "テスト",
+    "name_zh": "测试",
     "category": "korean",
     "allergens": "egg|soy",
     "price": "9000",
@@ -59,6 +65,7 @@ class ParseRowsTest(unittest.TestCase):
             {"oily": "-0.1"},
             {"hot": "yes"},
             {"name": ""},
+            {"name_ja": ""},
         ):
             with self.subTest(cells=cells):
                 self.assertEqual(len(errors_for(**cells)), 1)
@@ -67,6 +74,22 @@ class ParseRowsTest(unittest.TestCase):
         """A repeated id is reported on its second line."""
         errors = parse_rows([VALID, VALID])[1]
         self.assertEqual(errors, ["line 3: duplicate id 'x'"])
+
+    def test_attach_photos(self) -> None:
+        """Only rows with an existing webp become photos; bad ids fail."""
+        menus = parse_rows([VALID, {**VALID, "id": "y"}])[0]
+        credit = {"author": "A", "license": "CC0", "license_url": "u"}
+        rows = [
+            {"id": "x", "file": "x.jpg", **credit},
+            {"id": "y", "file": "y.jpg", **credit},
+            {"id": "z", "file": "z.jpg", **credit},
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "x.webp").touch()
+            errors = attach_photos(menus, rows, Path(tmp))
+        self.assertEqual(errors, ["photos line 4: unknown id 'z'"])
+        self.assertEqual(menus[0]["photo"], {"file": "x.jpg", **credit})
+        self.assertIsNone(menus[1]["photo"])
 
     def test_committed_csv_is_valid(self) -> None:
         """data/menus.csv has no problems."""

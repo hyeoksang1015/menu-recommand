@@ -1,33 +1,68 @@
 import type { Metadata } from "next";
+import { HTML_LANG, LOCALES, href, type Locale } from "@/i18n/config";
+import { getDict } from "@/i18n/ui";
 
-// 서비스명·주소는 여기서만 바꾸면 사이트 전체에 반영된다.
+// 사이트 전체에 한 번만 정의하는 값.
 export const site = {
-  name: "오늘 뭐 먹지",
-  description:
-    "오늘 배고픈 정도, 기분, 예산만 고르면 메뉴 후보 3개를 골라 드려요. 마음에 안 들면 이유를 탭하면 바로 다시 골라 드립니다.",
   // 실제 서비스 주소. Cloudflare Pages 주소가 정해지면 여기를 고치거나
   // 빌드 환경 변수 NEXT_PUBLIC_SITE_URL로 덮어쓴다.
   url: (
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://menu-recommand.pages.dev"
   ).replace(/\/$/, ""),
+  // Google AdSense 게시자 ID(공개 값). public/ads.txt 에도 같은 번호가 들어 있다.
+  adsenseClient: "ca-pub-4035979084834637",
+  // 문의 페이지·개인정보처리방침에 공개하는 연락처(운영자가 공개에 동의함).
+  contactEmail: "01059182043k@gmail.com",
 };
 
+const OG_LOCALE: Record<Locale, string> = {
+  ko: "ko_KR",
+  en: "en_US",
+  ja: "ja_JP",
+  zh: "zh_CN",
+};
+
+// 같은 페이지의 언어별 주소(hreflang). 기본(x-default)은 한국어.
+export function languageAlternates(path: string) {
+  return {
+    ...Object.fromEntries(LOCALES.map((l) => [HTML_LANG[l], href(l, path)])),
+    "x-default": path,
+  };
+}
+
 export function pageMeta(
+  lang: Locale,
   title: string,
   description: string,
   path: string,
+  options: { noindex?: boolean; absoluteTitle?: boolean } = {},
 ): Metadata {
+  const name = getDict(lang).site.name;
+  const url = href(lang, path);
   return {
-    title,
+    title: options.absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: url, languages: languageAlternates(path) },
+    ...(options.noindex ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
-      title: `${title} | ${site.name}`,
+      title: options.absoluteTitle ? title : `${title} | ${name}`,
       description,
-      url: path,
-      siteName: site.name,
-      locale: "ko_KR",
+      url,
+      siteName: name,
+      locale: OG_LOCALE[lang],
       type: "website",
     },
   };
 }
+
+// 루트 레이아웃 공통 메타데이터(제목 틀, 기본 설명).
+export function rootMeta(lang: Locale): Metadata {
+  const t = getDict(lang).site;
+  return {
+    metadataBase: new URL(site.url),
+    title: { default: t.name, template: `%s | ${t.name}` },
+    description: t.description,
+  };
+}
+
+export const viewport = { themeColor: "#fff8f1" };

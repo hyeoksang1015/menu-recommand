@@ -1,54 +1,39 @@
-import type { Menu, Reason, ReasonCode, Slot } from "@/lib/engine/types";
+import { INTL_LOCALE, fmt, type Locale } from "@/i18n/config";
+import type { Dict } from "@/i18n/ui";
+import type { Menu, ReasonCode } from "@/lib/engine/types";
 
-// 엔진 코드 → 화면 문구. 문구는 여기서만 고친다.
+// 엔진 코드·숫자 → 화면 문구. 문구 자체는 i18n/ui 사전에 있다.
 
-export const won = (n: number) => `${n.toLocaleString("ko-KR")}원`;
+export function won(n: number, lang: Locale): string {
+  if (lang === "ko") return `${n.toLocaleString("ko-KR")}원`;
+  return new Intl.NumberFormat(INTL_LOCALE[lang], {
+    style: "currency",
+    currency: "KRW",
+  }).format(n);
+}
 
-export function budgetLabel(n: number) {
+// 한국어 예산 슬라이더는 "1만 5천 원"처럼 읽기 쉬운 단위로 보여 준다.
+export function budgetLabel(n: number, lang: Locale): string {
+  if (lang !== "ko") return won(n, lang);
   const man = Math.floor(n / 10000);
   const rest = (n % 10000) / 1000;
   return `${man ? `${man}만` : ""}${rest ? ` ${rest}천` : ""} 원`.trim();
 }
 
-export const SPICE = [
-  "안 매움",
-  "살짝 매움",
-  "약간 매움",
-  "매콤",
-  "매움",
-  "아주 매움",
-];
+export const priceLabel = (m: Menu, lang: Locale, t: Dict) =>
+  fmt(t.menu.price, { price: won(m.price, lang) });
 
-export const SLOT_LABEL: Record<Slot, string> = {
-  safe: "무난한 선택",
-  mood: "오늘 상태에 딱",
-  novel: "새로운 도전",
-};
-
-export function reasonLabel(code: ReasonCode, m: Menu): string {
+export function reasonLabel(code: ReasonCode, m: Menu, t: Dict): string {
   switch (code) {
-    case "liked_category":
-      return "좋아하는 종류";
-    case "new_for_you":
-      return "처음 추천";
     case "hot_match":
-      return m.hot ? "따뜻한 음식" : "시원한 음식";
+      return m.hot ? t.reasons.hot : t.reasons.cold;
     case "heavy_match":
       return m.heavy >= 0.65
-        ? "든든해요"
+        ? t.reasons.heavy
         : m.heavy <= 0.35
-          ? "가벼워요"
-          : "적당한 양";
-    case "in_budget":
-      return "예산 안";
-    case "not_greasy":
-      return "덜 느끼해요";
+          ? t.reasons.light
+          : t.reasons.medium;
+    default:
+      return t.reasons[code];
   }
 }
-
-export const REJECT_LABEL: Record<Reason, string> = {
-  ate_recently: "어제 먹음",
-  too_greasy: "느끼함",
-  too_pricey: "비쌈",
-  dislike: "그냥 싫음",
-};

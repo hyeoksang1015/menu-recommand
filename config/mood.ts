@@ -7,19 +7,15 @@ import { ALLERGENS, CATEGORIES } from "@/lib/menus";
 export type Mood = "any" | "stress" | "tired" | "normal" | "celebrate";
 export type Company = "any" | "solo" | "two" | "group";
 
-export const MOODS: { key: Mood; label: string }[] = [
-  { key: "any", label: "상관없어" },
-  { key: "stress", label: "스트레스" },
-  { key: "tired", label: "피곤" },
-  { key: "normal", label: "평범" },
-  { key: "celebrate", label: "기념" },
+// 칩 순서. 화면 문구는 i18n/ui 사전의 home.moods / home.companies 에 있다.
+export const MOOD_KEYS: Mood[] = [
+  "any",
+  "stress",
+  "tired",
+  "normal",
+  "celebrate",
 ];
-export const COMPANIES: { key: Company; label: string }[] = [
-  { key: "any", label: "상관없어" },
-  { key: "solo", label: "혼자" },
-  { key: "two", label: "둘이" },
-  { key: "group", label: "여럿이" },
-];
+export const COMPANY_KEYS: Company[] = ["any", "solo", "two", "group"];
 
 // 기분이 정하는 기본값. 허기 슬라이더를 직접 움직였으면 want_heavy는 슬라이더 값을 쓴다.
 const MOOD_QUERY: Record<Mood, Partial<Query>> = {

@@ -1,115 +1,219 @@
 {
+ "locales": [
+  "ko",
+  "en",
+  "ja",
+  "zh"
+ ],
  "categories": [
   {
    "key": "korean",
-   "label": "한식",
    "emoji": "🍲",
-   "bit": 1
+   "bit": 1,
+   "label": {
+    "ko": "한식",
+    "en": "Korean",
+    "ja": "韓国料理",
+    "zh": "韩餐"
+   }
   },
   {
    "key": "chinese",
-   "label": "중식",
    "emoji": "🥟",
-   "bit": 2
+   "bit": 2,
+   "label": {
+    "ko": "중식",
+    "en": "Chinese",
+    "ja": "中華料理",
+    "zh": "中餐"
+   }
   },
   {
    "key": "japanese",
-   "label": "일식",
    "emoji": "🍣",
-   "bit": 4
+   "bit": 4,
+   "label": {
+    "ko": "일식",
+    "en": "Japanese",
+    "ja": "和食",
+    "zh": "日料"
+   }
   },
   {
    "key": "western",
-   "label": "양식",
    "emoji": "🍝",
-   "bit": 8
+   "bit": 8,
+   "label": {
+    "ko": "양식",
+    "en": "Western",
+    "ja": "洋食",
+    "zh": "西餐"
+   }
   },
   {
    "key": "snack",
-   "label": "분식",
    "emoji": "🍢",
-   "bit": 16
+   "bit": 16,
+   "label": {
+    "ko": "분식",
+    "en": "Korean Snacks",
+    "ja": "粉食",
+    "zh": "韩式小吃"
+   }
   },
   {
    "key": "asian",
-   "label": "아시안",
    "emoji": "🍜",
-   "bit": 32
+   "bit": 32,
+   "label": {
+    "ko": "아시안",
+    "en": "Asian",
+    "ja": "アジア料理",
+    "zh": "亚洲菜"
+   }
   },
   {
    "key": "fastfood",
-   "label": "패스트푸드",
    "emoji": "🍔",
-   "bit": 64
+   "bit": 64,
+   "label": {
+    "ko": "패스트푸드",
+    "en": "Fast Food",
+    "ja": "ファストフード",
+    "zh": "快餐"
+   }
   },
   {
    "key": "grill",
-   "label": "고기·구이",
    "emoji": "🥩",
-   "bit": 128
+   "bit": 128,
+   "label": {
+    "ko": "고기·구이",
+    "en": "BBQ & Grill",
+    "ja": "焼肉・グリル",
+    "zh": "烤肉"
+   }
   }
  ],
  "allergens": [
   {
    "key": "milk",
-   "label": "우유",
-   "bit": 1
+   "bit": 1,
+   "label": {
+    "ko": "우유",
+    "en": "Milk",
+    "ja": "乳",
+    "zh": "牛奶"
+   }
   },
   {
    "key": "egg",
-   "label": "달걀",
-   "bit": 2
+   "bit": 2,
+   "label": {
+    "ko": "달걀",
+    "en": "Egg",
+    "ja": "卵",
+    "zh": "鸡蛋"
+   }
   },
   {
    "key": "wheat",
-   "label": "밀",
-   "bit": 4
+   "bit": 4,
+   "label": {
+    "ko": "밀",
+    "en": "Wheat",
+    "ja": "小麦",
+    "zh": "小麦"
+   }
   },
   {
    "key": "soy",
-   "label": "대두",
-   "bit": 8
+   "bit": 8,
+   "label": {
+    "ko": "대두",
+    "en": "Soy",
+    "ja": "大豆",
+    "zh": "大豆"
+   }
   },
   {
    "key": "nuts",
-   "label": "땅콩·견과",
-   "bit": 16
+   "bit": 16,
+   "label": {
+    "ko": "땅콩·견과",
+    "en": "Peanuts & nuts",
+    "ja": "落花生・ナッツ",
+    "zh": "花生·坚果"
+   }
   },
   {
    "key": "crustacean",
-   "label": "새우·게",
-   "bit": 32
+   "bit": 32,
+   "label": {
+    "ko": "새우·게",
+    "en": "Shrimp & crab",
+    "ja": "エビ・カニ",
+    "zh": "虾·蟹"
+   }
   },
   {
    "key": "shellfish",
-   "label": "조개·오징어류",
-   "bit": 64
+   "bit": 64,
+   "label": {
+    "ko": "조개·오징어류",
+    "en": "Shellfish & squid",
+    "ja": "貝・イカ",
+    "zh": "贝类·鱿鱼"
+   }
   },
   {
    "key": "fish",
-   "label": "생선",
-   "bit": 128
+   "bit": 128,
+   "label": {
+    "ko": "생선",
+    "en": "Fish",
+    "ja": "魚",
+    "zh": "鱼"
+   }
   },
   {
    "key": "pork",
-   "label": "돼지고기",
-   "bit": 256
+   "bit": 256,
+   "label": {
+    "ko": "돼지고기",
+    "en": "Pork",
+    "ja": "豚肉",
+    "zh": "猪肉"
+   }
   },
   {
    "key": "beef",
-   "label": "소고기",
-   "bit": 512
+   "bit": 512,
+   "label": {
+    "ko": "소고기",
+    "en": "Beef",
+    "ja": "牛肉",
+    "zh": "牛肉"
+   }
   },
   {
    "key": "chicken",
-   "label": "닭고기",
-   "bit": 1024
+   "bit": 1024,
+   "label": {
+    "ko": "닭고기",
+    "en": "Chicken",
+    "ja": "鶏肉",
+    "zh": "鸡肉"
+   }
   }
  ],
  "menus": [
   {
    "id": "kimchi-jjigae",
    "name": "김치찌개",
+   "name_en": "Kimchi Jjigae",
+   "name_ja": "キムチチゲ",
+   "name_zh": "泡菜汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 264,
@@ -117,11 +221,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.cuisine-Kimchi jjigae-01.jpg",
+    "author": "by avlxyz",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "doenjang-jjigae",
    "name": "된장찌개",
+   "name_en": "Doenjang Jjigae",
+   "name_ja": "テンジャンチゲ",
+   "name_zh": "大酱汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 72,
@@ -129,11 +242,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Doenjang-jjigae 4.jpg",
+    "author": "이동원",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "bibimbap",
    "name": "비빔밥",
+   "name_en": "Bibimbap",
+   "name_ja": "ビビンバ",
+   "name_zh": "拌饭",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 10,
@@ -141,11 +263,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.food-Bibimbap-02.jpg",
+    "author": "abex (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "mul-naengmyeon",
    "name": "물냉면",
+   "name_en": "Mul Naengmyeon",
+   "name_ja": "水冷麺",
+   "name_zh": "水冷面",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 518,
@@ -153,11 +284,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.1,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Mul-naengmyeon 3.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "bibim-naengmyeon",
    "name": "비빔냉면",
+   "name_en": "Bibim Naengmyeon",
+   "name_ja": "ビビン冷麺",
+   "name_zh": "拌冷面",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 526,
@@ -165,11 +305,20 @@
    "spice": 3,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "KOCIS Bibim-naengmyeon Spicy Mixed Buckwheat Noodles (4594769498).jpg",
+    "author": "Korea.net / Korean Culture and Information Service",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "sundubu-jjigae",
    "name": "순두부찌개",
+   "name_en": "Sundubu Jjigae",
+   "name_ja": "スンドゥブチゲ",
+   "name_zh": "嫩豆腐汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 330,
@@ -177,11 +326,20 @@
    "spice": 3,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean stew-Sundubu jjigae-05.jpg",
+    "author": "by titanium22",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "budae-jjigae",
    "name": "부대찌개",
+   "name_en": "Budae Jjigae",
+   "name_ja": "プデチゲ",
+   "name_zh": "部队锅",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 781,
@@ -189,11 +347,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Budae jjigae indonesia.jpg",
+    "author": "Agus Damanik",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "galbitang",
    "name": "갈비탕",
+   "name_en": "Galbitang",
+   "name_ja": "カルビタン",
+   "name_zh": "排骨汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 520,
@@ -201,11 +368,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean soup-Galbitang-01.jpg",
+    "author": "stu_spivack",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "seolleongtang",
    "name": "설렁탕",
+   "name_en": "Seolleongtang",
+   "name_ja": "ソルロンタン",
+   "name_zh": "雪浓汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 512,
@@ -213,11 +389,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Seolleongtang.jpg",
+    "author": "이동원",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "dwaeji-gukbap",
    "name": "돼지국밥",
+   "name_en": "Dwaeji Gukbap",
+   "name_ja": "テジクッパ",
+   "name_zh": "猪肉汤饭",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 256,
@@ -225,11 +410,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Dwaeji-gukbap 2.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "sundae-gukbap",
    "name": "순대국밥",
+   "name_en": "Sundae Gukbap",
+   "name_ja": "スンデクッパ",
+   "name_zh": "米肠汤饭",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 268,
@@ -237,11 +431,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean soup Sundae gukbap 01.jpg",
+    "author": "Mar del Este",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "samgyetang",
    "name": "삼계탕",
+   "name_en": "Samgyetang",
+   "name_ja": "サムゲタン",
+   "name_zh": "参鸡汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 1040,
@@ -249,11 +452,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Samgye-tang 2.jpg",
+    "author": "wizdata",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "yukgaejang",
    "name": "육개장",
+   "name_en": "Yukgaejang",
+   "name_ja": "ユッケジャン",
+   "name_zh": "辣牛肉汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 522,
@@ -261,11 +473,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Yukgaejang-Moscow.JPG",
+    "author": "Lord Mountbatten",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Yukgaejang-Moscow.JPG"
+   }
   },
   {
    "id": "haejangguk",
    "name": "해장국",
+   "name_en": "Haejangguk",
+   "name_ja": "ヘジャンクッ",
+   "name_zh": "醒酒汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 520,
@@ -273,11 +494,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Haejangguk (hangover soup).jpg",
+    "author": "sangmins",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "gamjatang",
    "name": "감자탕",
+   "name_en": "Gamjatang",
+   "name_ja": "カムジャタン",
+   "name_zh": "土豆排骨汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 268,
@@ -285,11 +515,20 @@
    "spice": 2,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.food-Gamjatang-01.jpg",
+    "author": "comicpie (a flickr user)",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "kimchi-fried-rice",
    "name": "김치볶음밥",
+   "name_en": "Kimchi Fried Rice",
+   "name_ja": "キムチチャーハン",
+   "name_zh": "泡菜炒饭",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 266,
@@ -297,11 +536,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kimchi-bokkeum-bap (Kimchi fried rice) - Kogi 2023-09-11.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "jeyuk-bokkeum",
    "name": "제육볶음",
+   "name_en": "Jeyuk Bokkeum",
+   "name_ja": "チェユクポックム",
+   "name_zh": "辣炒猪肉",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 268,
@@ -309,11 +557,20 @@
    "spice": 3,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jeyuk-bokkeum 2.jpg",
+    "author": "국립국어원",
+    "license": "CC BY-SA 2.0 kr",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en"
+   }
   },
   {
    "id": "bulgogi-jeongsik",
    "name": "불고기 정식",
+   "name_en": "Bulgogi Set Meal",
+   "name_ja": "プルコギ定食",
+   "name_zh": "烤肉套餐",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 524,
@@ -321,11 +578,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bulgogi set meal of Matsuya.jpg",
+    "author": "毒島みるく",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "ojingeo-bokkeum",
    "name": "오징어볶음",
+   "name_en": "Spicy Stir-fried Squid",
+   "name_ja": "イカ炒め",
+   "name_zh": "辣炒鱿鱼",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 76,
@@ -333,11 +599,20 @@
    "spice": 4,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean spicy stir-fried squid (6880030177).jpg",
+    "author": "Chloe Lim from Seoul, South Korea",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "dakbokkeumtang",
    "name": "닭볶음탕",
+   "name_en": "Dakbokkeumtang",
+   "name_ja": "タッポックムタン",
+   "name_zh": "辣炖鸡",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 1032,
@@ -345,11 +620,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.food-Dakbokemtang-01.jpg",
+    "author": "stuart_spivack (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "godeungeo-gui",
    "name": "고등어구이 정식",
+   "name_en": "Grilled Mackerel Set Meal",
+   "name_ja": "サバ焼き定食",
+   "name_zh": "烤青花鱼套餐",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 136,
@@ -357,11 +641,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean cuisine-Godeungeo gui-01.jpg",
+    "author": "by david&alina at Flickr",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "galchi-jorim",
    "name": "갈치조림",
+   "name_en": "Braised Cutlassfish",
+   "name_ja": "タチウオの煮付け",
+   "name_zh": "炖带鱼",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 136,
@@ -369,11 +662,20 @@
    "spice": 3,
    "heavy": 0.5,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Galchi-jorim.jpg",
+    "author": "세미짱",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "kongguksu",
    "name": "콩국수",
+   "name_en": "Kongguksu",
+   "name_ja": "コングクス",
+   "name_zh": "豆浆面",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 28,
@@ -381,11 +683,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Korean noodles-Kongguksu-01.jpg",
+    "author": "egg (Hong, Yun Seon)",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "kalguksu",
    "name": "칼국수",
+   "name_en": "Kalguksu",
+   "name_ja": "カルグクス",
+   "name_zh": "刀切面",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 76,
@@ -393,11 +704,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.noodle-Kalguksu-01.jpg",
+    "author": "by jslander",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "sujebi",
    "name": "수제비",
+   "name_en": "Sujebi",
+   "name_ja": "スジェビ",
+   "name_zh": "面片汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 76,
@@ -405,11 +725,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.cuisine-Sujebi-01.jpg",
+    "author": "Steve Longus",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "janchi-guksu",
    "name": "잔치국수",
+   "name_en": "Janchi Guksu",
+   "name_ja": "チャンチグクス",
+   "name_zh": "喜面",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 142,
@@ -417,11 +746,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.1,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Janchi-guksu.jpg",
+    "author": "Chloe Lim",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "haemul-pajeon",
    "name": "해물파전",
+   "name_en": "Seafood Pancake",
+   "name_ja": "海鮮チヂミ",
+   "name_zh": "海鲜葱饼",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 102,
@@ -429,11 +767,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean seafood pancake 해물파전 (5534738474).jpg",
+    "author": "Matt @ PEK from Taipei, Taiwan",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "bossam",
    "name": "보쌈",
+   "name_en": "Bossam",
+   "name_ja": "ポッサム",
+   "name_zh": "菜包肉",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 264,
@@ -441,11 +788,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean cuisine-Bossam-04.jpg",
+    "author": "Timber Tank",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "jokbal",
    "name": "족발",
+   "name_en": "Jokbal",
+   "name_ja": "チョッパル",
+   "name_zh": "酱猪蹄",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 264,
@@ -453,11 +809,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jokbal 2.jpg",
+    "author": "국립국어원",
+    "license": "CC BY-SA 2.0 kr",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en"
+   }
   },
   {
    "id": "dolsot-bibimbap",
    "name": "돌솥비빔밥",
+   "name_en": "Dolsot Bibimbap",
+   "name_ja": "石焼ビビンバ",
+   "name_zh": "石锅拌饭",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 522,
@@ -465,11 +830,20 @@
    "spice": 2,
    "heavy": 0.7,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.food-Bibimbap-02.jpg",
+    "author": "abex (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "yukhoe-bibimbap",
    "name": "육회비빔밥",
+   "name_en": "Yukhoe Bibimbap",
+   "name_ja": "ユッケビビンバ",
+   "name_zh": "生拌牛肉拌饭",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 522,
@@ -477,11 +851,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Yukhoe Bibimbap.JPG",
+    "author": "hyolee2",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "cheonggukjang",
    "name": "청국장",
+   "name_en": "Cheonggukjang",
+   "name_ja": "チョングクチャン",
+   "name_zh": "清曲酱汤",
    "category": "korean",
    "category_bit": 1,
    "allergen_mask": 264,
@@ -489,11 +872,15 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "jjajangmyeon",
    "name": "짜장면",
+   "name_en": "Jjajangmyeon",
+   "name_ja": "チャジャン麺",
+   "name_zh": "炸酱面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 268,
@@ -501,11 +888,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jajangmyeon by KFoodaddict.jpg",
+    "author": "KFoodaddict",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "jjamppong",
    "name": "짬뽕",
+   "name_en": "Jjamppong",
+   "name_ja": "チャンポン",
+   "name_zh": "炒码面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 356,
@@ -513,11 +909,20 @@
    "spice": 4,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jjamppong-sujebi 2.jpg",
+    "author": "대경라이프",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "tangsuyuk",
    "name": "탕수육",
+   "name_en": "Tangsuyuk",
+   "name_ja": "タンスユク",
+   "name_zh": "糖醋肉",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 262,
@@ -525,11 +930,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tangsuyuk (Korean Chinese sweet and sour pork).jpg",
+    "author": "용스토리",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "mapo-tofu-rice",
    "name": "마파두부밥",
+   "name_en": "Mapo Tofu Rice",
+   "name_ja": "麻婆豆腐丼",
+   "name_zh": "麻婆豆腐饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 264,
@@ -537,11 +951,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Mapo Tofu, Rice & Noodle, 5 Rue Littré, Paris 001.jpg",
+    "author": "Guilhem Vellut from Paris, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "gan-jjajang",
    "name": "간짜장",
+   "name_en": "Gan Jjajang",
+   "name_ja": "カンチャジャン",
+   "name_zh": "干炸酱面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 270,
@@ -549,11 +972,15 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "jjajangbap",
    "name": "짜장밥",
+   "name_en": "Jjajang Rice",
+   "name_ja": "チャジャン飯",
+   "name_zh": "炸酱饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 268,
@@ -561,11 +988,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jajang-bap.jpg",
+    "author": "경빈마마",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "jjamppongbap",
    "name": "짬뽕밥",
+   "name_en": "Jjamppong Rice",
+   "name_ja": "チャンポン飯",
+   "name_zh": "炒码饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 360,
@@ -573,11 +1009,20 @@
    "spice": 4,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jjamppong-deopbap.jpg",
+    "author": "대경라이프",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "chinese-fried-rice",
    "name": "중화 볶음밥",
+   "name_en": "Chinese-style Fried Rice",
+   "name_ja": "中華チャーハン",
+   "name_zh": "中式炒饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 298,
@@ -585,11 +1030,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean Chinese fried rice 1.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "japchaebap",
    "name": "잡채밥",
+   "name_en": "Japchae Rice",
+   "name_ja": "チャプチェ飯",
+   "name_zh": "杂菜饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 268,
@@ -597,11 +1051,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Homemade Japchae with mixed capsicum, mushroom, meat, carrot with rice noodles 03.jpg",
+    "author": "Afifa Afrin",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "ulmyeon",
    "name": "울면",
+   "name_en": "Ulmyeon",
+   "name_ja": "ウルミョン",
+   "name_zh": "温卤面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 102,
@@ -609,11 +1072,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Ulmyeon.jpg",
+    "author": "Galaxea",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "gochu-japchae",
    "name": "고추잡채와 꽃빵",
+   "name_en": "Pepper Japchae with Flower Buns",
+   "name_ja": "青椒肉絲と花巻",
+   "name_zh": "青椒肉丝配花卷",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 268,
@@ -621,11 +1093,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Green pepper steak (青椒肉絲) (26880875325).jpg",
+    "author": "pelican from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "kkanpunggi",
    "name": "깐풍기",
+   "name_en": "Kkanpunggi",
+   "name_ja": "カンプンギ",
+   "name_zh": "干烹鸡",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 1036,
@@ -633,11 +1114,20 @@
    "spice": 2,
    "heavy": 0.7,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kkanpunggi 1.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "yuringi",
    "name": "유린기",
+   "name_en": "Yuringi",
+   "name_ja": "油淋鶏",
+   "name_zh": "油淋鸡",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 1036,
@@ -645,11 +1135,20 @@
    "spice": 1,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "You-lin-ji Japan.jpg",
+    "author": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "gunmandu",
    "name": "군만두",
+   "name_en": "Pan-fried Dumplings",
+   "name_ja": "焼き餃子",
+   "name_zh": "煎饺",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 268,
@@ -657,11 +1156,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.cuisine-Gunmandu-01.jpg",
+    "author": "by AZAdam",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "xiaolongbao",
    "name": "샤오롱바오",
+   "name_en": "Xiaolongbao",
+   "name_ja": "小籠包",
+   "name_zh": "小笼包",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 268,
@@ -669,11 +1177,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Xiao Long Bao by Junhao!.jpg",
+    "author": "Junhao!",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "malatang",
    "name": "마라탕",
+   "name_en": "Malatang",
+   "name_ja": "麻辣燙",
+   "name_zh": "麻辣烫",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 540,
@@ -681,11 +1198,20 @@
    "spice": 4,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Malatang from Hope Tree (20220226172344).jpg",
+    "author": "N509FZ",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "mala-xiangguo",
    "name": "마라샹궈",
+   "name_en": "Mala Xiangguo",
+   "name_ja": "麻辣香鍋",
+   "name_zh": "麻辣香锅",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 572,
@@ -693,11 +1219,20 @@
    "spice": 5,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Malaxiangguo in China.jpg",
+    "author": "Qinrong0115",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "guobaorou",
    "name": "꿔바로우",
+   "name_en": "Guobaorou",
+   "name_ja": "鍋包肉",
+   "name_zh": "锅包肉",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 260,
@@ -705,11 +1240,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Guobaorou at Zhenbutong, Changchun (20220826174428).jpg",
+    "author": "N509FZ",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "yanggochi",
    "name": "양꼬치",
+   "name_en": "Lamb Skewers",
+   "name_ja": "羊肉串",
+   "name_zh": "羊肉串",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 4,
@@ -717,11 +1261,20 @@
    "spice": 2,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Uykuluk (skewers).jpg",
+    "author": "E4024",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "dandan-noodles",
    "name": "탄탄면",
+   "name_en": "Dandan Noodles",
+   "name_ja": "担々麺",
+   "name_zh": "担担面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 284,
@@ -729,11 +1282,20 @@
    "spice": 3,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "担担面 Dandan noodles.jpg",
+    "author": "Sharon Ang",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "shrimp-fried-rice",
    "name": "새우볶음밥",
+   "name_en": "Shrimp Fried Rice",
+   "name_ja": "エビチャーハン",
+   "name_zh": "虾仁炒饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 42,
@@ -741,11 +1303,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Shrimp Fried Rice (Taiwan).jpg",
+    "author": "Ralff Nestor Nacor",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "yusanseul-bap",
    "name": "유산슬밥",
+   "name_en": "Yusanseul Rice",
+   "name_ja": "溜三絲丼",
+   "name_zh": "溜三丝饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 360,
@@ -753,11 +1324,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Yusanseul-deopbap.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "tomato-egg-rice",
    "name": "토마토 달걀볶음 덮밥",
+   "name_en": "Tomato and Egg Stir-fry Rice",
+   "name_ja": "トマト卵炒め丼",
+   "name_zh": "番茄炒蛋盖饭",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 10,
@@ -765,11 +1345,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Hunan cuisine, stir-fried tomato with eggs.jpg",
+    "author": "Huangdan2060",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+   }
   },
   {
    "id": "kkanpung-saeu",
    "name": "깐풍새우",
+   "name_en": "Kkanpung Shrimp",
+   "name_ja": "カンプンエビ",
+   "name_zh": "干烹虾",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 44,
@@ -777,11 +1366,15 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "chili-shrimp",
    "name": "칠리새우",
+   "name_en": "Chili Shrimp",
+   "name_ja": "エビチリ",
+   "name_zh": "干烧虾仁",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 46,
@@ -789,11 +1382,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kkansyo-saeu DSC00978.jpg",
+    "author": "최광모",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "baek-jjamppong",
    "name": "백짬뽕",
+   "name_en": "White Jjamppong",
+   "name_ja": "白チャンポン",
+   "name_zh": "白炒码面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 356,
@@ -801,11 +1403,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gul-jjamppong.jpg",
+    "author": "Linusblanket17",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "samseon-jjajang",
    "name": "삼선짜장",
+   "name_en": "Seafood Jjajangmyeon",
+   "name_ja": "三鮮チャジャン麺",
+   "name_zh": "三鲜炸酱面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 364,
@@ -813,11 +1424,15 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "naeng-jjamppong",
    "name": "냉짬뽕",
+   "name_en": "Cold Jjamppong",
+   "name_ja": "冷やしチャンポン",
+   "name_zh": "冷炒码面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 100,
@@ -825,11 +1440,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Naeng-jjamppong 2.jpg",
+    "author": "대경라이프",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nurungjitang",
    "name": "누룽지탕",
+   "name_en": "Sizzling Rice Soup",
+   "name_ja": "おこげあんかけ",
+   "name_zh": "锅巴汤",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 360,
@@ -837,11 +1461,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Nurungji-tang.jpg",
+    "author": "Jirka Matousek",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "dimsum-set",
    "name": "딤섬 모둠",
+   "name_en": "Dim Sum Platter",
+   "name_ja": "点心盛り合わせ",
+   "name_zh": "点心拼盘",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 300,
@@ -849,11 +1482,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Dim Sum platter from Wedding Banquet Specialist.jpg",
+    "author": "Peachyeung316",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "beef-noodle-soup",
    "name": "우육면",
+   "name_en": "Beef Noodle Soup",
+   "name_ja": "牛肉麺",
+   "name_zh": "牛肉面",
    "category": "chinese",
    "category_bit": 2,
    "allergen_mask": 524,
@@ -861,11 +1503,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Beef Noodles soup from Jinyi Beef Noodle Soup Inn in Shenzhen.jpg",
+    "author": "Peachyeung316",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "sushi-set",
    "name": "모둠초밥",
+   "name_en": "Assorted Sushi",
+   "name_ja": "寿司盛り合わせ",
+   "name_zh": "寿司拼盘",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 170,
@@ -873,11 +1524,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Assorted Shrimp Sushi.jpg",
+    "author": "Ceeseven",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "tonkatsu",
    "name": "돈카츠",
+   "name_en": "Tonkatsu",
+   "name_ja": "とんかつ",
+   "name_zh": "炸猪排",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 263,
@@ -885,11 +1545,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tonkatsu of Kimukatsu.jpg",
+    "author": "Minseong Kim",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "udon",
    "name": "우동",
+   "name_en": "Udon",
+   "name_ja": "うどん",
+   "name_zh": "乌冬面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 140,
@@ -897,11 +1566,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kake udon by Joe Jones in Tokyo.jpg",
+    "author": "Joe Jones from Tokyo",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "tonkotsu-ramen",
    "name": "돈코츠라멘",
+   "name_en": "Tonkotsu Ramen",
+   "name_ja": "豚骨ラーメン",
+   "name_zh": "豚骨拉面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 270,
@@ -909,11 +1587,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tonkotsu ramen in Tokyo.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "shoyu-ramen",
    "name": "쇼유라멘",
+   "name_en": "Shoyu Ramen",
+   "name_ja": "醤油ラーメン",
+   "name_zh": "酱油拉面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 1038,
@@ -921,11 +1608,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Shoyu Ramen.jpg",
+    "author": "Guilhem Vellut",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "miso-ramen",
    "name": "미소라멘",
+   "name_en": "Miso Ramen",
+   "name_ja": "味噌ラーメン",
+   "name_zh": "味噌拉面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 268,
@@ -933,11 +1629,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Miso ramen (M) - Goemon Ramen Bar 2025-12-10.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "tsukemen",
    "name": "츠케멘",
+   "name_en": "Tsukemen",
+   "name_ja": "つけ麺",
+   "name_zh": "蘸面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 396,
@@ -945,11 +1650,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tsukemen (Dipping Ramen) - Goemon Ramen Bar 2023-07-16.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "gyudon",
    "name": "규동",
+   "name_en": "Gyudon",
+   "name_ja": "牛丼",
+   "name_zh": "牛肉盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 524,
@@ -957,11 +1671,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gyuu-don 001.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "oyakodon",
    "name": "오야코동",
+   "name_en": "Oyakodon",
+   "name_ja": "親子丼",
+   "name_zh": "亲子盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 1038,
@@ -969,11 +1692,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Oyakodon 003.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "katsudon",
    "name": "가츠동",
+   "name_en": "Katsudon",
+   "name_ja": "カツ丼",
+   "name_zh": "猪排盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 270,
@@ -981,11 +1713,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Katsudon 001.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "kaisendon",
    "name": "카이센동",
+   "name_en": "Kaisendon",
+   "name_ja": "海鮮丼",
+   "name_zh": "海鲜盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 232,
@@ -993,11 +1734,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Kaisendon 001.jpg",
+    "author": "https://www.pxfuel.com/ja/free-photo-ojihe",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "sake-don",
    "name": "연어덮밥",
+   "name_en": "Salmon Rice Bowl",
+   "name_ja": "サーモン丼",
+   "name_zh": "三文鱼盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 136,
@@ -1005,11 +1755,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Rice bowl topped with salmon and salmon egg (14904439935).jpg",
+    "author": "pelican from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "tendon",
    "name": "텐동",
+   "name_en": "Tendon",
+   "name_ja": "天丼",
+   "name_zh": "天妇罗盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 174,
@@ -1017,11 +1776,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tendon 002.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "unadon",
    "name": "장어덮밥",
+   "name_en": "Unadon",
+   "name_ja": "うな丼",
+   "name_zh": "鳗鱼饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 140,
@@ -1029,11 +1797,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tokyo Chikuyotei Unadon01s2100.jpg",
+    "author": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5"
+   }
   },
   {
    "id": "zaru-soba",
    "name": "자루소바",
+   "name_en": "Zaru Soba",
+   "name_ja": "ざるそば",
+   "name_zh": "荞麦冷面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 140,
@@ -1041,11 +1818,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.1,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Zaru soba by spinachdip.jpg",
+    "author": "spinachdip from Minamikiso, Nagano",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "okonomiyaki",
    "name": "오코노미야키",
+   "name_en": "Okonomiyaki",
+   "name_ja": "お好み焼き",
+   "name_zh": "大阪烧",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 454,
@@ -1053,11 +1839,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Okonomiyaki 001.jpg",
+    "author": "ume-y",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "takoyaki",
    "name": "타코야키",
+   "name_en": "Takoyaki",
+   "name_ja": "たこ焼き",
+   "name_zh": "章鱼烧",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 198,
@@ -1065,11 +1860,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Takoyaki by yomi955.jpg",
+    "author": "heiwa4126",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "sashimi-set",
    "name": "모둠회",
+   "name_en": "Assorted Sashimi",
+   "name_ja": "刺身盛り合わせ",
+   "name_zh": "刺身拼盘",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 192,
@@ -1077,11 +1881,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Assorted Sashimi (6639227195).jpg",
+    "author": "Naotake Murayama from San Francisco, CA, USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "chirashi",
    "name": "지라시스시",
+   "name_en": "Chirashi Sushi",
+   "name_ja": "ちらし寿司",
+   "name_zh": "散寿司",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 170,
@@ -1089,11 +1902,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Chirashi-zushi.jpg",
+    "author": "Arashiyama",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "japanese-curry",
    "name": "일본식 카레라이스",
+   "name_en": "Japanese Curry Rice",
+   "name_ja": "カレーライス",
+   "name_zh": "日式咖喱饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 269,
@@ -1101,11 +1923,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Beef curry rice 003.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "katsu-curry",
    "name": "카츠카레",
+   "name_en": "Katsu Curry",
+   "name_ja": "カツカレー",
+   "name_zh": "猪排咖喱饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 271,
@@ -1113,11 +1944,20 @@
    "spice": 1,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Katsu-curry 001.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "yakisoba",
    "name": "야키소바",
+   "name_en": "Yakisoba",
+   "name_ja": "焼きそば",
+   "name_zh": "日式炒面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 396,
@@ -1125,11 +1965,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Pork yakisoba and tofu yakisoba, Korpan, Brighton.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "omurice",
    "name": "오므라이스",
+   "name_en": "Omurice",
+   "name_ja": "オムライス",
+   "name_zh": "蛋包饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 1031,
@@ -1137,11 +1986,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Omurice by Taimeiken.jpg",
+    "author": "Kanesue",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "hayashi-rice",
    "name": "하이라이스",
+   "name_en": "Hayashi Rice",
+   "name_ja": "ハヤシライス",
+   "name_zh": "牛肉烩饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 525,
@@ -1149,11 +2007,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Hayashi rice.jpg",
+    "author": "Hiratake at Japanese Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+   }
   },
   {
    "id": "karaage-don",
    "name": "가라아게동",
+   "name_en": "Karaage Rice Bowl",
+   "name_ja": "唐揚げ丼",
+   "name_zh": "日式炸鸡盖饭",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 1038,
@@ -1161,11 +2028,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tori Karaage Don With Onsen Tamago by Banej.jpg",
+    "author": "Banej",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "yakitori",
    "name": "야키토리",
+   "name_en": "Yakitori",
+   "name_ja": "焼き鳥",
+   "name_zh": "日式烤鸡串",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 1036,
@@ -1173,11 +2049,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Cooking yakitori.jpg",
+    "author": "竹麦魚(Searobin)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+   }
   },
   {
    "id": "shabu-shabu",
    "name": "샤브샤브",
+   "name_en": "Shabu-shabu",
+   "name_ja": "しゃぶしゃぶ",
+   "name_zh": "涮涮锅",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 524,
@@ -1185,11 +2070,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Shabu Shabu photo Don Ramey Logan.jpg",
+    "author": "Don Ramey Logan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "sukiyaki",
    "name": "스키야키",
+   "name_en": "Sukiyaki",
+   "name_ja": "すき焼き",
+   "name_zh": "寿喜烧",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 526,
@@ -1197,11 +2091,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Sukiyaki 01.jpg",
+    "author": "ajari",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "nabeyaki-udon",
    "name": "냄비우동",
+   "name_en": "Nabeyaki Udon",
+   "name_ja": "鍋焼きうどん",
+   "name_zh": "砂锅乌冬面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 174,
@@ -1209,11 +2112,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Nabeyaki udon.jpg",
+    "author": "Blue Lotus from Tokyo",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "onigiri-set",
    "name": "주먹밥 세트",
+   "name_en": "Onigiri Set",
+   "name_ja": "おにぎりセット",
+   "name_zh": "饭团套餐",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 136,
@@ -1221,11 +2133,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Onigiri udon (41001742365).jpg",
+    "author": "daisuke1230",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "hiyashi-chuka",
    "name": "히야시추카",
+   "name_en": "Hiyashi Chuka",
+   "name_ja": "冷やし中華",
+   "name_zh": "中华凉面",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 270,
@@ -1233,11 +2154,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Hiyashi chuka by woinary at 551 Horai in Osaka Intl Airport.jpg",
+    "author": "woinary from Osaka International Airport",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "ebi-katsu",
    "name": "새우카츠 정식",
+   "name_en": "Ebi Katsu Set Meal",
+   "name_ja": "エビカツ定食",
+   "name_zh": "炸虾排套餐",
    "category": "japanese",
    "category_bit": 4,
    "allergen_mask": 38,
@@ -1245,11 +2175,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Ebi Fry 001.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "cream-pasta",
    "name": "크림파스타",
+   "name_en": "Cream Pasta",
+   "name_ja": "クリームパスタ",
+   "name_zh": "奶油意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 261,
@@ -1257,11 +2196,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Pasta with cream sauce bacon and mushroom.jpg",
+    "author": "Geoffreyrabbit",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "tomato-pasta",
    "name": "토마토파스타",
+   "name_en": "Tomato Pasta",
+   "name_ja": "トマトパスタ",
+   "name_zh": "番茄意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 4,
@@ -1269,11 +2217,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Liat Portal for Foodie Disorder - Spaghetti with Tomato Sauce.jpg",
+    "author": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "caesar-salad",
    "name": "시저샐러드",
+   "name_en": "Caesar Salad",
+   "name_ja": "シーザーサラダ",
+   "name_zh": "凯撒沙拉",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 135,
@@ -1281,11 +2238,20 @@
    "spice": 0,
    "heavy": 0.2,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Caesar Salad - Purezza 2023-11-22.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "aglio-olio",
    "name": "알리오올리오",
+   "name_en": "Aglio e Olio",
+   "name_ja": "アーリオ・オーリオ",
+   "name_zh": "蒜香橄榄油意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 4,
@@ -1293,11 +2259,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Spaghetti aglio e olio KB.jpg",
+    "author": "Bairuilong",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "carbonara",
    "name": "까르보나라",
+   "name_en": "Carbonara",
+   "name_ja": "カルボナーラ",
+   "name_zh": "培根蛋酱意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 263,
@@ -1305,11 +2280,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Espaguetis carbonara.jpg",
+    "author": "Javier Somoza",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "rose-pasta",
    "name": "로제파스타",
+   "name_en": "Rosé Pasta",
+   "name_ja": "ロゼパスタ",
+   "name_zh": "玫瑰酱意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 5,
@@ -1317,11 +2301,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Rose Pasta.jpg",
+    "author": "SHIN MIN KYEONG",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "vongole",
    "name": "봉골레",
+   "name_en": "Spaghetti alle Vongole",
+   "name_ja": "ボンゴレ",
+   "name_zh": "蛤蜊意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 68,
@@ -1329,11 +2322,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Spaghetti alle vongole.jpg",
+    "author": "Flickr user: , retouched by AM",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "seafood-pasta",
    "name": "해산물 토마토파스타",
+   "name_en": "Seafood Tomato Pasta",
+   "name_ja": "シーフードトマトパスタ",
+   "name_zh": "海鲜番茄意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 100,
@@ -1341,11 +2343,20 @@
    "spice": 1,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Spicy Seafood Spaghetti (7994894586).jpg",
+    "author": "Sodanie Chea from Norwalk, Ca, United States",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "mentaiko-pasta",
    "name": "명란 크림파스타",
+   "name_en": "Mentaiko Cream Pasta",
+   "name_ja": "明太子クリームパスタ",
+   "name_zh": "明太子奶油意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 133,
@@ -1353,11 +2364,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Mentaiko spaghetti by kaex0r.jpg",
+    "author": "kaex0r",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "mushroom-risotto",
    "name": "버섯 리조또",
+   "name_en": "Mushroom Risotto",
+   "name_ja": "キノコのリゾット",
+   "name_zh": "蘑菇烩饭",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 5,
@@ -1365,11 +2385,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Mushroom and Leek Risotto (49535206656).jpg",
+    "author": "spurekar",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "steak",
    "name": "스테이크",
+   "name_en": "Steak",
+   "name_ja": "ステーキ",
+   "name_zh": "牛排",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 513,
@@ -1377,11 +2406,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "XO Steak and French Fries.jpg",
+    "author": "Yotam Nachum",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "hamburg-steak",
    "name": "함박스테이크",
+   "name_en": "Hamburg Steak",
+   "name_ja": "ハンバーグ",
+   "name_zh": "汉堡肉排",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 783,
@@ -1389,11 +2427,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Hamburg-Steak.jpg",
+    "author": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "kyungyang-donkas",
    "name": "경양식 돈가스",
+   "name_en": "Korean-style Pork Cutlet",
+   "name_ja": "韓国式とんかつ",
+   "name_zh": "韩式炸猪排",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 263,
@@ -1401,11 +2448,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Dongaseu 4.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "margherita-pizza",
    "name": "마르게리타 피자",
+   "name_en": "Margherita Pizza",
+   "name_ja": "マルゲリータ",
+   "name_zh": "玛格丽特披萨",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 5,
@@ -1413,11 +2469,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Margherita Originale.JPG",
+    "author": "Mario56",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "gorgonzola-pizza",
    "name": "고르곤졸라 피자",
+   "name_en": "Gorgonzola Pizza",
+   "name_ja": "ゴルゴンゾーラピザ",
+   "name_zh": "戈贡佐拉披萨",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 21,
@@ -1425,11 +2490,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gorgonzola pizza.jpg",
+    "author": "La yeon Kim",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "lasagna",
    "name": "라자냐",
+   "name_en": "Lasagna",
+   "name_ja": "ラザニア",
+   "name_zh": "千层面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 519,
@@ -1437,11 +2511,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Meaty Lasagna 8of8 (8736299782).jpg",
+    "author": "Breville USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "cobb-salad",
    "name": "콥샐러드",
+   "name_en": "Cobb Salad",
+   "name_ja": "コブサラダ",
+   "name_zh": "科布沙拉",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 1283,
@@ -1449,11 +2532,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Cobb salad from Silver Diner.jpg",
+    "author": "Ser Amantio di Nicolao",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "chicken-salad",
    "name": "닭가슴살 샐러드",
+   "name_en": "Chicken Breast Salad",
+   "name_ja": "鶏むね肉サラダ",
+   "name_zh": "鸡胸肉沙拉",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 1024,
@@ -1461,11 +2553,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Chicken breast and salad - Massachusetts.jpg",
+    "author": "Daderot",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "poke-bowl",
    "name": "포케",
+   "name_en": "Poke Bowl",
+   "name_ja": "ポキボウル",
+   "name_zh": "夏威夷波奇饭",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 136,
@@ -1473,11 +2574,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Philadelphia Poke Bowl - Happy Maki 2026-09-08.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "club-sandwich",
    "name": "클럽 샌드위치",
+   "name_en": "Club Sandwich",
+   "name_ja": "クラブサンドイッチ",
+   "name_zh": "总汇三明治",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 1287,
@@ -1485,11 +2595,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Club-sandwich.jpg",
+    "author": "Memm",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+   }
   },
   {
    "id": "brunch-plate",
    "name": "브런치 플레이트",
+   "name_en": "Brunch Plate",
+   "name_ja": "ブランチプレート",
+   "name_zh": "早午餐拼盘",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 263,
@@ -1497,11 +2616,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Brunch plate, Berlin.jpg",
+    "author": "Gerda Arendt",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "french-toast",
    "name": "프렌치토스트",
+   "name_en": "French Toast",
+   "name_ja": "フレンチトースト",
+   "name_zh": "法式吐司",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 7,
@@ -1509,11 +2637,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "French toast 001.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "clam-chowder",
    "name": "클램차우더와 빵",
+   "name_en": "Clam Chowder with Bread",
+   "name_ja": "クラムチャウダーとパン",
+   "name_zh": "蛤蜊浓汤配面包",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 69,
@@ -1521,11 +2658,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bread Bowl & Clam Chowder Soup (29842842338).jpg",
+    "author": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "fish-and-chips",
    "name": "피시앤칩스",
+   "name_en": "Fish and Chips",
+   "name_ja": "フィッシュ・アンド・チップス",
+   "name_zh": "炸鱼薯条",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 134,
@@ -1533,11 +2679,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Fish and chips plate with peas.jpg",
+    "author": "Grendelkhan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "cream-gnocchi",
    "name": "크림 뇨키",
+   "name_en": "Cream Gnocchi",
+   "name_ja": "クリームニョッキ",
+   "name_zh": "奶油意式团子",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 7,
@@ -1545,11 +2700,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gnocchis with Truffes cream - El Olivo 2025-03-23.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "paella",
    "name": "빠에야",
+   "name_en": "Paella",
+   "name_ja": "パエリア",
+   "name_zh": "西班牙海鲜饭",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 224,
@@ -1557,11 +2721,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Paella de fruit de mer.jpg",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "burrito",
    "name": "부리또",
+   "name_en": "Burrito",
+   "name_ja": "ブリトー",
+   "name_zh": "墨西哥卷饼",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 525,
@@ -1569,11 +2742,20 @@
    "spice": 2,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Burrito.JPG",
+    "author": "samuelfernandezrivera",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "tacos",
    "name": "타코",
+   "name_en": "Tacos",
+   "name_ja": "タコス",
+   "name_zh": "墨西哥塔可",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 517,
@@ -1581,11 +2763,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "001 Tacos de carnitas, carne asada y al pastor.jpg",
+    "author": "Larry Miller",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "quesadilla",
    "name": "퀘사디아",
+   "name_en": "Quesadilla",
+   "name_ja": "ケサディーヤ",
+   "name_zh": "墨西哥芝士饼",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 1029,
@@ -1593,11 +2784,20 @@
    "spice": 1,
    "heavy": 0.6,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "At Long Island 2023 267.jpg",
+    "author": "Photograph by Mike Peel (www.mikepeel.net).",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "bolognese",
    "name": "볼로네제",
+   "name_en": "Spaghetti Bolognese",
+   "name_ja": "ボロネーゼ",
+   "name_zh": "肉酱意面",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 773,
@@ -1605,11 +2805,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Spaghetti Bolognese - Figaros, Brighton 2023-10-06.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "gambas",
    "name": "감바스 알 아히요",
+   "name_en": "Gambas al Ajillo",
+   "name_ja": "ガンバス・アル・アヒージョ",
+   "name_zh": "蒜香虾",
    "category": "western",
    "category_bit": 8,
    "allergen_mask": 36,
@@ -1617,11 +2826,20 @@
    "spice": 1,
    "heavy": 0.4,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gambas al ajillo, 2024.jpg",
+    "author": "Juan Emilio Prades Bel",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "tteokbokki",
    "name": "떡볶이",
+   "name_en": "Tteokbokki",
+   "name_ja": "トッポッキ",
+   "name_zh": "辣炒年糕",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 12,
@@ -1629,11 +2847,20 @@
    "spice": 3,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.snacks-Tteokbokki-08.jpg",
+    "author": "by jetalone (flickr)",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "gimbap",
    "name": "김밥",
+   "name_en": "Gimbap",
+   "name_ja": "キンパ",
+   "name_zh": "紫菜包饭",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 10,
@@ -1641,11 +2868,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Gimbap (pixabay).jpg",
+    "author": "changupn",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "ramyeon",
    "name": "라면",
+   "name_en": "Ramyeon",
+   "name_ja": "ラミョン",
+   "name_zh": "韩式拉面",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 12,
@@ -1653,11 +2889,20 @@
    "spice": 3,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "A spicy ramyeon.jpg",
+    "author": "BrithnyBiong",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "rabokki",
    "name": "라볶이",
+   "name_en": "Rabokki",
+   "name_ja": "ラッポッキ",
+   "name_zh": "拉面炒年糕",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 14,
@@ -1665,11 +2910,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Rabokki - SOJU 2024-06-02.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "cheese-tteokbokki",
    "name": "치즈떡볶이",
+   "name_en": "Cheese Tteokbokki",
+   "name_ja": "チーズトッポッキ",
+   "name_zh": "芝士炒年糕",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 13,
@@ -1677,11 +2931,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Cheese-tteok-bokki.jpg",
+    "author": "insatiablemunch",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "rose-tteokbokki",
    "name": "로제떡볶이",
+   "name_en": "Rosé Tteokbokki",
+   "name_ja": "ロゼトッポッキ",
+   "name_zh": "玫瑰酱炒年糕",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 13,
@@ -1689,11 +2952,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Shrimp rosé tteokbokki.jpg",
+    "author": "Sharphyun",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "jjajang-tteokbokki",
    "name": "짜장떡볶이",
+   "name_en": "Jjajang Tteokbokki",
+   "name_ja": "チャジャントッポッキ",
+   "name_zh": "炸酱炒年糕",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 268,
@@ -1701,11 +2973,15 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "gungmul-tteokbokki",
    "name": "국물떡볶이",
+   "name_en": "Soupy Tteokbokki",
+   "name_ja": "汁だくトッポッキ",
+   "name_zh": "汤炒年糕",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 140,
@@ -1713,11 +2989,20 @@
    "spice": 3,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gungmul-tteok-bokki 1.jpg",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "sundae",
    "name": "순대",
+   "name_en": "Sundae (Korean Blood Sausage)",
+   "name_ja": "スンデ",
+   "name_zh": "米肠",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 268,
@@ -1725,11 +3010,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean blood sausage-Sundae-01.jpg",
+    "author": "SauceSupreme",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "twigim",
    "name": "모둠튀김",
+   "name_en": "Assorted Twigim",
+   "name_ja": "韓国式天ぷら盛り合わせ",
+   "name_zh": "韩式炸物拼盘",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 46,
@@ -1737,11 +3031,15 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "eomuktang",
    "name": "어묵탕",
+   "name_en": "Fish Cake Soup",
+   "name_ja": "おでん",
+   "name_zh": "鱼饼汤",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 140,
@@ -1749,11 +3047,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean fishcake bunsik eoumuk 01.jpg",
+    "author": "Hankook12",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "chamchi-gimbap",
    "name": "참치김밥",
+   "name_en": "Tuna Gimbap",
+   "name_ja": "ツナキンパ",
+   "name_zh": "金枪鱼紫菜包饭",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 138,
@@ -1761,11 +3068,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "키토 김밥.jpg",
+    "author": "Kcjsew",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "cheese-gimbap",
    "name": "치즈김밥",
+   "name_en": "Cheese Gimbap",
+   "name_ja": "チーズキンパ",
+   "name_zh": "芝士紫菜包饭",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 11,
@@ -1773,11 +3089,15 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": null
   },
   {
    "id": "kkoma-gimbap",
    "name": "꼬마김밥",
+   "name_en": "Mini Gimbap",
+   "name_ja": "ミニキンパ",
+   "name_zh": "迷你紫菜包饭",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 8,
@@ -1785,11 +3105,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Mayak-gimbap (31896881761).jpg",
+    "author": "bryan... from Taipei, Taiwan",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "jjolmyeon",
    "name": "쫄면",
+   "name_en": "Jjolmyeon",
+   "name_ja": "チョルミョン",
+   "name_zh": "辣拌筋面",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 14,
@@ -1797,11 +3126,20 @@
    "spice": 3,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Jjolmyeon by keizie.jpg",
+    "author": "keizie",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "bibim-guksu",
    "name": "비빔국수",
+   "name_en": "Bibim Guksu",
+   "name_ja": "ビビン麺",
+   "name_zh": "拌面",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 14,
@@ -1809,11 +3147,20 @@
    "spice": 3,
    "heavy": 0.4,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Bibim-guksu.jpg",
+    "author": "JeongHO Suh (daecheonnet)",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "tteok-manduguk",
    "name": "떡만둣국",
+   "name_en": "Rice Cake and Dumpling Soup",
+   "name_ja": "トック・マンドゥクッ",
+   "name_zh": "年糕饺子汤",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 782,
@@ -1821,11 +3168,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tteokmanduguk (rice cake dumpling soup).jpg",
+    "author": "방신애",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "cheese-ramyeon",
    "name": "치즈라면",
+   "name_en": "Cheese Ramyeon",
+   "name_ja": "チーズラミョン",
+   "name_zh": "芝士拉面",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 13,
@@ -1833,11 +3189,15 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "bunsik-udon",
    "name": "분식집 우동",
+   "name_en": "Snack Bar Udon",
+   "name_ja": "粉食店のうどん",
+   "name_zh": "小吃店乌冬面",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 140,
@@ -1845,11 +3205,15 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "street-toast",
    "name": "길거리 토스트",
+   "name_en": "Korean Street Toast",
+   "name_ja": "屋台トースト",
+   "name_zh": "韩式街头吐司",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 263,
@@ -1857,11 +3221,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gilgeori toast 5.jpg",
+    "author": "gildedgingerbread",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "hotteok",
    "name": "호떡",
+   "name_en": "Hotteok",
+   "name_ja": "ホットク",
+   "name_zh": "糖饼",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 20,
@@ -1869,11 +3242,20 @@
    "spice": 0,
    "heavy": 0.2,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean snack-Hotteok-01.jpg",
+    "author": "by yearofeats",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "korean-hotdog",
    "name": "핫도그",
+   "name_en": "Korean Corn Dog",
+   "name_ja": "韓国式ホットドッグ",
+   "name_zh": "韩式热狗",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 263,
@@ -1881,11 +3263,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Corn dog 001.jpg",
+    "author": "Ocdp",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "gyeranppang",
    "name": "계란빵",
+   "name_en": "Gyeranppang (Egg Bread)",
+   "name_ja": "ケランパン",
+   "name_zh": "鸡蛋面包",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 7,
@@ -1893,11 +3284,20 @@
    "spice": 0,
    "heavy": 0.2,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gyeranppang (egg bread) (Seoul street food).jpg",
+    "author": "tragrpx",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "jjinmandu",
    "name": "찐만두",
+   "name_en": "Steamed Dumplings",
+   "name_ja": "蒸し餃子",
+   "name_zh": "蒸饺",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 268,
@@ -1905,11 +3305,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Jjin-mandu 1.jpg",
+    "author": "chomjong",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "tteok-kkochi",
    "name": "떡꼬치",
+   "name_en": "Tteok Kkochi (Rice Cake Skewers)",
+   "name_ja": "トック串",
+   "name_zh": "年糕串",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 12,
@@ -1917,11 +3326,20 @@
    "spice": 1,
    "heavy": 0.2,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tteok-kkochi 2.jpg",
+    "author": "Lou Stejskal",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "gimmari",
    "name": "김말이 튀김",
+   "name_en": "Gimmari",
+   "name_ja": "キムマリ",
+   "name_zh": "紫菜卷炸粉条",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 12,
@@ -1929,11 +3347,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gimmari 김말이C1.jpg",
+    "author": "Unknown",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "yubu-chobap",
    "name": "유부초밥",
+   "name_en": "Inari Sushi",
+   "name_ja": "いなり寿司",
+   "name_zh": "豆皮寿司",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 12,
@@ -1941,11 +3368,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.3,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Kantofu Inarizushi.jpg",
+    "author": "Ocdp",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "cup-dakgangjeong",
    "name": "컵 닭강정",
+   "name_en": "Dakgangjeong Cup",
+   "name_ja": "カップタッカンジョン",
+   "name_zh": "杯装韩式炸鸡块",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 1052,
@@ -1953,11 +3389,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Dak-gangjeong 3.jpg",
+    "author": "hyun chun kim",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "mandu-ramyeon",
    "name": "만두라면",
+   "name_en": "Dumpling Ramyeon",
+   "name_ja": "餃子ラミョン",
+   "name_zh": "饺子拉面",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 268,
@@ -1965,11 +3410,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Mandu-ramyeon and gimbap.jpg",
+    "author": "Jude Lee",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "omurice-bunsik",
    "name": "분식집 오므라이스",
+   "name_en": "Snack Bar Omurice",
+   "name_ja": "粉食店のオムライス",
+   "name_zh": "小吃店蛋包饭",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 263,
@@ -1977,11 +3431,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Omurice 1.jpg",
+    "author": "Michael Sean Gallagher",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "donkas-gimbap",
    "name": "돈가스김밥",
+   "name_en": "Pork Cutlet Gimbap",
+   "name_ja": "とんかつキンパ",
+   "name_zh": "炸猪排紫菜包饭",
    "category": "snack",
    "category_bit": 16,
    "allergen_mask": 270,
@@ -1989,11 +3452,15 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": false
+   "hot": false,
+   "photo": null
   },
   {
    "id": "pho",
    "name": "쌀국수",
+   "name_en": "Pho",
+   "name_ja": "フォー",
+   "name_zh": "越南河粉",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 640,
@@ -2001,11 +3468,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Món ăn Đông Hà, Tết 2022 (phở Lý Quốc sư ở công viên Cọ Dầu) (2).jpg",
+    "author": "Phương Huy",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "pad-thai",
    "name": "팟타이",
+   "name_en": "Pad Thai",
+   "name_ja": "パッタイ",
+   "name_zh": "泰式炒河粉",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 186,
@@ -2013,11 +3489,20 @@
    "spice": 1,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Phat Thai kung Chang Khien street stall.jpg",
+    "author": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "banh-mi",
    "name": "반미",
+   "name_en": "Banh Mi",
+   "name_ja": "バインミー",
+   "name_zh": "越南法棍三明治",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 398,
@@ -2025,11 +3510,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Vietnamese Bánh mì (Banh Mi) Sandwich.jpg",
+    "author": "Jimmy Chen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "bun-cha",
    "name": "분짜",
+   "name_en": "Bun Cha",
+   "name_ja": "ブンチャー",
+   "name_zh": "烤肉米线",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 392,
@@ -2037,11 +3531,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Bún chả Hàng Mành.jpg",
+    "author": "Larry",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "bun-bo-hue",
    "name": "분보후에",
+   "name_en": "Bun Bo Hue",
+   "name_ja": "ブンボーフエ",
+   "name_zh": "顺化牛肉粉",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 928,
@@ -2049,11 +3552,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bún bò Huế minh28397.jpg",
+    "author": "Minh28397",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "goi-cuon",
    "name": "월남쌈",
+   "name_en": "Vietnamese Spring Rolls",
+   "name_ja": "生春巻き",
+   "name_zh": "越南春卷",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 432,
@@ -2061,11 +3573,20 @@
    "spice": 0,
    "heavy": 0.3,
    "oily": 0.1,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Vietnamese fried spring rolls in Ho Chi Minh City, Vietnam.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "tom-yum-goong",
    "name": "똠얌꿍",
+   "name_en": "Tom Yum Goong",
+   "name_ja": "トムヤムクン",
+   "name_zh": "冬阴功汤",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 161,
@@ -2073,11 +3594,20 @@
    "spice": 4,
    "heavy": 0.4,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tom Yum Goong Noodle Soup - Nok Nok Kitchen at The Cow 2024-03-28.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "green-curry",
    "name": "그린커리",
+   "name_en": "Thai Green Curry",
+   "name_ja": "グリーンカレー",
+   "name_zh": "泰式绿咖喱",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1152,
@@ -2085,11 +3615,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Thai green chicken curry and roti.jpg",
+    "author": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "massaman-curry",
    "name": "마싸만커리",
+   "name_en": "Massaman Curry",
+   "name_ja": "マッサマンカレー",
+   "name_zh": "马萨曼咖喱",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 656,
@@ -2097,11 +3636,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Beef Massaman curry with brown rice.jpg",
+    "author": "Vee Satayamas",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "khao-pad",
    "name": "태국식 볶음밥",
+   "name_en": "Khao Pad (Thai Fried Rice)",
+   "name_ja": "カオパット",
+   "name_zh": "泰式炒饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 170,
@@ -2109,11 +3657,20 @@
    "spice": 1,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Khao Pad (Rosa's Fried Rice) with Chicken - Rosa's Thai 2025-07-22.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "pad-kra-pao",
    "name": "팟카파오무쌉",
+   "name_en": "Pad Kra Pao",
+   "name_ja": "ガパオライス",
+   "name_zh": "泰式罗勒猪肉饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 394,
@@ -2121,11 +3678,20 @@
    "spice": 3,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kao Rad Pad Kra-pao - Unithai 2023-07-08.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "som-tam",
    "name": "쏨땀",
+   "name_en": "Som Tam",
+   "name_ja": "ソムタム",
+   "name_zh": "青木瓜沙拉",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 176,
@@ -2133,11 +3699,20 @@
    "spice": 4,
    "heavy": 0.2,
    "oily": 0.1,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Som Tam green papaya salad, Bangkok, Thailand.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "nasi-goreng",
    "name": "나시고렝",
+   "name_en": "Nasi Goreng",
+   "name_ja": "ナシゴレン",
+   "name_zh": "印尼炒饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1066,
@@ -2145,11 +3720,20 @@
    "spice": 2,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Nasi goreng indonesia.jpg",
+    "author": "Helito",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "mi-goreng",
    "name": "미고렝",
+   "name_en": "Mie Goreng",
+   "name_ja": "ミーゴレン",
+   "name_zh": "印尼炒面",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1038,
@@ -2157,11 +3741,20 @@
    "spice": 2,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Mi Goreng GM.jpg",
+    "author": "Gunawan Kartapranata",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "laksa",
    "name": "락사",
+   "name_en": "Laksa",
+   "name_ja": "ラクサ",
+   "name_zh": "叻沙",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 166,
@@ -2169,11 +3762,20 @@
    "spice": 3,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Thai laksa dish at Yim Thai Yeronga, Queensland.jpg",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "satay",
    "name": "사테",
+   "name_en": "Satay",
+   "name_ja": "サテ",
+   "name_zh": "沙爹肉串",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1048,
@@ -2181,11 +3783,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Sate Ayam Panggang.jpg",
+    "author": "Meandkancil2020",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "curry-and-naan",
    "name": "인도 커리와 난",
+   "name_en": "Indian Curry with Naan",
+   "name_ja": "インドカレーとナン",
+   "name_zh": "印度咖喱配馕",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1029,
@@ -2193,11 +3804,20 @@
    "spice": 2,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Naan-and-Curry-1.jpg",
+    "author": "Evelyn-rose",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "butter-chicken",
    "name": "버터치킨 커리",
+   "name_en": "Butter Chicken",
+   "name_ja": "バターチキンカレー",
+   "name_zh": "黄油鸡咖喱",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1045,
@@ -2205,11 +3825,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Chicken makhani.jpg",
+    "author": "stu_spivack",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "biryani",
    "name": "비리야니",
+   "name_en": "Biryani",
+   "name_ja": "ビリヤニ",
+   "name_zh": "印度香饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1041,
@@ -2217,11 +3846,20 @@
    "spice": 2,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Shrimp Biriyani.JPG",
+    "author": "Jyothis",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "tandoori-chicken",
    "name": "탄두리 치킨",
+   "name_en": "Tandoori Chicken",
+   "name_ja": "タンドリーチキン",
+   "name_zh": "印度烤鸡",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1025,
@@ -2229,11 +3867,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.4,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tandoori chicken Indian.jpg",
+    "author": "pelican",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "khao-man-gai",
    "name": "카오만까이",
+   "name_en": "Khao Man Gai",
+   "name_ja": "カオマンガイ",
+   "name_zh": "海南鸡饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1032,
@@ -2241,11 +3888,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Chicken, Rice & Peanut Sauce at Nong's Khao Man Gai, Portland, Oregon, 2025.jpg",
+    "author": "Another Believer",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "char-kway-teow",
    "name": "차퀘테오",
+   "name_en": "Char Kway Teow",
+   "name_ja": "チャークイティオ",
+   "name_zh": "炒粿条",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 302,
@@ -2253,11 +3909,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Char kway teow (kuetiau goreng) of Dann Char Kuey Teow at Permatang Tok Jaya, SPU 20240915 183329.jpg",
+    "author": "Wiki Farazi",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "banh-xeo",
    "name": "반쎄오",
+   "name_en": "Banh Xeo",
+   "name_ja": "バインセオ",
+   "name_zh": "越南煎饼",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 418,
@@ -2265,11 +3930,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bánh xèo 1.jpg",
+    "author": "Kent Wang from Austin, TX",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "lu-rou-fan",
    "name": "루러우판",
+   "name_en": "Lu Rou Fan",
+   "name_ja": "魯肉飯",
+   "name_zh": "卤肉饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 270,
@@ -2277,11 +3951,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Lurou fan(Taiwanese cuisine).jpg",
+    "author": "Jzest",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+   }
   },
   {
    "id": "pho-ga",
    "name": "닭 쌀국수",
+   "name_en": "Pho Ga (Chicken Pho)",
+   "name_ja": "鶏肉のフォー",
+   "name_zh": "鸡肉河粉",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1152,
@@ -2289,11 +3972,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.2,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Chicken Pho, Pho 21, Montparnasse, Paris 001.jpg",
+    "author": "Guilhem Vellut from Paris, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "kebab",
    "name": "케밥",
+   "name_en": "Kebab",
+   "name_ja": "ケバブ",
+   "name_zh": "土耳其烤肉",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 517,
@@ -2301,11 +3993,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kebab Gerashi.jpg",
+    "author": "Amin Noubahar",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "falafel-wrap",
    "name": "팔라펠 랩",
+   "name_en": "Falafel Wrap",
+   "name_ja": "ファラフェルラップ",
+   "name_zh": "炸鹰嘴豆丸卷饼",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 5,
@@ -2313,11 +4014,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Falafel Melt Wrap - We Love Falafel 2023-09-27.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "hummus-plate",
    "name": "후무스 플레이트",
+   "name_en": "Hummus Plate",
+   "name_ja": "フムスプレート",
+   "name_zh": "鹰嘴豆泥拼盘",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 20,
@@ -2325,11 +4035,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.5,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Hummus plate ni.jpg",
+    "author": "pita pita granada",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "cha-gio",
    "name": "짜조",
+   "name_en": "Cha Gio (Fried Spring Rolls)",
+   "name_ja": "揚げ春巻き",
+   "name_zh": "越南炸春卷",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 420,
@@ -2337,11 +4056,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Vietnamese fried spring rolls in Ho Chi Minh City, Vietnam.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "tom-kha-gai",
    "name": "똠카까이",
+   "name_en": "Tom Kha Gai",
+   "name_ja": "トムカーガイ",
+   "name_zh": "椰汁鸡汤",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 1152,
@@ -2349,11 +4077,20 @@
    "spice": 2,
    "heavy": 0.5,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Tom kha gai2.jpg",
+    "author": "lydiajoy1",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "com-tam",
    "name": "베트남 돼지갈비 덮밥",
+   "name_en": "Com Tam (Broken Rice with Pork)",
+   "name_ja": "コムタム",
+   "name_zh": "越南碎米饭",
    "category": "asian",
    "category_bit": 32,
    "allergen_mask": 394,
@@ -2361,11 +4098,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Com-Tam-2008.jpg",
+    "author": "Kham Tran",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "cheeseburger",
    "name": "치즈버거 세트",
+   "name_en": "Cheeseburger Meal",
+   "name_ja": "チーズバーガーセット",
+   "name_zh": "芝士汉堡套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 527,
@@ -2373,11 +4119,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Cheeseburger and Fries 2.jpg",
+    "author": "Kurt Kaiser",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "fried-chicken",
    "name": "후라이드치킨",
+   "name_en": "Korean Fried Chicken",
+   "name_ja": "フライドチキン",
+   "name_zh": "韩式炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1028,
@@ -2385,11 +4140,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean fried chicken 240206.jpg",
+    "author": "Startandstar",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "pepperoni-pizza",
    "name": "페퍼로니피자",
+   "name_en": "Pepperoni Pizza",
+   "name_ja": "ペパロニピザ",
+   "name_zh": "意式辣香肠披萨",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 261,
@@ -2397,11 +4161,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Pepperoni Pizza from Fellini’s Pizza.jpg",
+    "author": "BullDawg2021",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "yangnyeom-chicken",
    "name": "양념치킨",
+   "name_en": "Yangnyeom Chicken",
+   "name_ja": "ヤンニョムチキン",
+   "name_zh": "韩式甜辣炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1052,
@@ -2409,11 +4182,20 @@
    "spice": 2,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Yangnyeom Chicken Korean fried chicken.jpg",
+    "author": "Startandstar",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "ganjang-chicken",
    "name": "간장치킨",
+   "name_en": "Soy Garlic Chicken",
+   "name_ja": "醤油チキン",
+   "name_zh": "酱油炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2421,11 +4203,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Soy Garlic Chicken Meal, Feb 2025.jpg",
+    "author": "Ralff Nestor Nacor",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "padak",
    "name": "파닭",
+   "name_en": "Padak (Scallion Chicken)",
+   "name_ja": "パダック",
+   "name_zh": "葱丝炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2433,11 +4224,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Padak.jpg",
+    "author": "Choi2451",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "oven-chicken",
    "name": "오븐구이 치킨",
+   "name_en": "Oven-roasted Chicken",
+   "name_ja": "オーブンチキン",
+   "name_zh": "烤鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1024,
@@ -2445,11 +4245,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Roast Chicken - Kitchen Cafe 2023-06-10.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "boneless-chicken",
    "name": "순살치킨",
+   "name_en": "Boneless Fried Chicken",
+   "name_ja": "骨なしチキン",
+   "name_zh": "无骨炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2457,11 +4266,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Boneless chicken wings and fries.jpg",
+    "author": "Packer1028",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "spicy-chicken",
    "name": "매운 치킨",
+   "name_en": "Spicy Fried Chicken",
+   "name_ja": "激辛チキン",
+   "name_zh": "香辣炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2469,11 +4287,20 @@
    "spice": 4,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean fried chicken yangnyeom.jpg",
+    "author": "Yosomono",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "chicken-burger",
    "name": "치킨버거 세트",
+   "name_en": "Chicken Burger Meal",
+   "name_ja": "チキンバーガーセット",
+   "name_zh": "鸡肉汉堡套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1039,
@@ -2481,11 +4308,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Chicken cheese burger and Mexican vegetarian burger - Grubbs.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "shrimp-burger",
    "name": "새우버거 세트",
+   "name_en": "Shrimp Burger Meal",
+   "name_ja": "エビバーガーセット",
+   "name_zh": "虾堡套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 46,
@@ -2493,11 +4329,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Shrimp Burger.jpg",
+    "author": "Ceeseven",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "bulgogi-burger",
    "name": "불고기버거 세트",
+   "name_en": "Bulgogi Burger Meal",
+   "name_ja": "プルコギバーガーセット",
+   "name_zh": "烤肉汉堡套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 783,
@@ -2505,11 +4350,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bulgogi burger 1.jpg",
+    "author": "star5112",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "double-burger",
    "name": "더블 패티 버거",
+   "name_en": "Double Patty Burger",
+   "name_ja": "ダブルパティバーガー",
+   "name_zh": "双层牛肉汉堡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 527,
@@ -2517,11 +4371,20 @@
    "spice": 0,
    "heavy": 1.0,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Sriracha Double Smash Burger full meal.jpg",
+    "author": "JIP",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "combination-pizza",
    "name": "콤비네이션 피자",
+   "name_en": "Combination Pizza",
+   "name_ja": "コンビネーションピザ",
+   "name_zh": "什锦披萨",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 773,
@@ -2529,11 +4392,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Combination pizza (2).jpg",
+    "author": "jeffreyw",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "potato-pizza",
    "name": "포테이토 피자",
+   "name_en": "Potato Pizza",
+   "name_ja": "ポテトピザ",
+   "name_zh": "土豆披萨",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 263,
@@ -2541,11 +4413,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Potato pizza.jpg",
+    "author": "Jirka Matousek",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "bulgogi-pizza",
    "name": "불고기 피자",
+   "name_en": "Bulgogi Pizza",
+   "name_ja": "プルコギピザ",
+   "name_zh": "烤肉披萨",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 525,
@@ -2553,11 +4434,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bulgogi pizza 1.jpg",
+    "author": "Eric",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "hawaiian-pizza",
    "name": "하와이안 피자",
+   "name_en": "Hawaiian Pizza",
+   "name_ja": "ハワイアンピザ",
+   "name_zh": "夏威夷披萨",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 261,
@@ -2565,11 +4455,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Hawaiian pizza 1.jpg",
+    "author": "@joefoodie from USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "sub-sandwich",
    "name": "서브 샌드위치",
+   "name_en": "Submarine Sandwich",
+   "name_ja": "サブサンド",
+   "name_zh": "潜艇三明治",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1031,
@@ -2577,11 +4476,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.4,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Submarine sandwich sub subway.jpg",
+    "author": "Pixabay",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "chicken-wrap",
    "name": "치킨 랩",
+   "name_en": "Chicken Wrap",
+   "name_ja": "チキンラップ",
+   "name_zh": "鸡肉卷",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1031,
@@ -2589,11 +4497,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.6,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Handmade Chicken Shawarma Wrap - Lavash.jpg",
+    "author": "Andy Li",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "chicken-nuggets",
    "name": "치킨너겟 세트",
+   "name_en": "Chicken Nuggets Meal",
+   "name_ja": "チキンナゲットセット",
+   "name_zh": "鸡块套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2601,11 +4518,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Liat Portal for Foodie Disorder - Dinosaur Shaped Chicken Nuggets with Fresh Salad.jpg",
+    "author": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "chili-hotdog",
    "name": "칠리 핫도그",
+   "name_en": "Chili Dog",
+   "name_ja": "チリドッグ",
+   "name_zh": "辣肉酱热狗",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 773,
@@ -2613,11 +4539,20 @@
    "spice": 2,
    "heavy": 0.6,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Chili Dog.jpg",
+    "author": "Svh242 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+   }
   },
   {
    "id": "wings-and-fries",
    "name": "윙 앤 감자튀김",
+   "name_en": "Wings and Fries",
+   "name_ja": "手羽先とポテト",
+   "name_zh": "鸡翅配薯条",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1028,
@@ -2625,11 +4560,20 @@
    "spice": 1,
    "heavy": 0.6,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "French fries and fried chicken wings, Everything with Fries, Holland Village, Singapore - 20121021.jpg",
+    "author": "Jacklee",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "spicy-wings",
    "name": "매운 닭날개",
+   "name_en": "Spicy Chicken Wings",
+   "name_ja": "辛口手羽先",
+   "name_zh": "香辣鸡翅",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2637,11 +4581,20 @@
    "spice": 4,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Coast Guard buffalo chicken wings.jpg",
+    "author": "Coast Guard photo/ Petty Officer 2nd Class Jetta H. Disco",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/File:Coast_Guard_buffalo_chicken_wings.jpg"
+   }
   },
   {
    "id": "fish-burger",
    "name": "피시버거 세트",
+   "name_en": "Fish Burger Meal",
+   "name_ja": "フィッシュバーガーセット",
+   "name_zh": "鳕鱼堡套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 135,
@@ -2649,11 +4602,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Fish burger, Broad Arrow Tavern.jpg",
+    "author": "Chuq",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "mozzarella-burger",
    "name": "모짜렐라 버거",
+   "name_en": "Mozzarella Burger",
+   "name_ja": "モッツァレラバーガー",
+   "name_zh": "马苏里拉芝士汉堡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 519,
@@ -2661,11 +4623,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Argentine chicken burger sandwiches with lettuce, tomato, fried egg, and mozzarella cheese on Don Yeyo buns.jpg",
+    "author": "Horacio Cambeiro",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "spicy-chicken-burger",
    "name": "매운 치킨버거",
+   "name_en": "Spicy Chicken Burger",
+   "name_ja": "スパイシーチキンバーガー",
+   "name_zh": "香辣鸡腿堡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1038,
@@ -2673,11 +4644,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Burger King Spicy Chicken Sandwich (12181050703).jpg",
+    "author": "theimpulsivebuy",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "dakgangjeong",
    "name": "닭강정",
+   "name_en": "Dakgangjeong",
+   "name_ja": "タッカンジョン",
+   "name_zh": "韩式糖醋炸鸡块",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1052,
@@ -2685,11 +4665,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "만석닭강정.jpg",
+    "author": "LR0725",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "calzone",
    "name": "칼초네",
+   "name_en": "Calzone",
+   "name_ja": "カルツォーネ",
+   "name_zh": "意式包馅披萨",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 261,
@@ -2697,11 +4686,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Wikimania 2016 Deryck day 0 - 07 calzone.jpg",
+    "author": "Deryck Chan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "garlic-chicken",
    "name": "마늘치킨",
+   "name_en": "Garlic Fried Chicken",
+   "name_ja": "ガーリックチキン",
+   "name_zh": "蒜香炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1036,
@@ -2709,11 +4707,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Garlic Parmesan Fried Chicken Meal.jpg",
+    "author": "Ralff Nestor Nacor",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "cheese-seasoned-chicken",
    "name": "치즈 시즈닝 치킨",
+   "name_en": "Cheese-seasoned Chicken",
+   "name_ja": "チーズシーズニングチキン",
+   "name_zh": "芝士粉炸鸡",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 1029,
@@ -2721,11 +4728,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean fried chicken with cheese flavor (Chikin).jpg",
+    "author": "Fumikas Sagisavas",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "teriyaki-burger",
    "name": "데리야끼 버거 세트",
+   "name_en": "Teriyaki Burger Meal",
+   "name_ja": "照り焼きバーガーセット",
+   "name_zh": "照烧汉堡套餐",
    "category": "fastfood",
    "category_bit": 64,
    "allergen_mask": 270,
@@ -2733,11 +4749,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Lotteria teriyaki burger (3).jpg",
+    "author": "Baoothersks",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "samgyeopsal",
    "name": "삼겹살",
+   "name_en": "Samgyeopsal (Pork Belly)",
+   "name_ja": "サムギョプサル",
+   "name_zh": "烤五花肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 256,
@@ -2745,11 +4770,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Samgyeopsal (pork belly).jpg",
+    "author": "idkjm123",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "dakgalbi",
    "name": "닭갈비",
+   "name_en": "Dakgalbi",
+   "name_ja": "タッカルビ",
+   "name_zh": "辣炒鸡排",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 1036,
@@ -2757,11 +4791,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean cuisine-Dakgalbi-01.jpg",
+    "author": "by shizu k (shezzz) at Flickr",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "moksal",
    "name": "목살 구이",
+   "name_en": "Grilled Pork Neck",
+   "name_ja": "豚肩ロース焼き",
+   "name_zh": "烤猪颈肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 256,
@@ -2769,11 +4812,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Moksal-gui.jpg",
+    "author": "happy11u",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "hangjeongsal",
    "name": "항정살",
+   "name_en": "Grilled Pork Jowl",
+   "name_ja": "豚トロ焼き",
+   "name_zh": "烤猪颊肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 256,
@@ -2781,11 +4833,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Grilling pork meat described as ネックピートロ.jpg",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "dwaeji-galbi",
    "name": "돼지갈비",
+   "name_en": "Dwaeji Galbi (Pork Ribs)",
+   "name_ja": "テジカルビ",
+   "name_zh": "烤猪排骨",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 268,
@@ -2793,11 +4854,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Dwaeji-galbi-gui.jpg",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "so-galbi",
    "name": "소갈비",
+   "name_en": "So Galbi (Beef Short Ribs)",
+   "name_ja": "牛カルビ",
+   "name_zh": "烤牛排骨",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 524,
@@ -2805,11 +4875,20 @@
    "spice": 0,
    "heavy": 0.9,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean beef short ribs.jpg",
+    "author": "Tim Evanson",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "chadolbagi",
    "name": "차돌박이",
+   "name_en": "Chadolbagi (Beef Brisket)",
+   "name_ja": "チャドルバギ",
+   "name_zh": "烤牛胸肉片",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 512,
@@ -2817,11 +4896,20 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Chadolbagi-gui.jpg",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "deungsim",
    "name": "등심 구이",
+   "name_en": "Grilled Beef Sirloin",
+   "name_ja": "牛ロース焼き",
+   "name_zh": "烤牛里脊",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 512,
@@ -2829,11 +4917,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Grilled Sirloin Steak with Vegetables.jpg",
+    "author": "Ceeseven",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "yukhoe",
    "name": "육회",
+   "name_en": "Yukhoe (Beef Tartare)",
+   "name_ja": "ユッケ",
+   "name_zh": "韩式生拌牛肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 514,
@@ -2841,11 +4938,20 @@
    "spice": 0,
    "heavy": 0.4,
    "oily": 0.2,
-   "hot": false
+   "hot": false,
+   "photo": {
+    "file": "Malgogi-yukhoe 2.jpg",
+    "author": "사람냄새",
+    "license": "CC BY 2.0 kr",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/kr/deed.en"
+   }
   },
   {
    "id": "gopchang",
    "name": "곱창구이",
+   "name_en": "Grilled Gopchang",
+   "name_ja": "コプチャン焼き",
+   "name_zh": "烤牛小肠",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 512,
@@ -2853,11 +4959,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.9,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.food-Makchang-04.jpg",
+    "author": "by ~Mers",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "makchang",
    "name": "막창구이",
+   "name_en": "Grilled Makchang",
+   "name_ja": "マクチャン焼き",
+   "name_zh": "烤猪大肠",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 256,
@@ -2865,11 +4980,20 @@
    "spice": 1,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Makchang-gui.jpg",
+    "author": "Michael Sean Gallagher",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "galbisal",
    "name": "양념갈비살",
+   "name_en": "Marinated Beef Rib Finger",
+   "name_ja": "味付けカルビ",
+   "name_zh": "调味牛肋条",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 524,
@@ -2877,11 +5001,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.food-Galbi-03.jpg",
+    "author": "ayustety (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "dak-gui",
    "name": "닭구이",
+   "name_en": "Grilled Chicken",
+   "name_ja": "鶏の炭火焼き",
+   "name_zh": "烤鸡肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 1032,
@@ -2889,11 +5022,20 @@
    "spice": 1,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Grilled Chicken Sandwich from McDonald's Dongzhimenwai Store (20191222163031).jpg",
+    "author": "N509FZ",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "jangeo-gui",
    "name": "장어구이",
+   "name_en": "Grilled Eel",
+   "name_ja": "うなぎの蒲焼き",
+   "name_zh": "烤鳗鱼",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 140,
@@ -2901,11 +5043,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean grilled eel-Jangeo gui-01.jpg",
+    "author": "Richy!",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "daeha-gui",
    "name": "대하 소금구이",
+   "name_en": "Salt-grilled King Prawns",
+   "name_ja": "大正エビの塩焼き",
+   "name_zh": "盐烤大虾",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 32,
@@ -2913,11 +5064,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "2026-05-24 01 Grilled Spot prawns (Pandalus platyceros) - Victoria BC CAN.jpg",
+    "author": "Gordon Leggett",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "jogae-gui",
    "name": "조개구이",
+   "name_en": "Grilled Clams",
+   "name_ja": "焼き貝",
+   "name_zh": "烤贝类",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 64,
@@ -2925,11 +5085,20 @@
    "spice": 0,
    "heavy": 0.5,
    "oily": 0.3,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Grilled littleneck clams - Cambridge, MA.jpg",
+    "author": "Daderot",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "ori-jumulleok",
    "name": "오리 주물럭",
+   "name_en": "Spicy Marinated Duck",
+   "name_ja": "鴨肉の辛味炒め",
+   "name_zh": "辣拌鸭肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 12,
@@ -2937,11 +5106,15 @@
    "spice": 2,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "yanggalbi",
    "name": "양갈비",
+   "name_en": "Lamb Chops",
+   "name_ja": "ラムチョップ",
+   "name_zh": "烤羊排",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 0,
@@ -2949,11 +5122,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Liat Portal for Foodie Disorder – Lamb chops with asparagus.jpg",
+    "author": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "gopchang-jeongol",
    "name": "곱창전골",
+   "name_en": "Gopchang Hot Pot",
+   "name_ja": "コプチャン鍋",
+   "name_zh": "牛小肠火锅",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 524,
@@ -2961,11 +5143,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gopchang-jeongol.jpg",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "tteokgalbi",
    "name": "떡갈비 정식",
+   "name_en": "Tteokgalbi Set Meal",
+   "name_ja": "トッカルビ定食",
+   "name_zh": "韩式肉饼套餐",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 780,
@@ -2973,11 +5164,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean.cuisine-Tteokgalbi-01.jpg",
+    "author": "by Rhett Sutphin",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "gochujang-bulgogi",
    "name": "고추장 불고기",
+   "name_en": "Gochujang Pork Bulgogi",
+   "name_ja": "コチュジャンプルコギ",
+   "name_zh": "辣酱烤猪肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 268,
@@ -2985,11 +5185,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Gochujang-bulgogi 1.jpg",
+    "author": "대경라이프",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "so-jumulleok",
    "name": "소 주물럭",
+   "name_en": "Marinated Beef Jumulleok",
+   "name_ja": "牛肉ジュムルロク",
+   "name_zh": "调味烤牛肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 520,
@@ -2997,11 +5206,15 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "osam-bulgogi",
    "name": "오삼불고기",
+   "name_en": "Osam Bulgogi (Squid and Pork)",
+   "name_ja": "オサムプルコギ",
+   "name_zh": "鱿鱼五花肉炒",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 332,
@@ -3009,11 +5222,20 @@
    "spice": 3,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Korean cuisine-Osam bulgogi-01.jpg",
+    "author": "by aka_maya at Flickr",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "jjukkumi",
    "name": "쭈꾸미 볶음",
+   "name_en": "Spicy Stir-fried Webfoot Octopus",
+   "name_ja": "イイダコ炒め",
+   "name_zh": "辣炒小章鱼",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 76,
@@ -3021,11 +5243,15 @@
    "spice": 4,
    "heavy": 0.6,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "dwaeji-kkeopdegi",
    "name": "돼지껍데기",
+   "name_en": "Grilled Pork Skin",
+   "name_ja": "豚皮焼き",
+   "name_zh": "烤猪皮",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 264,
@@ -3033,11 +5259,20 @@
    "spice": 1,
    "heavy": 0.5,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Kkeopdegi-gui.jpg",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "bbq-brisket",
    "name": "바비큐 브리스킷",
+   "name_en": "BBQ Brisket",
+   "name_ja": "BBQブリスケット",
+   "name_zh": "烟熏牛胸肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 512,
@@ -3045,11 +5280,20 @@
    "spice": 0,
    "heavy": 0.8,
    "oily": 0.7,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "The Great Eldorado BBQ, Brews & Blues Festival 2019 - Stierch 08.jpg",
+    "author": "Missvain",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "bbq-pork-ribs",
    "name": "바비큐 폭립",
+   "name_en": "BBQ Pork Ribs",
+   "name_ja": "BBQポークリブ",
+   "name_zh": "烧烤猪肋排",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 268,
@@ -3057,11 +5301,20 @@
    "spice": 1,
    "heavy": 0.9,
    "oily": 0.8,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "BBQ RIBS pork side ribs.jpg",
+    "author": "WorldwrestlingfederationVKM",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "dakkkochi",
    "name": "닭꼬치",
+   "name_en": "Chicken Skewers",
+   "name_ja": "鶏串",
+   "name_zh": "鸡肉串",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 1036,
@@ -3069,11 +5322,20 @@
    "spice": 1,
    "heavy": 0.4,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Dak-kkochi 1.jpg",
+    "author": "향긋한 커피매니아",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "salmon-steak",
    "name": "연어 스테이크",
+   "name_en": "Salmon Steak",
+   "name_ja": "サーモンステーキ",
+   "name_zh": "三文鱼排",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 129,
@@ -3081,11 +5343,20 @@
    "spice": 0,
    "heavy": 0.6,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Salmon steak with with Beurre Maitre d'Hotel and spinach.jpg",
+    "author": "Kimberly Vardeman from Lubbock, TX, USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "dwaeji-bulbaek",
    "name": "돼지불백",
+   "name_en": "Dwaeji Bulbaek",
+   "name_ja": "テジプルベク",
+   "name_zh": "烤猪肉白饭",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 268,
@@ -3093,11 +5364,15 @@
    "spice": 2,
    "heavy": 0.7,
    "oily": 0.6,
-   "hot": true
+   "hot": true,
+   "photo": null
   },
   {
    "id": "eonyang-bulgogi",
    "name": "언양불고기",
+   "name_en": "Eonyang Bulgogi",
+   "name_ja": "オニャンプルコギ",
+   "name_zh": "彦阳烤牛肉",
    "category": "grill",
    "category_bit": 128,
    "allergen_mask": 524,
@@ -3105,7 +5380,13 @@
    "spice": 0,
    "heavy": 0.7,
    "oily": 0.5,
-   "hot": true
+   "hot": true,
+   "photo": {
+    "file": "Bassak-bulgogi.jpg",
+    "author": "행복한 초록개구리",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+   }
   }
  ]
 }

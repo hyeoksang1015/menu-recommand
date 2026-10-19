@@ -1,37 +1,64 @@
 "use client";
 
 import { motion } from "motion/react";
-import type { Menu, ReasonCode, Slot } from "@/lib/engine/types";
-import { reasonLabel, SLOT_LABEL, SPICE, won } from "@/lib/labels";
-import { CATEGORY_BY_KEY } from "@/lib/menus";
+import { useI18n } from "@/components/I18nProvider";
+import type { ReasonCode, Slot } from "@/lib/engine/types";
+import { priceLabel, reasonLabel } from "@/lib/labels";
+import {
+  CATEGORY_BY_KEY,
+  menuName,
+  photoUrl,
+  type MenuItem,
+} from "@/lib/menus";
 
-// 저장값을 불러오기 전 자리표시와 실제 카드의 높이를 맞춰 화면 밀림(CLS)을 막는다. 모바일에서 잰 실제 높이(216px).
-export const CARD_HEIGHT = "min-h-54";
+// 저장값을 불러오기 전 자리표시와 실제 카드의 높이를 맞춰 화면 밀림(CLS)을 막는다.
+// 모바일(412px)에서 잰 실제 카드 높이.
+export const CARD_HEIGHT = "min-h-[30rem]";
 
-// 사진 자리는 이미지 방식이 정해질 때까지(spec 12절) 카테고리 이모지로 채운다.
-export function MenuThumb({
+// 4:3 음식 사진. 사진이 없는 메뉴(Commons에 맞는 사진이 없던 것)는 카테고리 이모지로 채운다.
+// 사진은 빌드 전에 480×360 webp로 줄여 두었으므로 next/image 최적화 없이 <img>로 바로 쓴다.
+export function MenuPhoto({
   menu,
-  size = "h-20 w-20 text-4xl",
+  className = "",
+  priority = false,
 }: {
-  menu: Menu;
-  size?: string;
+  menu: MenuItem;
+  className?: string;
+  priority?: boolean;
 }) {
+  const { lang } = useI18n();
+  const src = photoUrl(menu);
   return (
     <div
-      aria-hidden
-      className={`grid shrink-0 place-items-center rounded-2xl bg-soft ${size}`}
+      className={`aspect-[4/3] overflow-hidden rounded-2xl bg-soft ${className}`}
     >
-      {CATEGORY_BY_KEY.get(menu.category)?.emoji}
+      {src ? (
+        // eslint-disable-next-line @next/next/no-img-element -- 정적 내보내기라 이미 줄인 webp를 그대로 쓴다
+        <img
+          src={src}
+          alt={menuName(menu, lang)}
+          width={480}
+          height={360}
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+          className="h-full w-full object-cover"
+        />
+      ) : (
+        <div aria-hidden className="grid h-full place-items-center text-6xl">
+          {CATEGORY_BY_KEY.get(menu.category)?.emoji}
+        </div>
+      )}
     </div>
   );
 }
 
-export function MenuBadges({ menu }: { menu: Menu }) {
+export function MenuBadges({ menu }: { menu: MenuItem }) {
+  const { lang, t } = useI18n();
   return (
     <div className="flex flex-wrap gap-1.5">
-      <span className="badge">약 {won(menu.price)}</span>
-      <span className="badge">{SPICE[menu.spice]}</span>
-      <span className="badge">{menu.hot ? "따뜻하게" : "차갑게"}</span>
+      <span className="badge">{priceLabel(menu, lang, t)}</span>
+      <span className="badge">{t.menu.spice[menu.spice]}</span>
+      <span className="badge">{menu.hot ? t.menu.hot : t.menu.cold}</span>
     </div>
   );
 }
@@ -40,15 +67,19 @@ export default function PickCard({
   menu,
   slot,
   reasons,
+  priority,
   onChoose,
   onReject,
 }: {
-  menu: Menu;
+  menu: MenuItem;
   slot: Slot;
   reasons: ReasonCode[];
+  priority: boolean;
   onChoose: () => void;
   onReject: () => void;
 }) {
+  const { lang, t } = useI18n();
+  const name = menuName(menu, lang);
   return (
     <motion.li
       layout
@@ -56,40 +87,41 @@ export default function PickCard({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.2 }}
-      className={`card ${CARD_HEIGHT}`}
-      aria-label={`${SLOT_LABEL[slot]}: ${menu.name}`}
+      className={`card ${CARD_HEIGHT} flex flex-col`}
+      aria-label={`${t.slots[slot]}: ${name}`}
     >
-      <p className="text-xs font-bold text-brand">{SLOT_LABEL[slot]}</p>
-      <div className="mt-2 flex gap-4">
-        <MenuThumb menu={menu} />
-        <div className="min-w-0 flex-1 space-y-2">
-          <h2 className="text-xl font-extrabold">
-            {menu.name}
-            <span className="ml-2 text-sm font-normal text-muted">
-              {CATEGORY_BY_KEY.get(menu.category)?.label}
-            </span>
-          </h2>
-          <MenuBadges menu={menu} />
-          {reasons.length > 0 && (
-            <ul className="flex flex-wrap gap-1.5" aria-label="추천 이유">
-              {reasons.map((r) => (
-                <li
-                  key={r}
-                  className="rounded-full border border-line px-2.5 py-0.5 text-xs"
-                >
-                  {reasonLabel(r, menu)}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+      <p className="text-xs font-bold text-brand">{t.slots[slot]}</p>
+      <MenuPhoto menu={menu} priority={priority} className="mt-2" />
+      <div className="mt-3 flex-1 space-y-2">
+        <h2 className="text-xl font-extrabold">
+          {name}
+          <span className="ml-2 text-sm font-normal text-muted">
+            {CATEGORY_BY_KEY.get(menu.category)?.label[lang]}
+          </span>
+        </h2>
+        <MenuBadges menu={menu} />
+        {reasons.length > 0 && (
+          <ul
+            className="flex flex-wrap gap-1.5"
+            aria-label={t.picks.reasonsAria}
+          >
+            {reasons.map((r) => (
+              <li
+                key={r}
+                className="rounded-full border border-line px-2.5 py-0.5 text-xs"
+              >
+                {reasonLabel(r, menu, t)}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
       <div className="mt-4 grid grid-cols-2 gap-2">
         <button type="button" className="btn btn-ghost" onClick={onReject}>
-          다른 거
+          {t.picks.reject}
         </button>
         <button type="button" className="btn btn-primary" onClick={onChoose}>
-          이걸로!
+          {t.picks.choose}
         </button>
       </div>
     </motion.li>

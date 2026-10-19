@@ -1,251 +1,251 @@
-id,name,category,allergens,price,spice,heavy,oily,hot
-kimchi-jjigae,김치찌개,korean,pork|soy,9000,2,0.6,0.4,1
-doenjang-jjigae,된장찌개,korean,soy|shellfish,9000,1,0.5,0.2,1
-bibimbap,비빔밥,korean,egg|soy,9500,2,0.6,0.3,1
-mul-naengmyeon,물냉면,korean,wheat|beef|egg,11000,0,0.4,0.1,0
-bibim-naengmyeon,비빔냉면,korean,wheat|beef|egg|soy,11000,3,0.4,0.2,0
-sundubu-jjigae,순두부찌개,korean,soy|shellfish|egg|pork,9500,3,0.5,0.3,1
-budae-jjigae,부대찌개,korean,pork|beef|wheat|soy|milk,11000,3,0.8,0.6,1
-galbitang,갈비탕,korean,beef|soy,14000,0,0.7,0.4,1
-seolleongtang,설렁탕,korean,beef,11000,0,0.6,0.3,1
-dwaeji-gukbap,돼지국밥,korean,pork,10000,1,0.8,0.5,1
-sundae-gukbap,순대국밥,korean,pork|soy|wheat,10000,1,0.8,0.5,1
-samgyetang,삼계탕,korean,chicken|nuts,17000,0,0.8,0.4,1
-yukgaejang,육개장,korean,beef|soy|egg,11000,3,0.6,0.4,1
-haejangguk,해장국,korean,beef|soy,10000,2,0.6,0.3,1
-gamjatang,감자탕,korean,pork|soy|wheat,12000,2,0.8,0.6,1
-kimchi-fried-rice,김치볶음밥,korean,pork|egg|soy,9000,2,0.6,0.5,1
-jeyuk-bokkeum,제육볶음,korean,pork|soy|wheat,10000,3,0.7,0.6,1
-bulgogi-jeongsik,불고기 정식,korean,beef|soy|wheat,12000,0,0.7,0.4,1
-ojingeo-bokkeum,오징어볶음,korean,shellfish|soy|wheat,11000,4,0.6,0.4,1
-dakbokkeumtang,닭볶음탕,korean,chicken|soy,13000,3,0.8,0.5,1
-godeungeo-gui,고등어구이 정식,korean,fish|soy,10000,0,0.5,0.5,1
-galchi-jorim,갈치조림,korean,fish|soy,14000,3,0.5,0.4,1
-kongguksu,콩국수,korean,soy|wheat|nuts,10000,0,0.5,0.2,0
-kalguksu,칼국수,korean,wheat|shellfish|soy,9000,0,0.6,0.2,1
-sujebi,수제비,korean,wheat|shellfish|soy,8500,0,0.6,0.2,1
-janchi-guksu,잔치국수,korean,wheat|egg|fish|soy,7000,0,0.4,0.1,1
-haemul-pajeon,해물파전,korean,wheat|egg|shellfish|crustacean,8000,0,0.6,0.8,1
-bossam,보쌈,korean,pork|soy,15000,1,0.8,0.5,1
-jokbal,족발,korean,pork|soy,15000,0,0.8,0.6,1
-dolsot-bibimbap,돌솥비빔밥,korean,egg|soy|beef,10500,2,0.7,0.4,1
-yukhoe-bibimbap,육회비빔밥,korean,beef|egg|soy,13000,2,0.6,0.3,0
-cheonggukjang,청국장,korean,soy|pork,9500,1,0.5,0.2,1
-jjajangmyeon,짜장면,chinese,wheat|soy|pork,8000,0,0.8,0.7,1
-jjamppong,짬뽕,chinese,wheat|crustacean|shellfish|pork,10000,4,0.7,0.5,1
-tangsuyuk,탕수육,chinese,wheat|pork|egg,12000,0,0.8,0.9,1
-mapo-tofu-rice,마파두부밥,chinese,soy|pork,9500,3,0.6,0.6,1
-gan-jjajang,간짜장,chinese,wheat|soy|pork|egg,9000,0,0.8,0.8,1
-jjajangbap,짜장밥,chinese,soy|pork|wheat,9000,0,0.8,0.7,1
-jjamppongbap,짬뽕밥,chinese,crustacean|shellfish|pork|soy,10000,4,0.7,0.5,1
-chinese-fried-rice,중화 볶음밥,chinese,egg|soy|pork|crustacean,9000,0,0.7,0.7,1
-japchaebap,잡채밥,chinese,soy|pork|wheat,10000,1,0.7,0.7,1
-ulmyeon,울면,chinese,wheat|shellfish|crustacean|egg,9000,0,0.6,0.4,1
-gochu-japchae,고추잡채와 꽃빵,chinese,pork|soy|wheat,13000,2,0.6,0.8,1
-kkanpunggi,깐풍기,chinese,chicken|wheat|soy,13000,2,0.7,0.9,1
-yuringi,유린기,chinese,chicken|wheat|soy,13000,1,0.6,0.8,1
-gunmandu,군만두,chinese,wheat|pork|soy,7000,0,0.5,0.8,1
-xiaolongbao,샤오롱바오,chinese,wheat|pork|soy,10000,0,0.5,0.5,1
-malatang,마라탕,chinese,soy|beef|wheat|nuts,12000,4,0.6,0.6,1
-mala-xiangguo,마라샹궈,chinese,soy|beef|wheat|nuts|crustacean,18000,5,0.7,0.8,1
-guobaorou,꿔바로우,chinese,pork|wheat,12000,0,0.7,0.9,1
-yanggochi,양꼬치,chinese,wheat,15000,2,0.7,0.7,1
-dandan-noodles,탄탄면,chinese,wheat|nuts|pork|soy,10000,3,0.7,0.6,1
-shrimp-fried-rice,새우볶음밥,chinese,crustacean|egg|soy,10000,0,0.6,0.6,1
-yusanseul-bap,유산슬밥,chinese,crustacean|shellfish|pork|soy,13000,0,0.6,0.5,1
-tomato-egg-rice,토마토 달걀볶음 덮밥,chinese,egg|soy,9000,0,0.5,0.5,1
-kkanpung-saeu,깐풍새우,chinese,crustacean|wheat|soy,15000,2,0.6,0.8,1
-chili-shrimp,칠리새우,chinese,crustacean|wheat|egg|soy,15000,2,0.6,0.8,1
-baek-jjamppong,백짬뽕,chinese,wheat|crustacean|shellfish|pork,10000,1,0.7,0.5,1
-samseon-jjajang,삼선짜장,chinese,wheat|soy|crustacean|shellfish|pork,11000,0,0.8,0.7,1
-naeng-jjamppong,냉짬뽕,chinese,wheat|crustacean|shellfish,10500,3,0.6,0.3,0
-nurungjitang,누룽지탕,chinese,crustacean|shellfish|soy|pork,14000,0,0.6,0.5,1
-dimsum-set,딤섬 모둠,chinese,wheat|pork|crustacean|soy,14000,0,0.5,0.5,1
-beef-noodle-soup,우육면,chinese,wheat|beef|soy,12000,1,0.7,0.4,1
-sushi-set,모둠초밥,japanese,fish|crustacean|soy|egg,16000,0,0.4,0.2,0
-tonkatsu,돈카츠,japanese,wheat|egg|pork|milk,11000,0,0.8,0.8,1
-udon,우동,japanese,wheat|fish|soy,8500,0,0.5,0.2,1
-tonkotsu-ramen,돈코츠라멘,japanese,wheat|pork|soy|egg,11000,1,0.8,0.7,1
-shoyu-ramen,쇼유라멘,japanese,wheat|soy|chicken|egg,10000,0,0.6,0.5,1
-miso-ramen,미소라멘,japanese,wheat|soy|pork,10500,1,0.7,0.6,1
-tsukemen,츠케멘,japanese,wheat|soy|pork|fish,12000,1,0.8,0.6,1
-gyudon,규동,japanese,beef|soy|wheat,9000,0,0.7,0.5,1
-oyakodon,오야코동,japanese,chicken|egg|soy|wheat,9500,0,0.7,0.4,1
-katsudon,가츠동,japanese,pork|egg|wheat|soy,10000,0,0.9,0.7,1
-kaisendon,카이센동,japanese,fish|crustacean|shellfish|soy,18000,0,0.5,0.2,0
-sake-don,연어덮밥,japanese,fish|soy,14000,0,0.5,0.4,0
-tendon,텐동,japanese,crustacean|wheat|egg|fish|soy,12000,0,0.8,0.9,1
-unadon,장어덮밥,japanese,fish|soy|wheat,25000,0,0.7,0.6,1
-zaru-soba,자루소바,japanese,wheat|soy|fish,9000,0,0.3,0.1,0
-okonomiyaki,오코노미야키,japanese,wheat|egg|pork|shellfish|fish,13000,0,0.7,0.7,1
-takoyaki,타코야키,japanese,wheat|egg|shellfish|fish,6000,0,0.4,0.6,1
-sashimi-set,모둠회,japanese,fish|shellfish,25000,0,0.4,0.2,0
-chirashi,지라시스시,japanese,fish|egg|soy|crustacean,15000,0,0.5,0.2,0
-japanese-curry,일본식 카레라이스,japanese,wheat|milk|pork|soy,9500,1,0.7,0.6,1
-katsu-curry,카츠카레,japanese,wheat|milk|pork|egg|soy,12000,1,0.9,0.8,1
-yakisoba,야키소바,japanese,wheat|pork|soy|fish,9500,0,0.6,0.6,1
-omurice,오므라이스,japanese,egg|milk|chicken|wheat,10000,0,0.7,0.6,1
-hayashi-rice,하이라이스,japanese,beef|wheat|milk|soy,10000,0,0.7,0.6,1
-karaage-don,가라아게동,japanese,chicken|wheat|soy|egg,10000,0,0.8,0.8,1
-yakitori,야키토리,japanese,chicken|soy|wheat,15000,0,0.5,0.5,1
-shabu-shabu,샤브샤브,japanese,beef|soy|wheat,17000,0,0.6,0.3,1
-sukiyaki,스키야키,japanese,beef|egg|soy|wheat,20000,0,0.7,0.5,1
-nabeyaki-udon,냄비우동,japanese,wheat|egg|crustacean|fish|soy,10000,0,0.6,0.3,1
-onigiri-set,주먹밥 세트,japanese,fish|soy,6000,0,0.4,0.2,0
-hiyashi-chuka,히야시추카,japanese,wheat|egg|soy|pork,10000,0,0.4,0.3,0
-ebi-katsu,새우카츠 정식,japanese,crustacean|wheat|egg,12000,0,0.7,0.8,1
-cream-pasta,크림파스타,western,wheat|milk|pork,14000,0,0.7,0.8,1
-tomato-pasta,토마토파스타,western,wheat,13000,0,0.6,0.4,1
-caesar-salad,시저샐러드,western,egg|milk|fish|wheat,11000,0,0.2,0.4,0
-aglio-olio,알리오올리오,western,wheat,12000,1,0.5,0.6,1
-carbonara,까르보나라,western,wheat|egg|milk|pork,14000,0,0.8,0.8,1
-rose-pasta,로제파스타,western,wheat|milk,14000,1,0.7,0.7,1
-vongole,봉골레,western,wheat|shellfish,15000,1,0.5,0.5,1
-seafood-pasta,해산물 토마토파스타,western,wheat|crustacean|shellfish,16000,1,0.6,0.4,1
-mentaiko-pasta,명란 크림파스타,western,wheat|milk|fish,15000,0,0.7,0.7,1
-mushroom-risotto,버섯 리조또,western,milk|wheat,14000,0,0.7,0.7,1
-steak,스테이크,western,beef|milk,30000,0,0.8,0.6,1
-hamburg-steak,함박스테이크,western,beef|pork|egg|wheat|milk|soy,13000,0,0.8,0.7,1
-kyungyang-donkas,경양식 돈가스,western,pork|wheat|egg|milk,10000,0,0.8,0.8,1
-margherita-pizza,마르게리타 피자,western,wheat|milk,15000,0,0.7,0.6,1
-gorgonzola-pizza,고르곤졸라 피자,western,wheat|milk|nuts,15000,0,0.7,0.7,1
-lasagna,라자냐,western,wheat|milk|beef|egg,15000,0,0.8,0.7,1
-cobb-salad,콥샐러드,western,egg|chicken|milk|pork,12000,0,0.4,0.4,0
-chicken-salad,닭가슴살 샐러드,western,chicken,10000,0,0.3,0.2,0
-poke-bowl,포케,western,fish|soy,12000,0,0.4,0.3,0
-club-sandwich,클럽 샌드위치,western,wheat|egg|pork|chicken|milk,9500,0,0.5,0.5,0
-brunch-plate,브런치 플레이트,western,egg|wheat|milk|pork,15000,0,0.7,0.7,1
-french-toast,프렌치토스트,western,egg|wheat|milk,10000,0,0.5,0.6,1
-clam-chowder,클램차우더와 빵,western,shellfish|milk|wheat,11000,0,0.6,0.6,1
-fish-and-chips,피시앤칩스,western,fish|wheat|egg,14000,0,0.7,0.9,1
-cream-gnocchi,크림 뇨키,western,wheat|milk|egg,15000,0,0.8,0.8,1
-paella,빠에야,western,crustacean|shellfish|fish,18000,1,0.7,0.5,1
-burrito,부리또,western,wheat|beef|milk|soy,10000,2,0.8,0.6,1
-tacos,타코,western,wheat|beef|milk,11000,2,0.6,0.6,1
-quesadilla,퀘사디아,western,wheat|milk|chicken,10000,1,0.6,0.7,1
-bolognese,볼로네제,western,wheat|beef|pork|milk,14000,0,0.7,0.6,1
-gambas,감바스 알 아히요,western,crustacean|wheat,16000,1,0.4,0.8,1
-tteokbokki,떡볶이,snack,wheat|soy,5000,3,0.5,0.3,1
-gimbap,김밥,snack,egg|soy,4000,0,0.4,0.2,0
-ramyeon,라면,snack,wheat|soy,4500,3,0.5,0.5,1
-rabokki,라볶이,snack,wheat|soy|egg,6500,3,0.6,0.5,1
-cheese-tteokbokki,치즈떡볶이,snack,wheat|soy|milk,7000,3,0.6,0.5,1
-rose-tteokbokki,로제떡볶이,snack,wheat|soy|milk,8000,2,0.6,0.6,1
-jjajang-tteokbokki,짜장떡볶이,snack,wheat|soy|pork,7000,0,0.6,0.5,1
-gungmul-tteokbokki,국물떡볶이,snack,wheat|soy|fish,6000,3,0.5,0.3,1
-sundae,순대,snack,pork|soy|wheat,5000,0,0.6,0.4,1
-twigim,모둠튀김,snack,wheat|egg|crustacean|soy,5000,0,0.5,0.9,1
-eomuktang,어묵탕,snack,fish|wheat|soy,5000,0,0.3,0.2,1
-chamchi-gimbap,참치김밥,snack,fish|egg|soy,5000,0,0.5,0.4,0
-cheese-gimbap,치즈김밥,snack,milk|egg|soy,4500,0,0.5,0.3,0
-kkoma-gimbap,꼬마김밥,snack,soy,4000,0,0.3,0.2,0
-jjolmyeon,쫄면,snack,wheat|egg|soy,6500,3,0.5,0.3,0
-bibim-guksu,비빔국수,snack,wheat|egg|soy,6500,3,0.4,0.3,0
-tteok-manduguk,떡만둣국,snack,wheat|pork|beef|egg|soy,8000,0,0.6,0.3,1
-cheese-ramyeon,치즈라면,snack,wheat|soy|milk,5500,2,0.6,0.6,1
-bunsik-udon,분식집 우동,snack,wheat|fish|soy,5000,0,0.4,0.2,1
-street-toast,길거리 토스트,snack,wheat|egg|milk|pork,4000,0,0.4,0.6,1
-hotteok,호떡,snack,wheat|nuts,2000,0,0.2,0.6,1
-korean-hotdog,핫도그,snack,wheat|egg|pork|milk,3500,0,0.4,0.8,1
-gyeranppang,계란빵,snack,wheat|egg|milk,2500,0,0.2,0.3,1
-jjinmandu,찐만두,snack,wheat|pork|soy,5000,0,0.4,0.3,1
-tteok-kkochi,떡꼬치,snack,wheat|soy,2500,1,0.2,0.5,1
-gimmari,김말이 튀김,snack,wheat|soy,4000,0,0.3,0.9,1
-yubu-chobap,유부초밥,snack,soy|wheat,5000,0,0.3,0.3,0
-cup-dakgangjeong,컵 닭강정,snack,chicken|wheat|soy|nuts,5000,1,0.5,0.8,1
-mandu-ramyeon,만두라면,snack,wheat|soy|pork,6000,3,0.6,0.5,1
-omurice-bunsik,분식집 오므라이스,snack,egg|pork|milk|wheat,7000,0,0.6,0.6,1
-donkas-gimbap,돈가스김밥,snack,pork|wheat|egg|soy,5500,0,0.6,0.6,0
-pho,쌀국수,asian,beef|fish,11000,1,0.5,0.2,1
-pad-thai,팟타이,asian,egg|nuts|crustacean|fish|soy,13000,1,0.6,0.6,1
-banh-mi,반미,asian,wheat|pork|egg|fish|soy,8000,1,0.5,0.4,0
-bun-cha,분짜,asian,pork|fish|soy,13000,1,0.5,0.4,0
-bun-bo-hue,분보후에,asian,beef|pork|fish|crustacean,12000,3,0.6,0.4,1
-goi-cuon,월남쌈,asian,crustacean|pork|fish|nuts,14000,0,0.3,0.1,0
-tom-yum-goong,똠얌꿍,asian,crustacean|fish|milk,15000,4,0.4,0.4,1
-green-curry,그린커리,asian,chicken|fish,13000,3,0.6,0.6,1
-massaman-curry,마싸만커리,asian,beef|nuts|fish,14000,1,0.8,0.7,1
-khao-pad,태국식 볶음밥,asian,egg|fish|soy|crustacean,11000,1,0.6,0.6,1
-pad-kra-pao,팟카파오무쌉,asian,pork|egg|fish|soy,11000,3,0.6,0.6,1
-som-tam,쏨땀,asian,nuts|fish|crustacean,9000,4,0.2,0.1,0
-nasi-goreng,나시고렝,asian,egg|soy|crustacean|chicken,11000,2,0.7,0.6,1
-mi-goreng,미고렝,asian,wheat|egg|soy|chicken,11000,2,0.7,0.6,1
-laksa,락사,asian,crustacean|fish|wheat|egg,13000,3,0.7,0.6,1
-satay,사테,asian,chicken|nuts|soy,12000,1,0.5,0.5,1
-curry-and-naan,인도 커리와 난,asian,wheat|milk|chicken,14000,2,0.8,0.7,1
-butter-chicken,버터치킨 커리,asian,milk|chicken|nuts|wheat,15000,1,0.8,0.8,1
-biryani,비리야니,asian,milk|chicken|nuts,15000,2,0.8,0.6,1
-tandoori-chicken,탄두리 치킨,asian,chicken|milk,15000,2,0.6,0.4,1
-khao-man-gai,카오만까이,asian,chicken|soy,11000,0,0.6,0.5,1
-char-kway-teow,차퀘테오,asian,egg|crustacean|soy|pork|wheat,12000,1,0.7,0.8,1
-banh-xeo,반쎄오,asian,crustacean|pork|fish|egg,13000,0,0.6,0.7,1
-lu-rou-fan,루러우판,asian,pork|soy|egg|wheat,10000,0,0.8,0.7,1
-pho-ga,닭 쌀국수,asian,chicken|fish,10000,0,0.5,0.2,1
-kebab,케밥,asian,wheat|beef|milk,10000,1,0.7,0.6,1
-falafel-wrap,팔라펠 랩,asian,wheat|milk,10000,0,0.6,0.6,0
-hummus-plate,후무스 플레이트,asian,wheat|nuts,12000,0,0.4,0.5,0
-cha-gio,짜조,asian,pork|crustacean|wheat|fish,8000,0,0.4,0.9,1
-tom-kha-gai,똠카까이,asian,chicken|fish,13000,2,0.5,0.5,1
-com-tam,베트남 돼지갈비 덮밥,asian,pork|fish|egg|soy,12000,0,0.7,0.6,1
-cheeseburger,치즈버거 세트,fastfood,wheat|milk|egg|beef|soy,9500,0,0.8,0.8,1
-fried-chicken,후라이드치킨,fastfood,wheat|chicken,12000,0,0.9,0.9,1
-pepperoni-pizza,페퍼로니피자,fastfood,wheat|milk|pork,12000,0,0.9,0.8,1
-yangnyeom-chicken,양념치킨,fastfood,wheat|chicken|soy|nuts,12500,2,0.9,0.9,1
-ganjang-chicken,간장치킨,fastfood,wheat|chicken|soy,12500,0,0.9,0.8,1
-padak,파닭,fastfood,wheat|chicken|soy,12500,1,0.8,0.8,1
-oven-chicken,오븐구이 치킨,fastfood,chicken,11000,0,0.7,0.5,1
-boneless-chicken,순살치킨,fastfood,wheat|chicken|soy,12000,0,0.8,0.9,1
-spicy-chicken,매운 치킨,fastfood,wheat|chicken|soy,12500,4,0.9,0.9,1
-chicken-burger,치킨버거 세트,fastfood,wheat|chicken|egg|milk|soy,8500,0,0.8,0.8,1
-shrimp-burger,새우버거 세트,fastfood,wheat|crustacean|egg|soy,7500,0,0.7,0.8,1
-bulgogi-burger,불고기버거 세트,fastfood,wheat|pork|beef|egg|soy|milk,7500,0,0.8,0.8,1
-double-burger,더블 패티 버거,fastfood,wheat|beef|milk|egg|soy,12000,0,1,0.9,1
-combination-pizza,콤비네이션 피자,fastfood,wheat|milk|pork|beef,12000,0,0.9,0.8,1
-potato-pizza,포테이토 피자,fastfood,wheat|milk|egg|pork,12000,0,0.9,0.8,1
-bulgogi-pizza,불고기 피자,fastfood,wheat|milk|beef|soy,12000,0,0.9,0.8,1
-hawaiian-pizza,하와이안 피자,fastfood,wheat|milk|pork,12000,0,0.8,0.7,1
-sub-sandwich,서브 샌드위치,fastfood,wheat|chicken|egg|milk,8000,0,0.5,0.4,0
-chicken-wrap,치킨 랩,fastfood,wheat|chicken|milk|egg,6500,1,0.5,0.6,0
-chicken-nuggets,치킨너겟 세트,fastfood,wheat|chicken|soy,6000,0,0.5,0.9,1
-chili-hotdog,칠리 핫도그,fastfood,wheat|pork|beef|milk,7000,2,0.6,0.7,1
-wings-and-fries,윙 앤 감자튀김,fastfood,chicken|wheat,9000,1,0.6,0.9,1
-spicy-wings,매운 닭날개,fastfood,chicken|soy|wheat,10000,4,0.6,0.8,1
-fish-burger,피시버거 세트,fastfood,wheat|fish|egg|milk,7500,0,0.6,0.8,1
-mozzarella-burger,모짜렐라 버거,fastfood,wheat|milk|beef|egg,9000,0,0.9,0.9,1
-spicy-chicken-burger,매운 치킨버거,fastfood,wheat|chicken|egg|soy,8500,3,0.8,0.8,1
-dakgangjeong,닭강정,fastfood,chicken|wheat|soy|nuts,11000,1,0.8,0.9,1
-calzone,칼초네,fastfood,wheat|milk|pork,11000,0,0.8,0.7,1
-garlic-chicken,마늘치킨,fastfood,chicken|wheat|soy,12500,0,0.9,0.9,1
-cheese-seasoned-chicken,치즈 시즈닝 치킨,fastfood,chicken|wheat|milk,12500,0,0.9,0.9,1
-teriyaki-burger,데리야끼 버거 세트,fastfood,wheat|pork|egg|soy,7500,0,0.7,0.8,1
-samgyeopsal,삼겹살,grill,pork,16000,0,0.9,0.9,1
-dakgalbi,닭갈비,grill,chicken|soy|wheat,14000,3,0.8,0.6,1
-moksal,목살 구이,grill,pork,16000,0,0.9,0.7,1
-hangjeongsal,항정살,grill,pork,18000,0,0.8,0.9,1
-dwaeji-galbi,돼지갈비,grill,pork|soy|wheat,16000,0,0.9,0.7,1
-so-galbi,소갈비,grill,beef|soy|wheat,30000,0,0.9,0.7,1
-chadolbagi,차돌박이,grill,beef,18000,0,0.7,0.8,1
-deungsim,등심 구이,grill,beef,35000,0,0.8,0.6,1
-yukhoe,육회,grill,beef|egg,20000,0,0.4,0.2,0
-gopchang,곱창구이,grill,beef,20000,1,0.8,0.9,1
-makchang,막창구이,grill,pork,18000,1,0.8,0.8,1
-galbisal,양념갈비살,grill,beef|soy|wheat,20000,0,0.8,0.7,1
-dak-gui,닭구이,grill,chicken|soy,14000,1,0.7,0.5,1
-jangeo-gui,장어구이,grill,fish|soy|wheat,30000,0,0.8,0.7,1
-daeha-gui,대하 소금구이,grill,crustacean,25000,0,0.5,0.3,1
-jogae-gui,조개구이,grill,shellfish,20000,0,0.5,0.3,1
-ori-jumulleok,오리 주물럭,grill,soy|wheat,17000,2,0.8,0.7,1
-yanggalbi,양갈비,grill,,25000,0,0.8,0.8,1
-gopchang-jeongol,곱창전골,grill,beef|soy|wheat,17000,3,0.8,0.7,1
-tteokgalbi,떡갈비 정식,grill,beef|pork|soy|wheat,13000,0,0.8,0.6,1
-gochujang-bulgogi,고추장 불고기,grill,pork|soy|wheat,12000,3,0.8,0.7,1
-so-jumulleok,소 주물럭,grill,beef|soy,25000,0,0.8,0.6,1
-osam-bulgogi,오삼불고기,grill,pork|shellfish|soy|wheat,13000,3,0.8,0.7,1
-jjukkumi,쭈꾸미 볶음,grill,shellfish|soy|wheat,14000,4,0.6,0.5,1
-dwaeji-kkeopdegi,돼지껍데기,grill,pork|soy,10000,1,0.5,0.8,1
-bbq-brisket,바비큐 브리스킷,grill,beef,20000,0,0.8,0.7,1
-bbq-pork-ribs,바비큐 폭립,grill,pork|soy|wheat,22000,1,0.9,0.8,1
-dakkkochi,닭꼬치,grill,chicken|soy|wheat,6000,1,0.4,0.5,1
-salmon-steak,연어 스테이크,grill,fish|milk,20000,0,0.6,0.6,1
-dwaeji-bulbaek,돼지불백,grill,pork|soy|wheat,10000,2,0.7,0.6,1
-eonyang-bulgogi,언양불고기,grill,beef|soy|wheat,15000,0,0.7,0.5,1
+id,name,name_en,name_ja,name_zh,category,allergens,price,spice,heavy,oily,hot
+kimchi-jjigae,김치찌개,Kimchi Jjigae,キムチチゲ,泡菜汤,korean,pork|soy,9000,2,0.6,0.4,1
+doenjang-jjigae,된장찌개,Doenjang Jjigae,テンジャンチゲ,大酱汤,korean,soy|shellfish,9000,1,0.5,0.2,1
+bibimbap,비빔밥,Bibimbap,ビビンバ,拌饭,korean,egg|soy,9500,2,0.6,0.3,1
+mul-naengmyeon,물냉면,Mul Naengmyeon,水冷麺,水冷面,korean,wheat|beef|egg,11000,0,0.4,0.1,0
+bibim-naengmyeon,비빔냉면,Bibim Naengmyeon,ビビン冷麺,拌冷面,korean,wheat|beef|egg|soy,11000,3,0.4,0.2,0
+sundubu-jjigae,순두부찌개,Sundubu Jjigae,スンドゥブチゲ,嫩豆腐汤,korean,soy|shellfish|egg|pork,9500,3,0.5,0.3,1
+budae-jjigae,부대찌개,Budae Jjigae,プデチゲ,部队锅,korean,pork|beef|wheat|soy|milk,11000,3,0.8,0.6,1
+galbitang,갈비탕,Galbitang,カルビタン,排骨汤,korean,beef|soy,14000,0,0.7,0.4,1
+seolleongtang,설렁탕,Seolleongtang,ソルロンタン,雪浓汤,korean,beef,11000,0,0.6,0.3,1
+dwaeji-gukbap,돼지국밥,Dwaeji Gukbap,テジクッパ,猪肉汤饭,korean,pork,10000,1,0.8,0.5,1
+sundae-gukbap,순대국밥,Sundae Gukbap,スンデクッパ,米肠汤饭,korean,pork|soy|wheat,10000,1,0.8,0.5,1
+samgyetang,삼계탕,Samgyetang,サムゲタン,参鸡汤,korean,chicken|nuts,17000,0,0.8,0.4,1
+yukgaejang,육개장,Yukgaejang,ユッケジャン,辣牛肉汤,korean,beef|soy|egg,11000,3,0.6,0.4,1
+haejangguk,해장국,Haejangguk,ヘジャンクッ,醒酒汤,korean,beef|soy,10000,2,0.6,0.3,1
+gamjatang,감자탕,Gamjatang,カムジャタン,土豆排骨汤,korean,pork|soy|wheat,12000,2,0.8,0.6,1
+kimchi-fried-rice,김치볶음밥,Kimchi Fried Rice,キムチチャーハン,泡菜炒饭,korean,pork|egg|soy,9000,2,0.6,0.5,1
+jeyuk-bokkeum,제육볶음,Jeyuk Bokkeum,チェユクポックム,辣炒猪肉,korean,pork|soy|wheat,10000,3,0.7,0.6,1
+bulgogi-jeongsik,불고기 정식,Bulgogi Set Meal,プルコギ定食,烤肉套餐,korean,beef|soy|wheat,12000,0,0.7,0.4,1
+ojingeo-bokkeum,오징어볶음,Spicy Stir-fried Squid,イカ炒め,辣炒鱿鱼,korean,shellfish|soy|wheat,11000,4,0.6,0.4,1
+dakbokkeumtang,닭볶음탕,Dakbokkeumtang,タッポックムタン,辣炖鸡,korean,chicken|soy,13000,3,0.8,0.5,1
+godeungeo-gui,고등어구이 정식,Grilled Mackerel Set Meal,サバ焼き定食,烤青花鱼套餐,korean,fish|soy,10000,0,0.5,0.5,1
+galchi-jorim,갈치조림,Braised Cutlassfish,タチウオの煮付け,炖带鱼,korean,fish|soy,14000,3,0.5,0.4,1
+kongguksu,콩국수,Kongguksu,コングクス,豆浆面,korean,soy|wheat|nuts,10000,0,0.5,0.2,0
+kalguksu,칼국수,Kalguksu,カルグクス,刀切面,korean,wheat|shellfish|soy,9000,0,0.6,0.2,1
+sujebi,수제비,Sujebi,スジェビ,面片汤,korean,wheat|shellfish|soy,8500,0,0.6,0.2,1
+janchi-guksu,잔치국수,Janchi Guksu,チャンチグクス,喜面,korean,wheat|egg|fish|soy,7000,0,0.4,0.1,1
+haemul-pajeon,해물파전,Seafood Pancake,海鮮チヂミ,海鲜葱饼,korean,wheat|egg|shellfish|crustacean,8000,0,0.6,0.8,1
+bossam,보쌈,Bossam,ポッサム,菜包肉,korean,pork|soy,15000,1,0.8,0.5,1
+jokbal,족발,Jokbal,チョッパル,酱猪蹄,korean,pork|soy,15000,0,0.8,0.6,1
+dolsot-bibimbap,돌솥비빔밥,Dolsot Bibimbap,石焼ビビンバ,石锅拌饭,korean,egg|soy|beef,10500,2,0.7,0.4,1
+yukhoe-bibimbap,육회비빔밥,Yukhoe Bibimbap,ユッケビビンバ,生拌牛肉拌饭,korean,beef|egg|soy,13000,2,0.6,0.3,0
+cheonggukjang,청국장,Cheonggukjang,チョングクチャン,清曲酱汤,korean,soy|pork,9500,1,0.5,0.2,1
+jjajangmyeon,짜장면,Jjajangmyeon,チャジャン麺,炸酱面,chinese,wheat|soy|pork,8000,0,0.8,0.7,1
+jjamppong,짬뽕,Jjamppong,チャンポン,炒码面,chinese,wheat|crustacean|shellfish|pork,10000,4,0.7,0.5,1
+tangsuyuk,탕수육,Tangsuyuk,タンスユク,糖醋肉,chinese,wheat|pork|egg,12000,0,0.8,0.9,1
+mapo-tofu-rice,마파두부밥,Mapo Tofu Rice,麻婆豆腐丼,麻婆豆腐饭,chinese,soy|pork,9500,3,0.6,0.6,1
+gan-jjajang,간짜장,Gan Jjajang,カンチャジャン,干炸酱面,chinese,wheat|soy|pork|egg,9000,0,0.8,0.8,1
+jjajangbap,짜장밥,Jjajang Rice,チャジャン飯,炸酱饭,chinese,soy|pork|wheat,9000,0,0.8,0.7,1
+jjamppongbap,짬뽕밥,Jjamppong Rice,チャンポン飯,炒码饭,chinese,crustacean|shellfish|pork|soy,10000,4,0.7,0.5,1
+chinese-fried-rice,중화 볶음밥,Chinese-style Fried Rice,中華チャーハン,中式炒饭,chinese,egg|soy|pork|crustacean,9000,0,0.7,0.7,1
+japchaebap,잡채밥,Japchae Rice,チャプチェ飯,杂菜饭,chinese,soy|pork|wheat,10000,1,0.7,0.7,1
+ulmyeon,울면,Ulmyeon,ウルミョン,温卤面,chinese,wheat|shellfish|crustacean|egg,9000,0,0.6,0.4,1
+gochu-japchae,고추잡채와 꽃빵,Pepper Japchae with Flower Buns,青椒肉絲と花巻,青椒肉丝配花卷,chinese,pork|soy|wheat,13000,2,0.6,0.8,1
+kkanpunggi,깐풍기,Kkanpunggi,カンプンギ,干烹鸡,chinese,chicken|wheat|soy,13000,2,0.7,0.9,1
+yuringi,유린기,Yuringi,油淋鶏,油淋鸡,chinese,chicken|wheat|soy,13000,1,0.6,0.8,1
+gunmandu,군만두,Pan-fried Dumplings,焼き餃子,煎饺,chinese,wheat|pork|soy,7000,0,0.5,0.8,1
+xiaolongbao,샤오롱바오,Xiaolongbao,小籠包,小笼包,chinese,wheat|pork|soy,10000,0,0.5,0.5,1
+malatang,마라탕,Malatang,麻辣燙,麻辣烫,chinese,soy|beef|wheat|nuts,12000,4,0.6,0.6,1
+mala-xiangguo,마라샹궈,Mala Xiangguo,麻辣香鍋,麻辣香锅,chinese,soy|beef|wheat|nuts|crustacean,18000,5,0.7,0.8,1
+guobaorou,꿔바로우,Guobaorou,鍋包肉,锅包肉,chinese,pork|wheat,12000,0,0.7,0.9,1
+yanggochi,양꼬치,Lamb Skewers,羊肉串,羊肉串,chinese,wheat,15000,2,0.7,0.7,1
+dandan-noodles,탄탄면,Dandan Noodles,担々麺,担担面,chinese,wheat|nuts|pork|soy,10000,3,0.7,0.6,1
+shrimp-fried-rice,새우볶음밥,Shrimp Fried Rice,エビチャーハン,虾仁炒饭,chinese,crustacean|egg|soy,10000,0,0.6,0.6,1
+yusanseul-bap,유산슬밥,Yusanseul Rice,溜三絲丼,溜三丝饭,chinese,crustacean|shellfish|pork|soy,13000,0,0.6,0.5,1
+tomato-egg-rice,토마토 달걀볶음 덮밥,Tomato and Egg Stir-fry Rice,トマト卵炒め丼,番茄炒蛋盖饭,chinese,egg|soy,9000,0,0.5,0.5,1
+kkanpung-saeu,깐풍새우,Kkanpung Shrimp,カンプンエビ,干烹虾,chinese,crustacean|wheat|soy,15000,2,0.6,0.8,1
+chili-shrimp,칠리새우,Chili Shrimp,エビチリ,干烧虾仁,chinese,crustacean|wheat|egg|soy,15000,2,0.6,0.8,1
+baek-jjamppong,백짬뽕,White Jjamppong,白チャンポン,白炒码面,chinese,wheat|crustacean|shellfish|pork,10000,1,0.7,0.5,1
+samseon-jjajang,삼선짜장,Seafood Jjajangmyeon,三鮮チャジャン麺,三鲜炸酱面,chinese,wheat|soy|crustacean|shellfish|pork,11000,0,0.8,0.7,1
+naeng-jjamppong,냉짬뽕,Cold Jjamppong,冷やしチャンポン,冷炒码面,chinese,wheat|crustacean|shellfish,10500,3,0.6,0.3,0
+nurungjitang,누룽지탕,Sizzling Rice Soup,おこげあんかけ,锅巴汤,chinese,crustacean|shellfish|soy|pork,14000,0,0.6,0.5,1
+dimsum-set,딤섬 모둠,Dim Sum Platter,点心盛り合わせ,点心拼盘,chinese,wheat|pork|crustacean|soy,14000,0,0.5,0.5,1
+beef-noodle-soup,우육면,Beef Noodle Soup,牛肉麺,牛肉面,chinese,wheat|beef|soy,12000,1,0.7,0.4,1
+sushi-set,모둠초밥,Assorted Sushi,寿司盛り合わせ,寿司拼盘,japanese,fish|crustacean|soy|egg,16000,0,0.4,0.2,0
+tonkatsu,돈카츠,Tonkatsu,とんかつ,炸猪排,japanese,wheat|egg|pork|milk,11000,0,0.8,0.8,1
+udon,우동,Udon,うどん,乌冬面,japanese,wheat|fish|soy,8500,0,0.5,0.2,1
+tonkotsu-ramen,돈코츠라멘,Tonkotsu Ramen,豚骨ラーメン,豚骨拉面,japanese,wheat|pork|soy|egg,11000,1,0.8,0.7,1
+shoyu-ramen,쇼유라멘,Shoyu Ramen,醤油ラーメン,酱油拉面,japanese,wheat|soy|chicken|egg,10000,0,0.6,0.5,1
+miso-ramen,미소라멘,Miso Ramen,味噌ラーメン,味噌拉面,japanese,wheat|soy|pork,10500,1,0.7,0.6,1
+tsukemen,츠케멘,Tsukemen,つけ麺,蘸面,japanese,wheat|soy|pork|fish,12000,1,0.8,0.6,1
+gyudon,규동,Gyudon,牛丼,牛肉盖饭,japanese,beef|soy|wheat,9000,0,0.7,0.5,1
+oyakodon,오야코동,Oyakodon,親子丼,亲子盖饭,japanese,chicken|egg|soy|wheat,9500,0,0.7,0.4,1
+katsudon,가츠동,Katsudon,カツ丼,猪排盖饭,japanese,pork|egg|wheat|soy,10000,0,0.9,0.7,1
+kaisendon,카이센동,Kaisendon,海鮮丼,海鲜盖饭,japanese,fish|crustacean|shellfish|soy,18000,0,0.5,0.2,0
+sake-don,연어덮밥,Salmon Rice Bowl,サーモン丼,三文鱼盖饭,japanese,fish|soy,14000,0,0.5,0.4,0
+tendon,텐동,Tendon,天丼,天妇罗盖饭,japanese,crustacean|wheat|egg|fish|soy,12000,0,0.8,0.9,1
+unadon,장어덮밥,Unadon,うな丼,鳗鱼饭,japanese,fish|soy|wheat,25000,0,0.7,0.6,1
+zaru-soba,자루소바,Zaru Soba,ざるそば,荞麦冷面,japanese,wheat|soy|fish,9000,0,0.3,0.1,0
+okonomiyaki,오코노미야키,Okonomiyaki,お好み焼き,大阪烧,japanese,wheat|egg|pork|shellfish|fish,13000,0,0.7,0.7,1
+takoyaki,타코야키,Takoyaki,たこ焼き,章鱼烧,japanese,wheat|egg|shellfish|fish,6000,0,0.4,0.6,1
+sashimi-set,모둠회,Assorted Sashimi,刺身盛り合わせ,刺身拼盘,japanese,fish|shellfish,25000,0,0.4,0.2,0
+chirashi,지라시스시,Chirashi Sushi,ちらし寿司,散寿司,japanese,fish|egg|soy|crustacean,15000,0,0.5,0.2,0
+japanese-curry,일본식 카레라이스,Japanese Curry Rice,カレーライス,日式咖喱饭,japanese,wheat|milk|pork|soy,9500,1,0.7,0.6,1
+katsu-curry,카츠카레,Katsu Curry,カツカレー,猪排咖喱饭,japanese,wheat|milk|pork|egg|soy,12000,1,0.9,0.8,1
+yakisoba,야키소바,Yakisoba,焼きそば,日式炒面,japanese,wheat|pork|soy|fish,9500,0,0.6,0.6,1
+omurice,오므라이스,Omurice,オムライス,蛋包饭,japanese,egg|milk|chicken|wheat,10000,0,0.7,0.6,1
+hayashi-rice,하이라이스,Hayashi Rice,ハヤシライス,牛肉烩饭,japanese,beef|wheat|milk|soy,10000,0,0.7,0.6,1
+karaage-don,가라아게동,Karaage Rice Bowl,唐揚げ丼,日式炸鸡盖饭,japanese,chicken|wheat|soy|egg,10000,0,0.8,0.8,1
+yakitori,야키토리,Yakitori,焼き鳥,日式烤鸡串,japanese,chicken|soy|wheat,15000,0,0.5,0.5,1
+shabu-shabu,샤브샤브,Shabu-shabu,しゃぶしゃぶ,涮涮锅,japanese,beef|soy|wheat,17000,0,0.6,0.3,1
+sukiyaki,스키야키,Sukiyaki,すき焼き,寿喜烧,japanese,beef|egg|soy|wheat,20000,0,0.7,0.5,1
+nabeyaki-udon,냄비우동,Nabeyaki Udon,鍋焼きうどん,砂锅乌冬面,japanese,wheat|egg|crustacean|fish|soy,10000,0,0.6,0.3,1
+onigiri-set,주먹밥 세트,Onigiri Set,おにぎりセット,饭团套餐,japanese,fish|soy,6000,0,0.4,0.2,0
+hiyashi-chuka,히야시추카,Hiyashi Chuka,冷やし中華,中华凉面,japanese,wheat|egg|soy|pork,10000,0,0.4,0.3,0
+ebi-katsu,새우카츠 정식,Ebi Katsu Set Meal,エビカツ定食,炸虾排套餐,japanese,crustacean|wheat|egg,12000,0,0.7,0.8,1
+cream-pasta,크림파스타,Cream Pasta,クリームパスタ,奶油意面,western,wheat|milk|pork,14000,0,0.7,0.8,1
+tomato-pasta,토마토파스타,Tomato Pasta,トマトパスタ,番茄意面,western,wheat,13000,0,0.6,0.4,1
+caesar-salad,시저샐러드,Caesar Salad,シーザーサラダ,凯撒沙拉,western,egg|milk|fish|wheat,11000,0,0.2,0.4,0
+aglio-olio,알리오올리오,Aglio e Olio,アーリオ・オーリオ,蒜香橄榄油意面,western,wheat,12000,1,0.5,0.6,1
+carbonara,까르보나라,Carbonara,カルボナーラ,培根蛋酱意面,western,wheat|egg|milk|pork,14000,0,0.8,0.8,1
+rose-pasta,로제파스타,Rosé Pasta,ロゼパスタ,玫瑰酱意面,western,wheat|milk,14000,1,0.7,0.7,1
+vongole,봉골레,Spaghetti alle Vongole,ボンゴレ,蛤蜊意面,western,wheat|shellfish,15000,1,0.5,0.5,1
+seafood-pasta,해산물 토마토파스타,Seafood Tomato Pasta,シーフードトマトパスタ,海鲜番茄意面,western,wheat|crustacean|shellfish,16000,1,0.6,0.4,1
+mentaiko-pasta,명란 크림파스타,Mentaiko Cream Pasta,明太子クリームパスタ,明太子奶油意面,western,wheat|milk|fish,15000,0,0.7,0.7,1
+mushroom-risotto,버섯 리조또,Mushroom Risotto,キノコのリゾット,蘑菇烩饭,western,milk|wheat,14000,0,0.7,0.7,1
+steak,스테이크,Steak,ステーキ,牛排,western,beef|milk,30000,0,0.8,0.6,1
+hamburg-steak,함박스테이크,Hamburg Steak,ハンバーグ,汉堡肉排,western,beef|pork|egg|wheat|milk|soy,13000,0,0.8,0.7,1
+kyungyang-donkas,경양식 돈가스,Korean-style Pork Cutlet,韓国式とんかつ,韩式炸猪排,western,pork|wheat|egg|milk,10000,0,0.8,0.8,1
+margherita-pizza,마르게리타 피자,Margherita Pizza,マルゲリータ,玛格丽特披萨,western,wheat|milk,15000,0,0.7,0.6,1
+gorgonzola-pizza,고르곤졸라 피자,Gorgonzola Pizza,ゴルゴンゾーラピザ,戈贡佐拉披萨,western,wheat|milk|nuts,15000,0,0.7,0.7,1
+lasagna,라자냐,Lasagna,ラザニア,千层面,western,wheat|milk|beef|egg,15000,0,0.8,0.7,1
+cobb-salad,콥샐러드,Cobb Salad,コブサラダ,科布沙拉,western,egg|chicken|milk|pork,12000,0,0.4,0.4,0
+chicken-salad,닭가슴살 샐러드,Chicken Breast Salad,鶏むね肉サラダ,鸡胸肉沙拉,western,chicken,10000,0,0.3,0.2,0
+poke-bowl,포케,Poke Bowl,ポキボウル,夏威夷波奇饭,western,fish|soy,12000,0,0.4,0.3,0
+club-sandwich,클럽 샌드위치,Club Sandwich,クラブサンドイッチ,总汇三明治,western,wheat|egg|pork|chicken|milk,9500,0,0.5,0.5,0
+brunch-plate,브런치 플레이트,Brunch Plate,ブランチプレート,早午餐拼盘,western,egg|wheat|milk|pork,15000,0,0.7,0.7,1
+french-toast,프렌치토스트,French Toast,フレンチトースト,法式吐司,western,egg|wheat|milk,10000,0,0.5,0.6,1
+clam-chowder,클램차우더와 빵,Clam Chowder with Bread,クラムチャウダーとパン,蛤蜊浓汤配面包,western,shellfish|milk|wheat,11000,0,0.6,0.6,1
+fish-and-chips,피시앤칩스,Fish and Chips,フィッシュ・アンド・チップス,炸鱼薯条,western,fish|wheat|egg,14000,0,0.7,0.9,1
+cream-gnocchi,크림 뇨키,Cream Gnocchi,クリームニョッキ,奶油意式团子,western,wheat|milk|egg,15000,0,0.8,0.8,1
+paella,빠에야,Paella,パエリア,西班牙海鲜饭,western,crustacean|shellfish|fish,18000,1,0.7,0.5,1
+burrito,부리또,Burrito,ブリトー,墨西哥卷饼,western,wheat|beef|milk|soy,10000,2,0.8,0.6,1
+tacos,타코,Tacos,タコス,墨西哥塔可,western,wheat|beef|milk,11000,2,0.6,0.6,1
+quesadilla,퀘사디아,Quesadilla,ケサディーヤ,墨西哥芝士饼,western,wheat|milk|chicken,10000,1,0.6,0.7,1
+bolognese,볼로네제,Spaghetti Bolognese,ボロネーゼ,肉酱意面,western,wheat|beef|pork|milk,14000,0,0.7,0.6,1
+gambas,감바스 알 아히요,Gambas al Ajillo,ガンバス・アル・アヒージョ,蒜香虾,western,crustacean|wheat,16000,1,0.4,0.8,1
+tteokbokki,떡볶이,Tteokbokki,トッポッキ,辣炒年糕,snack,wheat|soy,5000,3,0.5,0.3,1
+gimbap,김밥,Gimbap,キンパ,紫菜包饭,snack,egg|soy,4000,0,0.4,0.2,0
+ramyeon,라면,Ramyeon,ラミョン,韩式拉面,snack,wheat|soy,4500,3,0.5,0.5,1
+rabokki,라볶이,Rabokki,ラッポッキ,拉面炒年糕,snack,wheat|soy|egg,6500,3,0.6,0.5,1
+cheese-tteokbokki,치즈떡볶이,Cheese Tteokbokki,チーズトッポッキ,芝士炒年糕,snack,wheat|soy|milk,7000,3,0.6,0.5,1
+rose-tteokbokki,로제떡볶이,Rosé Tteokbokki,ロゼトッポッキ,玫瑰酱炒年糕,snack,wheat|soy|milk,8000,2,0.6,0.6,1
+jjajang-tteokbokki,짜장떡볶이,Jjajang Tteokbokki,チャジャントッポッキ,炸酱炒年糕,snack,wheat|soy|pork,7000,0,0.6,0.5,1
+gungmul-tteokbokki,국물떡볶이,Soupy Tteokbokki,汁だくトッポッキ,汤炒年糕,snack,wheat|soy|fish,6000,3,0.5,0.3,1
+sundae,순대,Sundae (Korean Blood Sausage),スンデ,米肠,snack,pork|soy|wheat,5000,0,0.6,0.4,1
+twigim,모둠튀김,Assorted Twigim,韓国式天ぷら盛り合わせ,韩式炸物拼盘,snack,wheat|egg|crustacean|soy,5000,0,0.5,0.9,1
+eomuktang,어묵탕,Fish Cake Soup,おでん,鱼饼汤,snack,fish|wheat|soy,5000,0,0.3,0.2,1
+chamchi-gimbap,참치김밥,Tuna Gimbap,ツナキンパ,金枪鱼紫菜包饭,snack,fish|egg|soy,5000,0,0.5,0.4,0
+cheese-gimbap,치즈김밥,Cheese Gimbap,チーズキンパ,芝士紫菜包饭,snack,milk|egg|soy,4500,0,0.5,0.3,0
+kkoma-gimbap,꼬마김밥,Mini Gimbap,ミニキンパ,迷你紫菜包饭,snack,soy,4000,0,0.3,0.2,0
+jjolmyeon,쫄면,Jjolmyeon,チョルミョン,辣拌筋面,snack,wheat|egg|soy,6500,3,0.5,0.3,0
+bibim-guksu,비빔국수,Bibim Guksu,ビビン麺,拌面,snack,wheat|egg|soy,6500,3,0.4,0.3,0
+tteok-manduguk,떡만둣국,Rice Cake and Dumpling Soup,トック・マンドゥクッ,年糕饺子汤,snack,wheat|pork|beef|egg|soy,8000,0,0.6,0.3,1
+cheese-ramyeon,치즈라면,Cheese Ramyeon,チーズラミョン,芝士拉面,snack,wheat|soy|milk,5500,2,0.6,0.6,1
+bunsik-udon,분식집 우동,Snack Bar Udon,粉食店のうどん,小吃店乌冬面,snack,wheat|fish|soy,5000,0,0.4,0.2,1
+street-toast,길거리 토스트,Korean Street Toast,屋台トースト,韩式街头吐司,snack,wheat|egg|milk|pork,4000,0,0.4,0.6,1
+hotteok,호떡,Hotteok,ホットク,糖饼,snack,wheat|nuts,2000,0,0.2,0.6,1
+korean-hotdog,핫도그,Korean Corn Dog,韓国式ホットドッグ,韩式热狗,snack,wheat|egg|pork|milk,3500,0,0.4,0.8,1
+gyeranppang,계란빵,Gyeranppang (Egg Bread),ケランパン,鸡蛋面包,snack,wheat|egg|milk,2500,0,0.2,0.3,1
+jjinmandu,찐만두,Steamed Dumplings,蒸し餃子,蒸饺,snack,wheat|pork|soy,5000,0,0.4,0.3,1
+tteok-kkochi,떡꼬치,Tteok Kkochi (Rice Cake Skewers),トック串,年糕串,snack,wheat|soy,2500,1,0.2,0.5,1
+gimmari,김말이 튀김,Gimmari,キムマリ,紫菜卷炸粉条,snack,wheat|soy,4000,0,0.3,0.9,1
+yubu-chobap,유부초밥,Inari Sushi,いなり寿司,豆皮寿司,snack,soy|wheat,5000,0,0.3,0.3,0
+cup-dakgangjeong,컵 닭강정,Dakgangjeong Cup,カップタッカンジョン,杯装韩式炸鸡块,snack,chicken|wheat|soy|nuts,5000,1,0.5,0.8,1
+mandu-ramyeon,만두라면,Dumpling Ramyeon,餃子ラミョン,饺子拉面,snack,wheat|soy|pork,6000,3,0.6,0.5,1
+omurice-bunsik,분식집 오므라이스,Snack Bar Omurice,粉食店のオムライス,小吃店蛋包饭,snack,egg|pork|milk|wheat,7000,0,0.6,0.6,1
+donkas-gimbap,돈가스김밥,Pork Cutlet Gimbap,とんかつキンパ,炸猪排紫菜包饭,snack,pork|wheat|egg|soy,5500,0,0.6,0.6,0
+pho,쌀국수,Pho,フォー,越南河粉,asian,beef|fish,11000,1,0.5,0.2,1
+pad-thai,팟타이,Pad Thai,パッタイ,泰式炒河粉,asian,egg|nuts|crustacean|fish|soy,13000,1,0.6,0.6,1
+banh-mi,반미,Banh Mi,バインミー,越南法棍三明治,asian,wheat|pork|egg|fish|soy,8000,1,0.5,0.4,0
+bun-cha,분짜,Bun Cha,ブンチャー,烤肉米线,asian,pork|fish|soy,13000,1,0.5,0.4,0
+bun-bo-hue,분보후에,Bun Bo Hue,ブンボーフエ,顺化牛肉粉,asian,beef|pork|fish|crustacean,12000,3,0.6,0.4,1
+goi-cuon,월남쌈,Vietnamese Spring Rolls,生春巻き,越南春卷,asian,crustacean|pork|fish|nuts,14000,0,0.3,0.1,0
+tom-yum-goong,똠얌꿍,Tom Yum Goong,トムヤムクン,冬阴功汤,asian,crustacean|fish|milk,15000,4,0.4,0.4,1
+green-curry,그린커리,Thai Green Curry,グリーンカレー,泰式绿咖喱,asian,chicken|fish,13000,3,0.6,0.6,1
+massaman-curry,마싸만커리,Massaman Curry,マッサマンカレー,马萨曼咖喱,asian,beef|nuts|fish,14000,1,0.8,0.7,1
+khao-pad,태국식 볶음밥,Khao Pad (Thai Fried Rice),カオパット,泰式炒饭,asian,egg|fish|soy|crustacean,11000,1,0.6,0.6,1
+pad-kra-pao,팟카파오무쌉,Pad Kra Pao,ガパオライス,泰式罗勒猪肉饭,asian,pork|egg|fish|soy,11000,3,0.6,0.6,1
+som-tam,쏨땀,Som Tam,ソムタム,青木瓜沙拉,asian,nuts|fish|crustacean,9000,4,0.2,0.1,0
+nasi-goreng,나시고렝,Nasi Goreng,ナシゴレン,印尼炒饭,asian,egg|soy|crustacean|chicken,11000,2,0.7,0.6,1
+mi-goreng,미고렝,Mie Goreng,ミーゴレン,印尼炒面,asian,wheat|egg|soy|chicken,11000,2,0.7,0.6,1
+laksa,락사,Laksa,ラクサ,叻沙,asian,crustacean|fish|wheat|egg,13000,3,0.7,0.6,1
+satay,사테,Satay,サテ,沙爹肉串,asian,chicken|nuts|soy,12000,1,0.5,0.5,1
+curry-and-naan,인도 커리와 난,Indian Curry with Naan,インドカレーとナン,印度咖喱配馕,asian,wheat|milk|chicken,14000,2,0.8,0.7,1
+butter-chicken,버터치킨 커리,Butter Chicken,バターチキンカレー,黄油鸡咖喱,asian,milk|chicken|nuts|wheat,15000,1,0.8,0.8,1
+biryani,비리야니,Biryani,ビリヤニ,印度香饭,asian,milk|chicken|nuts,15000,2,0.8,0.6,1
+tandoori-chicken,탄두리 치킨,Tandoori Chicken,タンドリーチキン,印度烤鸡,asian,chicken|milk,15000,2,0.6,0.4,1
+khao-man-gai,카오만까이,Khao Man Gai,カオマンガイ,海南鸡饭,asian,chicken|soy,11000,0,0.6,0.5,1
+char-kway-teow,차퀘테오,Char Kway Teow,チャークイティオ,炒粿条,asian,egg|crustacean|soy|pork|wheat,12000,1,0.7,0.8,1
+banh-xeo,반쎄오,Banh Xeo,バインセオ,越南煎饼,asian,crustacean|pork|fish|egg,13000,0,0.6,0.7,1
+lu-rou-fan,루러우판,Lu Rou Fan,魯肉飯,卤肉饭,asian,pork|soy|egg|wheat,10000,0,0.8,0.7,1
+pho-ga,닭 쌀국수,Pho Ga (Chicken Pho),鶏肉のフォー,鸡肉河粉,asian,chicken|fish,10000,0,0.5,0.2,1
+kebab,케밥,Kebab,ケバブ,土耳其烤肉,asian,wheat|beef|milk,10000,1,0.7,0.6,1
+falafel-wrap,팔라펠 랩,Falafel Wrap,ファラフェルラップ,炸鹰嘴豆丸卷饼,asian,wheat|milk,10000,0,0.6,0.6,0
+hummus-plate,후무스 플레이트,Hummus Plate,フムスプレート,鹰嘴豆泥拼盘,asian,wheat|nuts,12000,0,0.4,0.5,0
+cha-gio,짜조,Cha Gio (Fried Spring Rolls),揚げ春巻き,越南炸春卷,asian,pork|crustacean|wheat|fish,8000,0,0.4,0.9,1
+tom-kha-gai,똠카까이,Tom Kha Gai,トムカーガイ,椰汁鸡汤,asian,chicken|fish,13000,2,0.5,0.5,1
+com-tam,베트남 돼지갈비 덮밥,Com Tam (Broken Rice with Pork),コムタム,越南碎米饭,asian,pork|fish|egg|soy,12000,0,0.7,0.6,1
+cheeseburger,치즈버거 세트,Cheeseburger Meal,チーズバーガーセット,芝士汉堡套餐,fastfood,wheat|milk|egg|beef|soy,9500,0,0.8,0.8,1
+fried-chicken,후라이드치킨,Korean Fried Chicken,フライドチキン,韩式炸鸡,fastfood,wheat|chicken,12000,0,0.9,0.9,1
+pepperoni-pizza,페퍼로니피자,Pepperoni Pizza,ペパロニピザ,意式辣香肠披萨,fastfood,wheat|milk|pork,12000,0,0.9,0.8,1
+yangnyeom-chicken,양념치킨,Yangnyeom Chicken,ヤンニョムチキン,韩式甜辣炸鸡,fastfood,wheat|chicken|soy|nuts,12500,2,0.9,0.9,1
+ganjang-chicken,간장치킨,Soy Garlic Chicken,醤油チキン,酱油炸鸡,fastfood,wheat|chicken|soy,12500,0,0.9,0.8,1
+padak,파닭,Padak (Scallion Chicken),パダック,葱丝炸鸡,fastfood,wheat|chicken|soy,12500,1,0.8,0.8,1
+oven-chicken,오븐구이 치킨,Oven-roasted Chicken,オーブンチキン,烤鸡,fastfood,chicken,11000,0,0.7,0.5,1
+boneless-chicken,순살치킨,Boneless Fried Chicken,骨なしチキン,无骨炸鸡,fastfood,wheat|chicken|soy,12000,0,0.8,0.9,1
+spicy-chicken,매운 치킨,Spicy Fried Chicken,激辛チキン,香辣炸鸡,fastfood,wheat|chicken|soy,12500,4,0.9,0.9,1
+chicken-burger,치킨버거 세트,Chicken Burger Meal,チキンバーガーセット,鸡肉汉堡套餐,fastfood,wheat|chicken|egg|milk|soy,8500,0,0.8,0.8,1
+shrimp-burger,새우버거 세트,Shrimp Burger Meal,エビバーガーセット,虾堡套餐,fastfood,wheat|crustacean|egg|soy,7500,0,0.7,0.8,1
+bulgogi-burger,불고기버거 세트,Bulgogi Burger Meal,プルコギバーガーセット,烤肉汉堡套餐,fastfood,wheat|pork|beef|egg|soy|milk,7500,0,0.8,0.8,1
+double-burger,더블 패티 버거,Double Patty Burger,ダブルパティバーガー,双层牛肉汉堡,fastfood,wheat|beef|milk|egg|soy,12000,0,1,0.9,1
+combination-pizza,콤비네이션 피자,Combination Pizza,コンビネーションピザ,什锦披萨,fastfood,wheat|milk|pork|beef,12000,0,0.9,0.8,1
+potato-pizza,포테이토 피자,Potato Pizza,ポテトピザ,土豆披萨,fastfood,wheat|milk|egg|pork,12000,0,0.9,0.8,1
+bulgogi-pizza,불고기 피자,Bulgogi Pizza,プルコギピザ,烤肉披萨,fastfood,wheat|milk|beef|soy,12000,0,0.9,0.8,1
+hawaiian-pizza,하와이안 피자,Hawaiian Pizza,ハワイアンピザ,夏威夷披萨,fastfood,wheat|milk|pork,12000,0,0.8,0.7,1
+sub-sandwich,서브 샌드위치,Submarine Sandwich,サブサンド,潜艇三明治,fastfood,wheat|chicken|egg|milk,8000,0,0.5,0.4,0
+chicken-wrap,치킨 랩,Chicken Wrap,チキンラップ,鸡肉卷,fastfood,wheat|chicken|milk|egg,6500,1,0.5,0.6,0
+chicken-nuggets,치킨너겟 세트,Chicken Nuggets Meal,チキンナゲットセット,鸡块套餐,fastfood,wheat|chicken|soy,6000,0,0.5,0.9,1
+chili-hotdog,칠리 핫도그,Chili Dog,チリドッグ,辣肉酱热狗,fastfood,wheat|pork|beef|milk,7000,2,0.6,0.7,1
+wings-and-fries,윙 앤 감자튀김,Wings and Fries,手羽先とポテト,鸡翅配薯条,fastfood,chicken|wheat,9000,1,0.6,0.9,1
+spicy-wings,매운 닭날개,Spicy Chicken Wings,辛口手羽先,香辣鸡翅,fastfood,chicken|soy|wheat,10000,4,0.6,0.8,1
+fish-burger,피시버거 세트,Fish Burger Meal,フィッシュバーガーセット,鳕鱼堡套餐,fastfood,wheat|fish|egg|milk,7500,0,0.6,0.8,1
+mozzarella-burger,모짜렐라 버거,Mozzarella Burger,モッツァレラバーガー,马苏里拉芝士汉堡,fastfood,wheat|milk|beef|egg,9000,0,0.9,0.9,1
+spicy-chicken-burger,매운 치킨버거,Spicy Chicken Burger,スパイシーチキンバーガー,香辣鸡腿堡,fastfood,wheat|chicken|egg|soy,8500,3,0.8,0.8,1
+dakgangjeong,닭강정,Dakgangjeong,タッカンジョン,韩式糖醋炸鸡块,fastfood,chicken|wheat|soy|nuts,11000,1,0.8,0.9,1
+calzone,칼초네,Calzone,カルツォーネ,意式包馅披萨,fastfood,wheat|milk|pork,11000,0,0.8,0.7,1
+garlic-chicken,마늘치킨,Garlic Fried Chicken,ガーリックチキン,蒜香炸鸡,fastfood,chicken|wheat|soy,12500,0,0.9,0.9,1
+cheese-seasoned-chicken,치즈 시즈닝 치킨,Cheese-seasoned Chicken,チーズシーズニングチキン,芝士粉炸鸡,fastfood,chicken|wheat|milk,12500,0,0.9,0.9,1
+teriyaki-burger,데리야끼 버거 세트,Teriyaki Burger Meal,照り焼きバーガーセット,照烧汉堡套餐,fastfood,wheat|pork|egg|soy,7500,0,0.7,0.8,1
+samgyeopsal,삼겹살,Samgyeopsal (Pork Belly),サムギョプサル,烤五花肉,grill,pork,16000,0,0.9,0.9,1
+dakgalbi,닭갈비,Dakgalbi,タッカルビ,辣炒鸡排,grill,chicken|soy|wheat,14000,3,0.8,0.6,1
+moksal,목살 구이,Grilled Pork Neck,豚肩ロース焼き,烤猪颈肉,grill,pork,16000,0,0.9,0.7,1
+hangjeongsal,항정살,Grilled Pork Jowl,豚トロ焼き,烤猪颊肉,grill,pork,18000,0,0.8,0.9,1
+dwaeji-galbi,돼지갈비,Dwaeji Galbi (Pork Ribs),テジカルビ,烤猪排骨,grill,pork|soy|wheat,16000,0,0.9,0.7,1
+so-galbi,소갈비,So Galbi (Beef Short Ribs),牛カルビ,烤牛排骨,grill,beef|soy|wheat,30000,0,0.9,0.7,1
+chadolbagi,차돌박이,Chadolbagi (Beef Brisket),チャドルバギ,烤牛胸肉片,grill,beef,18000,0,0.7,0.8,1
+deungsim,등심 구이,Grilled Beef Sirloin,牛ロース焼き,烤牛里脊,grill,beef,35000,0,0.8,0.6,1
+yukhoe,육회,Yukhoe (Beef Tartare),ユッケ,韩式生拌牛肉,grill,beef|egg,20000,0,0.4,0.2,0
+gopchang,곱창구이,Grilled Gopchang,コプチャン焼き,烤牛小肠,grill,beef,20000,1,0.8,0.9,1
+makchang,막창구이,Grilled Makchang,マクチャン焼き,烤猪大肠,grill,pork,18000,1,0.8,0.8,1
+galbisal,양념갈비살,Marinated Beef Rib Finger,味付けカルビ,调味牛肋条,grill,beef|soy|wheat,20000,0,0.8,0.7,1
+dak-gui,닭구이,Grilled Chicken,鶏の炭火焼き,烤鸡肉,grill,chicken|soy,14000,1,0.7,0.5,1
+jangeo-gui,장어구이,Grilled Eel,うなぎの蒲焼き,烤鳗鱼,grill,fish|soy|wheat,30000,0,0.8,0.7,1
+daeha-gui,대하 소금구이,Salt-grilled King Prawns,大正エビの塩焼き,盐烤大虾,grill,crustacean,25000,0,0.5,0.3,1
+jogae-gui,조개구이,Grilled Clams,焼き貝,烤贝类,grill,shellfish,20000,0,0.5,0.3,1
+ori-jumulleok,오리 주물럭,Spicy Marinated Duck,鴨肉の辛味炒め,辣拌鸭肉,grill,soy|wheat,17000,2,0.8,0.7,1
+yanggalbi,양갈비,Lamb Chops,ラムチョップ,烤羊排,grill,,25000,0,0.8,0.8,1
+gopchang-jeongol,곱창전골,Gopchang Hot Pot,コプチャン鍋,牛小肠火锅,grill,beef|soy|wheat,17000,3,0.8,0.7,1
+tteokgalbi,떡갈비 정식,Tteokgalbi Set Meal,トッカルビ定食,韩式肉饼套餐,grill,beef|pork|soy|wheat,13000,0,0.8,0.6,1
+gochujang-bulgogi,고추장 불고기,Gochujang Pork Bulgogi,コチュジャンプルコギ,辣酱烤猪肉,grill,pork|soy|wheat,12000,3,0.8,0.7,1
+so-jumulleok,소 주물럭,Marinated Beef Jumulleok,牛肉ジュムルロク,调味烤牛肉,grill,beef|soy,25000,0,0.8,0.6,1
+osam-bulgogi,오삼불고기,Osam Bulgogi (Squid and Pork),オサムプルコギ,鱿鱼五花肉炒,grill,pork|shellfish|soy|wheat,13000,3,0.8,0.7,1
+jjukkumi,쭈꾸미 볶음,Spicy Stir-fried Webfoot Octopus,イイダコ炒め,辣炒小章鱼,grill,shellfish|soy|wheat,14000,4,0.6,0.5,1
+dwaeji-kkeopdegi,돼지껍데기,Grilled Pork Skin,豚皮焼き,烤猪皮,grill,pork|soy,10000,1,0.5,0.8,1
+bbq-brisket,바비큐 브리스킷,BBQ Brisket,BBQブリスケット,烟熏牛胸肉,grill,beef,20000,0,0.8,0.7,1
+bbq-pork-ribs,바비큐 폭립,BBQ Pork Ribs,BBQポークリブ,烧烤猪肋排,grill,pork|soy|wheat,22000,1,0.9,0.8,1
+dakkkochi,닭꼬치,Chicken Skewers,鶏串,鸡肉串,grill,chicken|soy|wheat,6000,1,0.4,0.5,1
+salmon-steak,연어 스테이크,Salmon Steak,サーモンステーキ,三文鱼排,grill,fish|milk,20000,0,0.6,0.6,1
+dwaeji-bulbaek,돼지불백,Dwaeji Bulbaek,テジプルベク,烤猪肉白饭,grill,pork|soy|wheat,10000,2,0.7,0.6,1
+eonyang-bulgogi,언양불고기,Eonyang Bulgogi,オニャンプルコギ,彦阳烤牛肉,grill,beef|soy|wheat,15000,0,0.7,0.5,1

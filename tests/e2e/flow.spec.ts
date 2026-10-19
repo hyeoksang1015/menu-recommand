@@ -1,9 +1,9 @@
 import { expect, test, type Page } from "@playwright/test";
 
-const cards = (page: Page) =>
+const cards = (page: Page, choose = "이걸로!") =>
   page
     .getByRole("listitem")
-    .filter({ has: page.getByRole("button", { name: "이걸로!" }) });
+    .filter({ has: page.getByRole("button", { name: choose }) });
 const count = async (page: Page) =>
   Number(await page.getByTestId("candidate-count").textContent());
 const names = (page: Page) =>
@@ -96,7 +96,11 @@ test("browse, confirm, share and record a meal", async ({ page, context }) => {
   await page.getByRole("link", { name: "직접 고를래요" }).click();
   await expect(page).toHaveURL(/\/browse\/$/);
   await expect(page.getByTestId("candidate-count")).toHaveText(String(total));
-  const grid = page.getByRole("list").last().getByRole("button");
+  const grid = page
+    .getByRole("main")
+    .getByRole("list")
+    .first()
+    .getByRole("button");
   await expect(grid).toHaveCount(Math.min(12, total));
 
   const name = (await grid.first().locator("span.font-bold").textContent())!;
@@ -125,11 +129,88 @@ test("browse, confirm, share and record a meal", async ({ page, context }) => {
   expect(await names(page)).not.toContain(name);
 });
 
-test("about page lists every menu without JavaScript", async ({ browser }) => {
+test("dish guide pages list menus without JavaScript", async ({ browser }) => {
   const page = await browser.newPage({ javaScriptEnabled: false });
-  await page.goto("http://localhost:3100/about/");
+  await page.goto("http://localhost:3100/menus/korean/");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("한식");
+  await expect(page.getByRole("heading", { name: "김치찌개" })).toBeVisible();
+  await page.goto("http://localhost:3100/guides/quick-lunch/");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "점심 메뉴, 3분 안에 정하는 법",
+  );
+});
+
+test("leave-out and match-me panels are open from the start", async ({
+  page,
+}) => {
+  await openHome(page);
+  for (const name of ["빼주께", "맞춰주께"]) {
+    await expect(
+      page.getByRole("heading", { name, exact: true }),
+    ).toBeVisible();
+  }
   await expect(
-    page.getByRole("heading", { name: /전체 메뉴 \d+개/ }),
+    page.getByRole("button", { name: "우유", exact: true }),
   ).toBeVisible();
-  await expect(page.getByText(/김치찌개 · 약/)).toBeVisible();
+  await expect(page.getByRole("slider", { name: "1인 예산" })).toBeVisible();
+});
+
+test("picks show real food photos", async ({ page }) => {
+  await toPicks(page);
+  const photos = cards(page).locator("img");
+  await expect(photos.first()).toBeVisible();
+  const widths = await photos.evaluateAll((imgs) =>
+    Promise.all(
+      (imgs as HTMLImageElement[]).map((img) =>
+        img
+          .decode()
+          .then(() => img.naturalWidth)
+          .catch(() => 0),
+      ),
+    ),
+  );
+  expect(widths.filter((w) => w > 0).length).toBeGreaterThan(0);
+});
+
+test("English pages and the language switcher", async ({ page }) => {
+  await page.goto("/en/");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await page.getByRole("button", { name: "Skip" }).click();
+  await expect(
+    page.getByRole("heading", { name: "Leave out", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Pick 3 for me" }).click();
+  await expect(page).toHaveURL(/\/en\/picks\/$/);
+  await expect(cards(page, "This one!")).toHaveCount(3);
+
+  await page.goto("/en/about/");
+  await page.getByRole("combobox", { name: "Language" }).selectOption("ja");
+  await expect(page).toHaveURL(/\/ja\/about\/$/);
+  await expect(page.locator("html")).toHaveAttribute("lang", "ja");
+});
+
+test("AdSense tag sits in the head of content pages but not on the 404 page", async ({
+  request,
+}) => {
+  for (const path of [
+    "/",
+    "/en/menus/korean/",
+    "/guides/allergies/",
+    "/privacy/",
+  ]) {
+    const html = await (await request.get(path)).text();
+    const head = html.slice(0, html.indexOf("</head>"));
+    expect(head, path).toContain(
+      'src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4035979084834637" crossorigin="anonymous"',
+    );
+  }
+  expect(await (await request.get("/404.html")).text()).not.toContain(
+    "adsbygoogle",
+  );
+  expect(await (await request.get("/ads.txt")).text()).toContain(
+    "google.com, pub-4035979084834637, DIRECT, f08c47fec0942fa0",
+  );
+  const sitemap = await (await request.get("/sitemap.xml")).text();
+  expect(sitemap).toContain('hreflang="zh-Hans"');
+  expect(sitemap).not.toContain("/picks/");
 });

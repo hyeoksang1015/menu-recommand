@@ -1,9 +1,11 @@
 "use client";
 
+import { useI18n } from "@/components/I18nProvider";
 import Sheet from "@/components/Sheet";
+import { fmt } from "@/i18n/config";
 import { REASONS } from "@/lib/engine/engine";
-import type { Menu, Reason } from "@/lib/engine/types";
-import { REJECT_LABEL } from "@/lib/labels";
+import type { Reason } from "@/lib/engine/types";
+import { menuName, type MenuItem } from "@/lib/menus";
 
 // 거절 사유 1탭 → 부모가 바로 다시 고른다.
 export default function RejectSheet({
@@ -11,19 +13,18 @@ export default function RejectSheet({
   onClose,
   onReject,
 }: {
-  menu: Menu | null;
+  menu: MenuItem | null;
   onClose: () => void;
   onReject: (reason: Reason) => void;
 }) {
+  const { lang, t } = useI18n();
   return (
     <Sheet
       open={menu !== null}
       onClose={onClose}
-      title={menu ? `${menu.name}, 왜 별로예요?` : ""}
+      title={menu ? fmt(t.reject.title, { name: menuName(menu, lang) }) : ""}
     >
-      <p className="mb-4 text-sm text-muted">
-        이유를 누르면 바로 다시 골라 드려요.
-      </p>
+      <p className="mb-4 text-sm text-muted">{t.reject.lead}</p>
       <div className="grid grid-cols-2 gap-2">
         {REASONS.map((r) => (
           <button
@@ -32,7 +33,7 @@ export default function RejectSheet({
             className="btn btn-ghost"
             onClick={() => onReject(r)}
           >
-            {REJECT_LABEL[r]}
+            {t.reject.reasons[r]}
           </button>
         ))}
       </div>
