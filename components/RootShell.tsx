@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import GoogleTag from "@/components/GoogleTag";
 import { I18nProvider } from "@/components/I18nProvider";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import StoreHydrator from "@/components/StoreHydrator";
@@ -25,6 +26,10 @@ export default function RootShell({
   ];
   return (
     <html lang={HTML_LANG[lang]} className="h-full antialiased">
+      {/* eslint-disable-next-line @next/next/no-head-element -- 앱 라우터 루트 레이아웃 껍데기라 <head>가 맞다 */}
+      <head>
+        <GoogleTag />
+      </head>
       <body className="flex min-h-full flex-col">
         {/* Google AdSense: 모든 콘텐츠 페이지. async 스크립트라 React가 <head>로 올려 준다. 404 화면(app/global-not-found.tsx)에는 넣지 않는다. */}
         <script

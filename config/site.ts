@@ -11,6 +11,8 @@ export const site = {
   ).replace(/\/$/, ""),
   // Google AdSense 게시자 ID(공개 값). public/ads.txt 에도 같은 번호가 들어 있다.
   adsenseClient: "ca-pub-4035979084834637",
+  // Google 애널리틱스(GA4) 측정 ID(공개 값). components/GoogleTag.tsx 가 모든 페이지 <head>에 넣는다.
+  gaId: "G-5MZDBV6NJ1",
   // 문의 페이지·개인정보처리방침에 공개하는 연락처(운영자가 공개에 동의함).
   contactEmail: "01059182043k@gmail.com",
 };

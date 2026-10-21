@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GoogleTag from "@/components/GoogleTag";
 import { adsenseVerification } from "@/config/site";
 import { PAGE_TEXT } from "@/content/pages";
 import { LOCALES, href } from "@/i18n/config";
@@ -16,6 +17,9 @@ export const metadata: Metadata = {
 export default function GlobalNotFound() {
   return (
     <html lang="ko" className="h-full antialiased">
+      <head>
+        <GoogleTag />
+      </head>
       <body className="flex min-h-full flex-col items-center justify-center px-gutter py-16">
         <main className="w-full max-w-md space-y-8 text-center">
           <p className="text-5xl" aria-hidden>

@@ -139,11 +139,12 @@ const ko: PageText = {
         ],
       },
       {
-        heading: "3. 광고와 쿠키",
+        heading: "3. 광고, 방문 통계와 쿠키",
         body: [
           "이 사이트는 Google 애드센스를 통해 광고를 게재할 수 있어요. Google을 포함한 제3자 공급업체는 쿠키를 사용해 사용자가 이 사이트나 다른 사이트를 방문한 기록을 바탕으로 광고를 게재해요.",
           "Google은 광고 쿠키를 사용해 사용자가 이 사이트와 인터넷의 다른 사이트를 방문한 기록에 기반한 광고를 보여 줄 수 있어요. 맞춤 광고는 Google 광고 설정(https://adssettings.google.com)에서 끌 수 있고, www.aboutads.info에서 다른 제3자 공급업체의 맞춤 광고 쿠키도 끌 수 있어요.",
           "Google이 파트너 사이트의 데이터를 어떻게 사용하는지는 https://policies.google.com/technologies/partner-sites 에서 확인할 수 있어요.",
+          "이용 현황을 파악하려고 모든 페이지에서 Google 애널리틱스를 사용해요. 방문한 페이지, 머문 시간, 대략적인 지역, 기기·브라우저 정보 등이 Google에 전달되고, 이를 위해 Google 애널리틱스 쿠키(_ga 등)가 저장될 수 있어요. 기기에 저장된 입력 조건과 먹은 기록은 보내지 않아요. 수집을 원하지 않으면 Google 애널리틱스 차단 브라우저 부가기능(https://tools.google.com/dlpage/gaoptout)을 쓰거나 브라우저에서 쿠키를 차단할 수 있어요.",
         ],
       },
       {
@@ -286,11 +287,12 @@ const en: PageText = {
         ],
       },
       {
-        heading: "3. Advertising and cookies",
+        heading: "3. Advertising, analytics and cookies",
         body: [
           "This site may show ads through Google AdSense. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites.",
           "Google's use of advertising cookies enables it and its partners to serve ads based on your visits to this site and other sites on the internet. You can opt out of personalized advertising in Google Ads Settings (https://adssettings.google.com), and opt out of other third-party vendors' cookies at www.aboutads.info.",
           "Learn how Google uses data from partner sites at https://policies.google.com/technologies/partner-sites.",
+          "To understand how the site is used, every page uses Google Analytics. Pages visited, time spent, approximate location, and device and browser information are sent to Google, and Google Analytics cookies (such as _ga) may be stored for this. The conditions and meal history saved on your device are not sent. To opt out, use the Google Analytics Opt-out Browser Add-on (https://tools.google.com/dlpage/gaoptout) or block cookies in your browser.",
         ],
       },
       {
@@ -433,11 +435,12 @@ const ja: PageText = {
         ],
       },
       {
-        heading: "3. 広告と Cookie",
+        heading: "3. 広告・アクセス解析と Cookie",
         body: [
           "当サイトは Google AdSense による広告を掲載する場合があります。Google などの第三者配信事業者は Cookie を使用して、ユーザーが当サイトや他のサイトに過去にアクセスした情報に基づいて広告を配信します。",
           "Google は広告 Cookie を使用することにより、ユーザーが当サイトやインターネット上の他のサイトにアクセスした情報に基づいて広告を配信できます。パーソナライズ広告は Google 広告設定（https://adssettings.google.com）で無効にでき、www.aboutads.info で他の第三者配信事業者の Cookie も無効にできます。",
           "Google がパートナーサイトのデータをどのように使用するかは https://policies.google.com/technologies/partner-sites で確認できます。",
+          "利用状況を把握するため、すべてのページで Google アナリティクスを使用しています。閲覧したページ、滞在時間、おおよその地域、端末・ブラウザの情報などが Google に送信され、そのために Google アナリティクスの Cookie（_ga など）が保存される場合があります。端末に保存された入力条件や食事の記録は送信しません。収集を望まない場合は、Google アナリティクス オプトアウト アドオン（https://tools.google.com/dlpage/gaoptout）を使うか、ブラウザで Cookie をブロックしてください。",
         ],
       },
       {
@@ -582,11 +585,12 @@ const zh: PageText = {
         ],
       },
       {
-        heading: "3. 广告与 Cookie",
+        heading: "3. 广告、访问统计与 Cookie",
         body: [
           "本网站可能通过 Google AdSense 展示广告。包括 Google 在内的第三方供应商会使用 Cookie，根据你过去访问本网站或其他网站的记录投放广告。",
           "Google 使用广告 Cookie，使其及其合作伙伴能够根据你访问本网站和互联网上其他网站的记录投放广告。你可以在 Google 广告设置（https://adssettings.google.com）中关闭个性化广告，也可以在 www.aboutads.info 关闭其他第三方供应商的 Cookie。",
           "关于 Google 如何使用合作伙伴网站的数据，请参阅 https://policies.google.com/technologies/partner-sites。",
+          "为了解网站的使用情况，所有页面都使用 Google Analytics。你访问的页面、停留时间、大致地区以及设备和浏览器信息会发送给 Google，为此可能会存储 Google Analytics Cookie（如 _ga）。保存在设备上的输入条件和就餐记录不会被发送。如不希望被收集，可以使用 Google Analytics 停用浏览器插件（https://tools.google.com/dlpage/gaoptout），或在浏览器中阻止 Cookie。",
         ],
       },
       {

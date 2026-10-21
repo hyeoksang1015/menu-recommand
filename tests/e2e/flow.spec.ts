@@ -191,8 +191,9 @@ test("English pages and the language switcher", async ({ page }) => {
 
 const META =
   '<meta name="google-adsense-account" content="ca-pub-4035979084834637"/>';
+const GTAG = 'src="https://www.googletagmanager.com/gtag/js?id=G-5MZDBV6NJ1"';
 
-test("AdSense tag sits in the head of content pages but not on the 404 page", async ({
+test("Google tag on every page; AdSense tag in content pages but not on the 404 page", async ({
   request,
 }) => {
   for (const path of [
@@ -204,6 +205,7 @@ test("AdSense tag sits in the head of content pages but not on the 404 page", as
     const html = await (await request.get(path)).text();
     const head = html.slice(0, html.indexOf("</head>"));
     expect(head, path).toContain(META);
+    expect(head.split(GTAG).length - 1, path).toBe(1);
     expect(head, path).toContain(
       'src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4035979084834637" crossorigin="anonymous"',
     );
@@ -212,6 +214,7 @@ test("AdSense tag sits in the head of content pages but not on the 404 page", as
   const notFound = await (await request.get("/404.html")).text();
   expect(notFound).not.toContain("adsbygoogle");
   expect(notFound.slice(0, notFound.indexOf("</head>"))).toContain(META);
+  expect(notFound.slice(0, notFound.indexOf("</head>"))).toContain(GTAG);
   expect(await (await request.get("/ads.txt")).text()).toContain(
     "google.com, pub-4035979084834637, DIRECT, f08c47fec0942fa0",
   );
