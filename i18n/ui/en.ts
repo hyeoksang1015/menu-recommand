@@ -3,9 +3,9 @@ import type { Dict } from "./ko";
 const en = {
   site: {
     name: "Gollajuke",
-    tagline: "Can't decide what to eat? We'll pick for you",
+    tagline: "Less time deciding, more time eating",
     description:
-      "Tell us what to leave out and how you feel today, and we'll pick three meal ideas for you. Not feeling one? Tap a reason and get a new pick instantly. 250 dishes, free, no sign-up.",
+      "Stop losing your lunch break to \"what should we eat?\". Leave out what you can't eat, tell us how you feel, and we'll narrow 250 dishes down to three, with a reason for each. Not feeling one? Tap why and get a new pick. Free, no sign-up.",
   },
   nav: {
     pick: "Pick a meal",
@@ -23,8 +23,8 @@ const en = {
       "Food photos are freely licensed images from Wikimedia Commons. Authors and licenses are listed on the photo credits page.",
   },
   home: {
-    title: "What should I eat today? Gollajuke picks for you",
-    lead: "Tell us what to leave out and what to match, and we'll pick three dishes.",
+    title: "Stop wasting time deciding what to eat",
+    lead: "Tell us what to leave out and how you feel. We'll cut 250 dishes down to three.",
     exclude: "Leave out",
     excludeLead: "First, let's remove what you can't or don't want to eat.",
     allergens: "Ingredients I can't eat",
@@ -62,7 +62,7 @@ const en = {
     start: "Pick 3 for me",
     none: "No dishes match",
     noneHint: "Try relaxing what you leave out or your budget.",
-    hint: "Choose as much as you like, then we'll pick three. Skipping is fine too.",
+    hint: "You don't have to answer everything. Tap now and you'll still get three picks.",
   },
   coach: {
     label: "How it works",
@@ -77,7 +77,8 @@ const en = {
   },
   picks: {
     title: "Today's 3 picks",
-    count: "Picked from {count} matching dishes.",
+    count:
+      "Out of {total} dishes, {count} fit your choices, and we compared them all.",
     fewer: " Only {n} cuisines match, so you get {n} picks.",
     empty: "No dishes match your choices.",
     emptyHint: "Relax what you leave out or your budget and we'll pick again.",
@@ -88,22 +89,45 @@ const en = {
     choose: "This one!",
     reject: "Something else",
     reasonsAria: "Why we picked it",
+    excluded: "Left out: {items}",
+    recent: "{count} dishes you ate recently",
+    top: "Can't decide? Go with this",
   },
   slots: {
     safe: "Safe choice",
     mood: "Fits your mood",
     novel: "Try something new",
   },
+  slotWhy: {
+    safe: "The best fit for today's choices. Hard to go wrong.",
+    mood: "We set your usual taste aside and only looked at how you feel right now.",
+    novel: "Picked from dishes we haven't shown you much.",
+  },
   reasons: {
-    liked_category: "A cuisine you like",
-    new_for_you: "New to you",
-    hot: "Warm dish",
-    cold: "Cool dish",
-    heavy: "Filling",
-    light: "Light",
-    medium: "Moderate portion",
-    in_budget: "Within budget",
-    not_greasy: "Less greasy",
+    liked_category: "{category}, which usually works for you.",
+    new_for_you: "We've never suggested this one to you before.",
+    hot: "It's served warm.",
+    cold: "It's served cold.",
+    hotTired: "You said you're tired, so we went with something warm.",
+    heavy: "It'll fill you up.",
+    light: "Easy on the stomach.",
+    medium: "Not too much, not too little.",
+    asked: {
+      heavy: "You wanted something filling, so we went with a hearty portion.",
+      light: "You wanted something light, so we kept it easy.",
+      medium: "You wanted a normal-sized meal, so the portion is just right.",
+    },
+    mood: {
+      tired: "It's been a tiring day, so we leaned toward something filling.",
+      stress: "Stressful day, so we leaned toward something filling.",
+    },
+    in_budget: "Within your {budget} budget, with about {left} to spare.",
+    budgetExact: "Right at your {budget} budget.",
+    cheaper:
+      "You said the last one was too pricey, so we looked for something cheaper.",
+    not_greasy:
+      "You said it was too greasy, so we switched to something less oily.",
+    celebrate: "It's a special day, so we made room for something different.",
   },
   reject: {
     title: "Why not {name}?",
@@ -143,6 +167,9 @@ const en = {
     shareText: "Today it's {name}! 🍚",
     record: "Mark as eaten",
     recorded: "Saved. We'll leave it out of picks for two days.",
+    took: "Decided in {time}. Enjoy the time you saved.",
+    sec: "{s} sec",
+    min: "{m} min {s} sec",
   },
   common: { close: "Close", start: "Pick a meal now", readMore: "Read more" },
 } satisfies Dict;

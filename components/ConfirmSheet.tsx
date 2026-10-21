@@ -18,6 +18,26 @@ export const kakaoMapUrl = (q: string) =>
 export const googleMapUrl = (q: string) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
 
+// 이 탭에서 사이트를 연 뒤 확정까지 걸린 시간. 화면 이동은 클라이언트 라우팅이라 문서가 그대로여서 이어서 잰다.
+// shortcut: 새로고침하면 처음부터 다시 잰다. 정확한 기록이 필요해지면 첫 방문 시각을 저장한다.
+function Took() {
+  const { t } = useI18n();
+  const c = t.confirm;
+  const [sec] = useState(() =>
+    Math.max(1, Math.round(performance.now() / 1000)),
+  );
+  if (sec > 15 * 60) return null; // 탭을 오래 열어 둔 경우는 고민 시간이 아니다
+  const time =
+    sec < 60
+      ? fmt(c.sec, { s: sec })
+      : fmt(c.min, { m: Math.floor(sec / 60), s: sec % 60 });
+  return (
+    <p className="rounded-2xl bg-paper px-3 py-2 text-sm">
+      {fmt(c.took, { time })}
+    </p>
+  );
+}
+
 export default function ConfirmSheet({
   menu,
   onClose,
@@ -60,6 +80,7 @@ export default function ConfirmSheet({
           <div className="mt-3 space-y-2">
             <p className="text-2xl font-extrabold">{name}</p>
             <MenuBadges menu={menu} />
+            <Took key={menu.id} />
           </div>
           <div className="mt-5 grid gap-2">
             <a

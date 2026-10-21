@@ -4,7 +4,8 @@ import { GUIDES } from "../content/guides";
 import { PAGE_TEXT } from "../content/pages";
 import { LOCALES, fmt, href, splitPath } from "../i18n/config";
 import { DICTS } from "../i18n/ui";
-import { budgetLabel, won } from "../lib/labels";
+import { DEFAULT_INPUTS, toQuery } from "../config/mood";
+import { budgetLabel, whyLines, won } from "../lib/labels";
 import { CATEGORIES, MENU_BY_ID, menuName } from "../lib/menus";
 
 // 객체의 모양(키 경로와 배열 길이)을 문자열 목록으로 펼친다.
@@ -58,5 +59,30 @@ describe("helpers", () => {
       menuName(m, "ja"),
       menuName(m, "zh"),
     ]).toEqual(["김치찌개", "Kimchi Jjigae", "キムチチゲ", "泡菜汤"]);
+  });
+
+  it("explains picks by echoing the user's own choices once", () => {
+    const m = MENU_BY_ID.get("kimchi-jjigae")!; // 9,000원, 따뜻함, heavy 0.6
+    const inputs = { ...DEFAULT_INPUTS, mood: "tired" as const, budget: 15000 };
+    const q = toQuery(inputs, [], 0);
+    const t = DICTS.ko;
+    const said = new Set<string>();
+    const codes = ["hot_match", "heavy_match", "in_budget"] as const;
+    expect(whyLines(codes, m, "safe", inputs, q, "ko", t, said)).toEqual([
+      "피곤하다고 하셔서 따뜻한 걸로 골랐어요.",
+      "지친 날이라 든든한 쪽으로 맞췄어요.",
+      "1인 예산 1만 5천 원 안이에요. 약 6,000원 남아요.",
+    ]);
+    // 두 번째 카드부터는 같은 말을 되풀이하지 않고 메뉴 자체의 사실을 쓴다.
+    expect(whyLines(codes, m, "mood", inputs, q, "ko", t, said)).toEqual([
+      t.reasons.hot,
+      t.reasons.medium,
+      "1인 예산 1만 5천 원 안이에요. 약 6,000원 남아요.",
+    ]);
+    // 거절("비쌈")로 예산이 내려갔으면 그 이유를 말한다.
+    const cheaper = { ...q, max_price: 8999 };
+    expect(
+      whyLines(["in_budget"], m, "safe", inputs, cheaper, "ko", t, new Set()),
+    ).toEqual([t.reasons.cheaper]);
   });
 });

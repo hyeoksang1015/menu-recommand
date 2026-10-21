@@ -9,9 +9,17 @@ import Fmt from "@/components/Fmt";
 import { useI18n } from "@/components/I18nProvider";
 import PickCard, { CARD_HEIGHT } from "@/components/PickCard";
 import RejectSheet from "@/components/RejectSheet";
-import { fmt, href } from "@/i18n/config";
+import { recentIds } from "@/config/mood";
+import { INTL_LOCALE, fmt, href } from "@/i18n/config";
 import { passes } from "@/lib/engine/engine";
-import { MENU_BY_ID, MENUS, type MenuItem } from "@/lib/menus";
+import { whyLines } from "@/lib/labels";
+import {
+  ALLERGENS,
+  CATEGORIES,
+  MENU_BY_ID,
+  MENUS,
+  type MenuItem,
+} from "@/lib/menus";
 import { currentQuery, useMenuStore } from "@/lib/store";
 
 export default function PicksView() {
@@ -38,12 +46,29 @@ export default function PicksView() {
     if (hydrated && picks === null) start();
   }, [hydrated, picks, start]);
 
-  const count = useMemo(() => {
-    const q = currentQuery({ inputs, eaten, query, skipped });
-    return MENUS.filter((m) => passes(m, q)).length;
-  }, [inputs, eaten, query, skipped]);
+  const [now] = useState(() => Date.now());
+  const { q, count, recent } = useMemo(() => {
+    const q = currentQuery({ inputs, eaten, query, skipped }, now);
+    return {
+      q,
+      count: MENUS.filter((m) => passes(m, q)).length,
+      recent: recentIds(eaten, now).size,
+    };
+  }, [inputs, eaten, query, skipped, now]);
+
+  // 걸러 낸 과정을 보여 주면 "대충 뽑은 게 아니구나" 싶어 결과를 더 믿게 된다.
+  const excluded = [
+    ...ALLERGENS.filter((a) => inputs.banAllergens.includes(a.key)).map(
+      (a) => a.label[lang],
+    ),
+    ...CATEGORIES.filter((c) => inputs.banCategories.includes(c.key)).map(
+      (c) => c.label[lang],
+    ),
+    ...(recent ? [fmt(t.picks.recent, { count: recent })] : []),
+  ];
 
   const ready = hydrated && picks !== null;
+  const said = new Set<string>();
   return (
     <MotionConfig reducedMotion="user">
       <h1 className="mt-2 text-2xl font-extrabold">{t.picks.title}</h1>
@@ -53,12 +78,22 @@ export default function PicksView() {
             <Fmt
               template={t.picks.count}
               values={{
+                total: MENUS.length,
                 count: <strong data-testid="candidate-count">{count}</strong>,
               }}
             />
             {picks.length > 0 &&
               picks.length < 3 &&
               fmt(t.picks.fewer, { n: picks.length })}
+            {excluded.length > 0 && (
+              <span className="mt-1 block text-sm">
+                {fmt(t.picks.excluded, {
+                  items: new Intl.ListFormat(INTL_LOCALE[lang], {
+                    type: "unit",
+                  }).format(excluded),
+                })}
+              </span>
+            )}
           </>
         )}
         <span className="sr-only">{announce}</span>
@@ -93,7 +128,17 @@ export default function PicksView() {
                   key={p.id}
                   menu={menu}
                   slot={p.slot}
-                  reasons={p.reasons}
+                  reasons={whyLines(
+                    p.reasons,
+                    menu,
+                    p.slot,
+                    inputs,
+                    q,
+                    lang,
+                    t,
+                    said,
+                  )}
+                  top={i === 0 && picks.length > 1}
                   priority={i === 0}
                   onChoose={() => setChosen(menu)}
                   onReject={() => setRejecting(menu)}

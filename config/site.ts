@@ -73,4 +73,4 @@ export function rootMeta(lang: Locale): Metadata {
   };
 }
 
-export const viewport = { themeColor: "#fff8f1" };
+export const viewport = { themeColor: "#ffefc4" };

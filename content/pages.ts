@@ -66,10 +66,10 @@ const ko: PageText = {
   about: {
     title: "골라주께 소개",
     description:
-      "골라주께가 메뉴 3개를 고르는 방법, 거절을 학습하는 방식, 데이터와 사진의 출처를 설명합니다.",
+      "골라주께가 메뉴 고민 시간을 줄이는 방법, 3개를 고르는 기준, 거절에서 배우는 방식, 데이터와 사진의 출처를 설명합니다.",
     intro: [
-      '골라주께는 "오늘 뭐 먹지?"를 오래 고민하는 사람을 위해 만든 메뉴 추천 서비스예요. 룰렛처럼 하나를 무작위로 뽑아 주면 막상 안 끌릴 때가 많아서, 오늘 상태를 듣고 서로 다른 종류에서 후보 3개를 보여 준 뒤 마지막 선택은 직접 하도록 만들었어요.',
-      "가입도, 서버도 없어요. 추천 계산은 모두 지금 쓰고 있는 기기 안에서 이루어지고, 취향과 먹은 기록도 이 브라우저에만 저장돼요.",
+      '골라주께는 "오늘 뭐 먹지?"에 쓰는 시간을 줄이려고 만들었어요. 배달 앱을 한참 내리다가, 단톡방에 "아무거나"만 오가다가 점심시간 절반이 지나간 적 있다면 바로 그 시간을 아껴 드리려는 거예요.',
+      "고를 게 많으면 오히려 더 못 고르게 돼요. 그래서 메뉴 250개 중 못 먹는 것과 오늘 안 끌리는 걸 먼저 걸러 내고, 서로 다른 종류에서 딱 3개만 남겨요. 카드마다 왜 그 메뉴인지 적어 두니까 다시 따져 볼 필요 없이 하나만 고르면 돼요. 룰렛처럼 아무거나 뽑지 않고 마지막 선택을 직접 하게 둔 것도, 그래야 고른 뒤에 다시 흔들리지 않기 때문이에요.",
     ],
     sections: [
       {
@@ -83,7 +83,7 @@ const ko: PageText = {
         heading: "3개는 이렇게 달라요",
         body: [
           "무난한 선택은 오늘 상태와 지금까지 쌓인 취향에 가장 잘 맞는 메뉴예요. 오늘 상태에 딱은 취향은 빼고 지금 상태(얼마나 든든하게, 따뜻하게 먹고 싶은지)만 본 메뉴예요. 새로운 도전은 아직 덜 추천받은 메뉴 중에서 고른 메뉴예요.",
-          "세 메뉴는 항상 서로 다른 종류(한식, 중식, 일식 등)에서 나와요. 비슷한 메뉴 셋 중에서 고르느라 다시 고민하지 않도록요.",
+          "세 메뉴는 항상 서로 다른 종류(한식, 중식, 일식 등)에서 나와요. 비슷한 메뉴 셋 중에서 고르느라 다시 고민하지 않도록요. 카드에는 고른 이유도 적어 두는데, 입력한 조건 중 실제로 맞아떨어진 것만 적어요.",
         ],
       },
       {
@@ -214,9 +214,10 @@ const en: PageText = {
   about: {
     title: "About Gollajuke",
     description:
-      "How Gollajuke picks three dishes, how it learns from your rejections, and where the data and photos come from.",
+      "How Gollajuke cuts down the time you spend deciding, how it picks three dishes, how it learns from your rejections, and where the data and photos come from.",
     intro: [
-      "Gollajuke (Korean for \"I'll pick for you\") is a meal picker for anyone who spends too long wondering what to eat. A random roulette often lands on something you don't feel like, so instead we ask how you feel today, show three candidates from different cuisines, and let you make the final call.",
+      'Gollajuke (Korean for "I\'ll pick for you") exists to cut down the time you spend on "what should we eat?". If you\'ve ever scrolled a delivery app for ages, or watched a group chat go nowhere with "anything is fine" until half your lunch break was gone, that\'s the time we want to give back.',
+      "The more options you have, the harder it gets to choose. So we first filter 250 dishes down to what you can eat and what suits today, then keep just three from different cuisines. Each card says why that dish made the cut, so you don't have to weigh it all again. We still leave the final call to you instead of spinning a roulette, because a choice you made yourself is one you're less likely to second-guess.",
       "There is no sign-up and no server. All recommendations are calculated on your own device, and your preferences and meal history stay in this browser.",
     ],
     sections: [
@@ -231,7 +232,7 @@ const en: PageText = {
         heading: "How the three picks differ",
         body: [
           "The Safe choice best fits both how you feel today and the preferences you've built up. Fits your mood ignores preferences and looks only at your current state, such as how filling or how warm you want your meal. Try something new comes from dishes you've seen less often.",
-          "The three picks always come from different cuisines, so you don't end up agonizing over three similar dishes.",
+          "The three picks always come from different cuisines, so you don't end up agonizing over three similar dishes. Each card also says why we picked it, using only the choices of yours that actually matched.",
         ],
       },
       {
@@ -362,9 +363,10 @@ const ja: PageText = {
   about: {
     title: "ゴラジュケについて",
     description:
-      "ゴラジュケが3品を選ぶ仕組み、断った理由から学ぶ方法、データと写真の出典を説明します。",
+      "ゴラジュケがメニュー選びの時間を短くする仕組み、3品を選ぶ基準、断った理由から学ぶ方法、データと写真の出典を説明します。",
     intro: [
-      "ゴラジュケ（韓国語で「選んであげる」）は、「今日なに食べよう？」と長く迷ってしまう人のためのメニュー提案サービスです。ルーレットのようにランダムで1つ選ぶと結局気が乗らないことが多いため、今日の状態を聞いて異なるジャンルから候補を3つ見せ、最後は自分で決められるようにしました。",
+      "ゴラジュケ（韓国語で「選んであげる」）は、「今日なに食べよう？」に使う時間を短くするために作りました。デリバリーアプリをずっとスクロールしたり、グループチャットで「なんでもいい」が続いたりして、お昼休みが半分終わってしまったことがあるなら、その時間を取り戻すためのサービスです。",
+      "選択肢が多いほど、かえって決められなくなります。そこで250品の中から食べられないものと今日の気分に合わないものを先に外し、異なるジャンルから3品だけ残します。カードごとにそのメニューを選んだ理由を書いているので、もう一度考え直さずにひとつ選ぶだけ。ルーレットのように適当に引かず最後の一品を自分で選ぶようにしたのも、自分で決めたものなら後で迷い直しにくいからです。",
       "会員登録もサーバーもありません。おすすめの計算はすべてお使いの端末の中で行われ、好みや食事の記録もこのブラウザにだけ保存されます。",
     ],
     sections: [
@@ -379,7 +381,7 @@ const ja: PageText = {
         heading: "3品はこう違います",
         body: [
           "「定番の一品」は今日の状態とこれまでの好みに最も合うメニューです。「今の気分にぴったり」は好みを除き、今の状態（どのくらいがっつり、温かいものを食べたいか）だけを見たメニューです。「新しい挑戦」はまだあまりおすすめされていないメニューから選びます。",
-          "3品はいつも異なるジャンル（韓国料理、中華、和食など）から選ばれます。似たメニュー3つの中でまた迷わないようにするためです。",
+          "3品はいつも異なるジャンル（韓国料理、中華、和食など）から選ばれます。似たメニュー3つの中でまた迷わないようにするためです。カードには選んだ理由も載せています。入力した条件のうち、実際に当てはまったものだけです。",
         ],
       },
       {
@@ -512,9 +514,10 @@ const zh: PageText = {
   about: {
     title: "关于 Gollajuke",
     description:
-      "介绍 Gollajuke 如何挑出 3 道菜、如何从你的拒绝中学习，以及数据与照片的来源。",
+      "介绍 Gollajuke 如何帮你缩短选菜时间、挑出 3 道菜的标准、如何从你的拒绝中学习，以及数据与照片的来源。",
     intro: [
-      "Gollajuke（韩语“帮你选”）是为总在纠结“今天吃什么”的人做的选菜服务。像轮盘那样随机抽一个，结果往往不想吃，所以我们先问你今天的状态，从不同类别里给出 3 个候选，最后由你自己决定。",
+      "Gollajuke（韩语“帮你选”）是为了缩短“今天吃什么”所花的时间而做的。如果你也曾在外卖 App 里刷了半天，或者群聊里一直“随便”，午休就过去了一半，我们想帮你省下的正是这段时间。",
+      "选项越多，反而越难做决定。所以我们先从 250 道菜里去掉不能吃的和今天不想吃的，再从不同类别里只留下 3 道。每张卡片都写着为什么选它，不用再重新比较，挑一道就行。没有像轮盘那样随便抽，而是把最后的选择留给你，是因为自己做的决定，事后更不容易反悔。",
       "无需注册，也没有服务器。所有推荐都在你当前使用的设备上计算，口味和就餐记录也只保存在这个浏览器里。",
     ],
     sections: [
@@ -529,7 +532,7 @@ const zh: PageText = {
         heading: "3 道菜的区别",
         body: [
           "“稳妥之选”最符合你今天的状态和积累下来的口味。“正合心情”不看口味，只看你现在的状态（想吃多饱、想吃热的还是凉的）。“尝鲜挑战”从你较少看到的菜里挑选。",
-          "3 道菜总是来自不同类别（韩餐、中餐、日料等），免得你又在 3 道相似的菜里纠结。",
+          "3 道菜总是来自不同类别（韩餐、中餐、日料等），免得你又在 3 道相似的菜里纠结。卡片上还会写出推荐理由，只列出你输入的条件中真正符合的那些。",
         ],
       },
       {

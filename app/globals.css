@@ -1,18 +1,31 @@
 @import "tailwindcss";
 
-/* 색·간격 토큰. 화면 코드에서는 이 이름(bg-brand, p-gutter 등)만 쓴다. */
+/* 그리운 프롬솔(Dear Fromsol, 그리운 제작). 웹 사용은 허용, 파일 재배포는 금지라 눈누 CDN에서 그대로 불러온다. 굵기는 400 하나뿐이다. */
+@font-face {
+  font-family: "DearFromsol";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161334@griun-fromsol-rg/griun-fromsol-rg/Griun_Fromsol-Rg.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* 색·간격 토큰. 화면 코드에서는 이 이름(bg-brand, p-gutter 등)만 쓴다.
+   팔레트 #086288 · #4D8DBA · #97D7FF · #FFEFC4. 흰 글씨는 #086288 위에만 올린다(#4D8DBA는 대비 3.6:1이라 장식용). */
 @theme {
-  --color-paper: #fff8f1;
+  --color-paper: #ffefc4;
   --color-card: #ffffff;
-  --color-ink: #231f1c;
-  --color-muted: #625850;
-  --color-brand: #c2410c;
-  --color-brand-dark: #9a3412;
-  --color-soft: #ffeadb;
-  --color-line: #eadfd3;
+  --color-ink: #0b2b3c;
+  --color-muted: #46616f;
+  --color-brand: #086288;
+  --color-brand-dark: #054b69;
+  --color-accent: #4d8dba;
+  --color-sky: #97d7ff;
+  --color-soft: #e4f4ff;
+  --color-line: #c3e6fb;
   --spacing-gutter: 1rem;
   --font-sans:
-    "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    "DearFromsol", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic",
+    system-ui, sans-serif;
 }
 
 body {
