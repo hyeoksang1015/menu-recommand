@@ -53,7 +53,7 @@ export default function RootShell({
               <LanguageSwitcher lang={lang} label={t.nav.language} />
             </div>
             <nav
-              aria-label={t.nav.menus}
+              aria-label={t.nav.main}
               className="mt-3 -mx-gutter overflow-x-auto px-gutter"
             >
               <ul className="flex gap-1.5 whitespace-nowrap text-sm">
@@ -75,28 +75,30 @@ export default function RootShell({
           </main>
           <footer className="border-t border-line bg-card">
             <div className="mx-auto w-full max-w-xl space-y-3 px-gutter py-6 text-sm text-muted">
-              <ul className="flex flex-wrap gap-x-4 gap-y-1">
-                <li>
-                  <Link href={href(lang, "/about/")} className="underline">
-                    {t.nav.about}
-                  </Link>
-                </li>
-                <li>
-                  <Link href={href(lang, "/privacy/")} className="underline">
-                    {t.footer.privacy}
-                  </Link>
-                </li>
-                <li>
-                  <Link href={href(lang, "/contact/")} className="underline">
-                    {t.footer.contact}
-                  </Link>
-                </li>
-                <li>
-                  <Link href={href(lang, "/credits/")} className="underline">
-                    {t.footer.credits}
-                  </Link>
-                </li>
-              </ul>
+              <nav aria-label={t.nav.siteInfo}>
+                <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                  <li>
+                    <Link href={href(lang, "/about/")} className="underline">
+                      {t.nav.about}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(lang, "/privacy/")} className="underline">
+                      {t.footer.privacy}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(lang, "/contact/")} className="underline">
+                      {t.footer.contact}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(lang, "/credits/")} className="underline">
+                      {t.footer.credits}
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
               <p className="text-xs">{t.footer.photoNote}</p>
               <p className="text-xs">© 2026 {t.site.name}</p>
             </div>

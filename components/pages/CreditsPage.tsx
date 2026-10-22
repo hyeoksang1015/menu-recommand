@@ -21,7 +21,7 @@ export default function CreditsPage({ lang }: { lang: Locale }) {
       {CATEGORIES.map((c) => (
         <section key={c.key} className="mt-8">
           <h2 className="text-lg font-bold">
-            {c.emoji} {c.label[lang]}
+            <span aria-hidden>{c.emoji}</span> {c.label[lang]}
           </h2>
           <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-muted">
             {MENUS.filter((m) => m.category === c.key).map((m) => (

@@ -14,6 +14,8 @@ const ko = {
     about: "소개",
     language: "언어",
     skip: "본문으로 건너뛰기",
+    main: "주요 메뉴",
+    siteInfo: "사이트 정보",
   },
   footer: {
     privacy: "개인정보처리방침",

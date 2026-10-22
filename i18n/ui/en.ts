@@ -14,6 +14,8 @@ const en = {
     about: "About",
     language: "Language",
     skip: "Skip to content",
+    main: "Main menu",
+    siteInfo: "Site information",
   },
   footer: {
     privacy: "Privacy policy",

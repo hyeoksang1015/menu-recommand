@@ -2,10 +2,21 @@ import Link from "next/link";
 import { href, type Locale } from "@/i18n/config";
 
 // 글 페이지들이 함께 쓰는 제목·문단 블록.
-export function PageHeader({ title, lead }: { title: string; lead?: string }) {
+export function PageHeader({
+  title,
+  lead,
+  emoji,
+}: {
+  title: string;
+  lead?: string;
+  emoji?: string;
+}) {
   return (
     <header className="mt-2 mb-6">
-      <h1 className="text-2xl font-extrabold">{title}</h1>
+      <h1 className="text-2xl font-extrabold">
+        {emoji && <span aria-hidden>{emoji} </span>}
+        {title}
+      </h1>
       {lead && <p className="mt-2 leading-relaxed text-muted">{lead}</p>}
     </header>
   );

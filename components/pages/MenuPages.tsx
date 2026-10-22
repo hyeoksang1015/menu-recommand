@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MenuPhoto } from "@/components/PickCard";
 import { pageMeta } from "@/config/site";
 import { CATEGORY_TEXT } from "@/content/categories";
+import { GUIDE_BY_SLUG } from "@/content/guides";
 import { PAGE_TEXT } from "@/content/pages";
 import { fmt, href, type Locale } from "@/i18n/config";
 import { getDict } from "@/i18n/ui";
@@ -56,7 +57,7 @@ export function MenusIndexPage({ lang }: { lang: Locale }) {
               >
                 <MenuPhoto menu={sample} />
                 <h2 className="mt-3 text-lg font-extrabold">
-                  {c.emoji} {c.label[lang]}
+                  <span aria-hidden>{c.emoji}</span> {c.label[lang]}
                   <span className="ml-2 text-sm font-normal text-muted">
                     {fmt(p.count, { count: menusOf(c.key).length })}
                   </span>
@@ -93,7 +94,7 @@ export function MenuCategoryPage({
           ← {p.back}
         </Link>
       </p>
-      <PageHeader title={`${c.emoji} ${c.label[lang]}`} />
+      <PageHeader emoji={c.emoji} title={c.label[lang]} />
       {text.intro.map((para) => (
         <p key={para.slice(0, 32)} className="mt-3 leading-relaxed text-muted">
           {para}
@@ -147,7 +148,26 @@ export function MenuCategoryPage({
           );
         })}
       </ul>
-      <p className="mt-6 text-xs text-muted">{t.home.allergenNote}</p>
+      <p className="mt-6 text-xs text-muted">
+        {t.home.allergenNote}{" "}
+        <Link href={href(lang, "/guides/allergies/")} className="text-link">
+          {GUIDE_BY_SLUG.get("allergies")!.text[lang].title}
+        </Link>
+      </p>
+      <nav aria-labelledby="other-categories" className="mt-10">
+        <h2 id="other-categories" className="text-lg font-bold">
+          {p.others}
+        </h2>
+        <ul className="mt-3 flex flex-wrap gap-1.5">
+          {CATEGORIES.filter((o) => o.key !== categoryKey).map((o) => (
+            <li key={o.key}>
+              <Link href={href(lang, `/menus/${o.key}/`)} className="chip">
+                <span aria-hidden>{o.emoji}</span>&nbsp;{o.label[lang]}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <StartButton lang={lang} label={t.common.start} />
     </article>
   );

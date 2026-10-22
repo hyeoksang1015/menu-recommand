@@ -2,9 +2,11 @@ import Link from "next/link";
 import CoachMarks from "@/components/CoachMarks";
 import InputPanel from "@/components/InputPanel";
 import { pageMeta } from "@/config/site";
+import { GUIDES } from "@/content/guides";
 import { PAGE_TEXT } from "@/content/pages";
 import { href, type Locale } from "@/i18n/config";
 import { getDict } from "@/i18n/ui";
+import { CATEGORIES } from "@/lib/menus";
 
 export const homeMeta = (lang: Locale) => {
   const t = getDict(lang);
@@ -35,17 +37,38 @@ export default function HomePage({ lang }: { lang: Locale }) {
         </h2>
         <p>{about.sections[1].body[0]}</p>
         <p>{about.sections[2].body[0]}</p>
-        <p className="flex flex-wrap gap-x-4">
+        <p>
           <Link href={href(lang, "/about/")} className="text-link">
             {t.nav.about}
           </Link>
-          <Link href={href(lang, "/menus/")} className="text-link">
-            {t.nav.menus}
-          </Link>
-          <Link href={href(lang, "/guides/")} className="text-link">
-            {t.nav.guides}
-          </Link>
         </p>
+        <h3 className="pt-3 text-base font-bold text-ink">
+          <Link href={href(lang, "/guides/")}>{t.nav.guides}</Link>
+        </h3>
+        <ul className="space-y-1">
+          {GUIDES.map((g) => (
+            <li key={g.slug}>
+              <Link
+                href={href(lang, `/guides/${g.slug}/`)}
+                className="text-link"
+              >
+                {g.text[lang].title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <h3 className="pt-3 text-base font-bold text-ink">
+          <Link href={href(lang, "/menus/")}>{t.nav.menus}</Link>
+        </h3>
+        <ul className="flex flex-wrap gap-1.5">
+          {CATEGORIES.map((c) => (
+            <li key={c.key}>
+              <Link href={href(lang, `/menus/${c.key}/`)} className="chip">
+                {c.label[lang]}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );

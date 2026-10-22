@@ -44,6 +44,7 @@ export interface PageText {
     noAllergens: string;
     photoBy: string;
     back: string;
+    others: string;
   };
   guides: {
     title: string;
@@ -184,6 +185,7 @@ const ko: PageText = {
     noAllergens: "표시할 주요 알레르기 재료 없음",
     photoBy: "사진",
     back: "메뉴 백과로",
+    others: "다른 종류 메뉴 백과",
   },
   guides: {
     title: "메뉴 고르기 가이드",
@@ -333,6 +335,7 @@ const en: PageText = {
     noAllergens: "No major allergens listed",
     photoBy: "Photo",
     back: "Back to the dish guide",
+    others: "Other cuisines",
   },
   guides: {
     title: "Guides to choosing a meal",
@@ -484,6 +487,7 @@ const ja: PageText = {
     noAllergens: "表示する主なアレルギー食材なし",
     photoBy: "写真",
     back: "料理図鑑へ",
+    others: "ほかのジャンル",
   },
   guides: {
     title: "メニュー選びガイド",
@@ -632,6 +636,7 @@ const zh: PageText = {
     noAllergens: "无需标注的主要过敏食材",
     photoBy: "照片",
     back: "返回菜品百科",
+    others: "其他类别",
   },
   guides: {
     title: "选菜指南",

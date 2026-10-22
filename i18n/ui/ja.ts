@@ -14,6 +14,8 @@ const ja = {
     about: "このサイトについて",
     language: "言語",
     skip: "本文へスキップ",
+    main: "メインメニュー",
+    siteInfo: "サイト情報",
   },
   footer: {
     privacy: "プライバシーポリシー",

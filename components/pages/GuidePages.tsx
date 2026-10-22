@@ -20,6 +20,8 @@ export function guideMeta(lang: Locale, slug: string) {
 }
 
 function GuideList({ lang, except }: { lang: Locale; except?: string }) {
+  // 가이드 글 아래 "다른 가이드" 목록은 그 소제목(h2) 아래에 오므로 한 단계 내린다.
+  const Title = except ? "h3" : "h2";
   return (
     <ul className="grid gap-3">
       {GUIDES.filter((g) => g.slug !== except).map((g) => (
@@ -28,9 +30,9 @@ function GuideList({ lang, except }: { lang: Locale; except?: string }) {
             href={href(lang, `/guides/${g.slug}/`)}
             className="card block hover:bg-soft"
           >
-            <h2 className="text-lg font-extrabold">
-              {g.emoji} {g.text[lang].title}
-            </h2>
+            <Title className="text-lg font-extrabold">
+              <span aria-hidden>{g.emoji}</span> {g.text[lang].title}
+            </Title>
             <p className="mt-1 text-sm leading-relaxed text-muted">
               {g.text[lang].description}
             </p>
@@ -67,6 +69,11 @@ export function GuidePage({ lang, slug }: { lang: Locale; slug: string }) {
       <StartButton lang={lang} label={getDict(lang).common.start} />
       <h2 className="mt-12 mb-3 text-lg font-bold">{p.related}</h2>
       <GuideList lang={lang} except={slug} />
+      <p className="mt-6">
+        <Link href={href(lang, "/menus/")} className="text-link">
+          {PAGE_TEXT[lang].menus.title}
+        </Link>
+      </p>
     </article>
   );
 }

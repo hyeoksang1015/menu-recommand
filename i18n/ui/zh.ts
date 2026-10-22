@@ -14,6 +14,8 @@ const zh = {
     about: "关于",
     language: "语言",
     skip: "跳到正文",
+    main: "主导航",
+    siteInfo: "网站信息",
   },
   footer: {
     privacy: "隐私政策",
