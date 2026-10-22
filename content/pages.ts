@@ -36,7 +36,11 @@ export interface PageText {
     title: string;
     description: string;
     intro: string;
+    metaTitle: string;
     count: string;
+    categoryTitle: string;
+    categoryHeading: string;
+    categoryFacts: string;
     categoryDescription: string;
     tipsTitle: string;
     listTitle: string;
@@ -176,9 +180,14 @@ const ko: PageText = {
       "한식, 중식, 일식, 양식, 분식, 아시안, 패스트푸드, 고기·구이 8가지 종류의 메뉴 250개를 사진과 함께 정리했습니다.",
     intro:
       "골라주께가 추천하는 메뉴 250개를 8가지 종류로 나눠 정리했어요. 종류마다 특징과 고를 때 도움이 되는 팁, 메뉴별 대략적인 가격과 맵기, 들어가는 주요 재료를 볼 수 있어요.",
+    metaTitle: "메뉴 백과: 8가지 종류 메뉴 250개 가격·맵기·재료",
     count: "메뉴 {count}개",
+    categoryTitle: "{name} 메뉴 {count}가지: 가격·맵기·재료 한눈에",
+    categoryHeading: "{name} 메뉴 {count}가지",
+    categoryFacts:
+      "1인 약 {min}~{max} · 안 매운 메뉴 {mild}개 · 따뜻하게 먹는 메뉴 {hot}개",
     categoryDescription:
-      "{name} 메뉴 {count}개의 특징, 고르는 팁, 가격과 맵기, 주요 재료를 정리했습니다.",
+      "{name} 메뉴 {count}개를 사진과 함께 정리했어요. 1인 약 {min}~{max}, 안 매운 메뉴는 {mild}개예요. 종류별 특징과 고르는 팁, 메뉴마다 맵기와 주요 재료도 볼 수 있어요.",
     tipsTitle: "고를 때 팁",
     listTitle: "메뉴 목록",
     allergens: "주요 재료",
@@ -326,9 +335,15 @@ const en: PageText = {
       "250 dishes in 8 cuisines — Korean, Chinese, Japanese, Western, Korean snacks, Asian, fast food and BBQ — with photos.",
     intro:
       "Here are all 250 dishes Gollajuke recommends, grouped into 8 cuisines. For each cuisine you'll find what makes it distinctive, tips for choosing, and each dish's rough price, spiciness and main ingredients.",
+    metaTitle:
+      "Dish guide: 250 dishes in 8 cuisines with prices and spice levels",
     count: "{count} dishes",
+    categoryTitle: "{name}: {count} dishes, prices and spice levels",
+    categoryHeading: "{name}: {count} dishes",
+    categoryFacts:
+      "About {min}–{max} per person · {mild} not spicy · {hot} served warm",
     categoryDescription:
-      "{count} {name} dishes: what they're like, tips for choosing, prices, spiciness and main ingredients.",
+      "{count} {name} dishes with photos, about {min}–{max} per person, {mild} of them not spicy. Also what the cuisine is like, tips for choosing, and each dish's spice level and main ingredients.",
     tipsTitle: "Tips for choosing",
     listTitle: "Dishes",
     allergens: "Main ingredients",
@@ -478,9 +493,14 @@ const ja: PageText = {
       "韓国料理・中華・和食・洋食・粉食・アジア料理・ファストフード・焼肉の8ジャンル250品を写真付きでまとめました。",
     intro:
       "ゴラジュケがおすすめする250品を8つのジャンルに分けてまとめました。ジャンルごとの特徴と選ぶときのコツ、メニューごとのおおよその価格と辛さ、主な食材を確認できます。",
+    metaTitle: "料理図鑑：8ジャンル250品の価格・辛さ・食材",
     count: "{count}品",
+    categoryTitle: "{name}メニュー{count}品：価格・辛さ・食材まとめ",
+    categoryHeading: "{name}メニュー{count}品",
+    categoryFacts:
+      "1人あたり約{min}〜{max} · 辛くない{mild}品 · 温かい料理{hot}品",
     categoryDescription:
-      "{name}{count}品の特徴、選ぶコツ、価格と辛さ、主な食材をまとめました。",
+      "{name}メニュー{count}品を写真付きでまとめました。1人あたり約{min}〜{max}、辛くないメニューは{mild}品。ジャンルの特徴や選ぶコツ、メニューごとの辛さと主な食材もわかります。",
     tipsTitle: "選ぶときのコツ",
     listTitle: "メニュー一覧",
     allergens: "主な食材",
@@ -627,9 +647,13 @@ const zh: PageText = {
       "按韩餐、中餐、日料、西餐、韩式小吃、亚洲菜、快餐、烤肉 8 个类别整理了 250 道菜，并附照片。",
     intro:
       "这里按 8 个类别整理了 Gollajuke 推荐的全部 250 道菜。每个类别都有特点介绍和挑选技巧，还能看到每道菜的大致价格、辣度和主要食材。",
+    metaTitle: "菜品百科：8 类 250 道菜的价格、辣度和食材",
     count: "{count} 道菜",
+    categoryTitle: "{count} 道{name}：价格、辣度和食材一览",
+    categoryHeading: "{count} 道{name}",
+    categoryFacts: "人均约 {min}~{max} · 不辣 {mild} 道 · 热菜 {hot} 道",
     categoryDescription:
-      "{name} {count} 道菜的特点、挑选技巧、价格、辣度和主要食材。",
+      "收录 {count} 道{name}，附照片，人均约 {min}~{max}，其中 {mild} 道不辣。还能看到这类菜的特点、挑选技巧，以及每道菜的辣度和主要食材。",
     tipsTitle: "挑选技巧",
     listTitle: "菜品列表",
     allergens: "主要食材",

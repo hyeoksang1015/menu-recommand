@@ -6,7 +6,7 @@ import { GUIDE_BY_SLUG } from "@/content/guides";
 import { PAGE_TEXT } from "@/content/pages";
 import { fmt, href, type Locale } from "@/i18n/config";
 import { getDict } from "@/i18n/ui";
-import { priceLabel } from "@/lib/labels";
+import { priceLabel, won } from "@/lib/labels";
 import {
   ALLERGENS,
   CATEGORIES,
@@ -19,24 +19,35 @@ import { PageHeader, StartButton } from "./shared";
 
 const menusOf = (key: string) => MENUS.filter((m) => m.category === key);
 
+// 종류 페이지의 제목·설명·요약 줄에 넣는 값. 문장에 숫자를 직접 쓰지 않고 menus.json에서 계산한다.
+function statsOf(key: string, lang: Locale) {
+  const list = menusOf(key);
+  const prices = list.map((m) => m.price);
+  return {
+    name: CATEGORY_BY_KEY.get(key)!.label[lang],
+    count: list.length,
+    min: won(Math.min(...prices), lang),
+    max: won(Math.max(...prices), lang),
+    mild: list.filter((m) => m.spice === 0).length,
+    hot: list.filter((m) => m.hot).length,
+  };
+}
+
 export const menusMeta = (lang: Locale) =>
   pageMeta(
     lang,
-    PAGE_TEXT[lang].menus.title,
+    PAGE_TEXT[lang].menus.metaTitle,
     PAGE_TEXT[lang].menus.description,
     "/menus/",
   );
 
 export function categoryMeta(lang: Locale, key: string) {
-  const c = CATEGORY_BY_KEY.get(key)!;
-  const name = c.label[lang];
+  const p = PAGE_TEXT[lang].menus;
+  const stats = statsOf(key, lang);
   return pageMeta(
     lang,
-    `${name} | ${PAGE_TEXT[lang].menus.title}`,
-    fmt(PAGE_TEXT[lang].menus.categoryDescription, {
-      name,
-      count: menusOf(key).length,
-    }),
+    fmt(p.categoryTitle, stats),
+    fmt(p.categoryDescription, stats),
     `/menus/${key}/`,
   );
 }
@@ -94,7 +105,11 @@ export function MenuCategoryPage({
           ← {p.back}
         </Link>
       </p>
-      <PageHeader emoji={c.emoji} title={c.label[lang]} />
+      <PageHeader
+        emoji={c.emoji}
+        title={fmt(p.categoryHeading, statsOf(categoryKey, lang))}
+        lead={fmt(p.categoryFacts, statsOf(categoryKey, lang))}
+      />
       {text.intro.map((para) => (
         <p key={para.slice(0, 32)} className="mt-3 leading-relaxed text-muted">
           {para}

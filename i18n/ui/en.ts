@@ -4,8 +4,9 @@ const en = {
   site: {
     name: "Gollajuke",
     tagline: "Less time deciding, more time eating",
+    homeTitle: "Gollajuke - What should I eat today? Lunch and dinner picks",
     description:
-      "Stop losing your lunch break to \"what should we eat?\". Leave out what you can't eat, tell us how you feel, and we'll narrow 250 dishes down to three, with a reason for each. Not feeling one? Tap why and get a new pick. Free, no sign-up.",
+      "Can't decide what to eat? Pick what you can't eat, how hungry you are, your mood and budget, and get three dishes from different cuisines, each with the reason it was chosen. Free, no sign-up.",
   },
   nav: {
     pick: "Pick a meal",

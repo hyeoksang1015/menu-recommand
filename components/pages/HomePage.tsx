@@ -10,15 +10,9 @@ import { CATEGORIES } from "@/lib/menus";
 
 export const homeMeta = (lang: Locale) => {
   const t = getDict(lang);
-  return pageMeta(
-    lang,
-    `${t.site.name} - ${t.site.tagline}`,
-    t.site.description,
-    "/",
-    {
-      absoluteTitle: true,
-    },
-  );
+  return pageMeta(lang, t.site.homeTitle, t.site.description, "/", {
+    absoluteTitle: true,
+  });
 };
 
 export default function HomePage({ lang }: { lang: Locale }) {

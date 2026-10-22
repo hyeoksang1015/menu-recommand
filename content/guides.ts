@@ -20,7 +20,7 @@ export const GUIDES: Guide[] = [
       ko: {
         title: "점심 메뉴, 3분 안에 정하는 법",
         description:
-          "매일 반복되는 점심 메뉴 고민을 줄이는 세 가지 기준과 골라주께로 빠르게 정하는 순서를 소개합니다.",
+          "점심 메뉴 고민을 줄이는 세 가지 기준, 룰렛처럼 하나를 뽑는 대신 후보를 3개로 줄여 고르는 순서를 소개합니다.",
         sections: [
           {
             heading: "고민이 길어지는 이유",
@@ -45,6 +45,14 @@ export const GUIDES: Guide[] = [
             ],
           },
           {
+            heading: "룰렛으로 뽑는 것과 뭐가 다를까",
+            body: [
+              "룰렛은 정해진 목록에서 하나를 무작위로 뽑아요. 빠르지만 못 먹는 재료나 어제 먹은 메뉴가 걸리면 다시 돌려야 하고, 왜 그 메뉴인지는 알 수 없어요.",
+              "골라주께는 순서가 반대예요. 못 먹는 재료와 싫은 종류를 먼저 빼서, 뺀 메뉴는 아예 후보에 오르지 않아요. 남은 메뉴 중 서로 다른 종류에서 3개를 고르고, 카드마다 입력한 조건 중 실제로 맞은 것(예: 예산 안에서 얼마가 남는지)을 적어 둬요. 마지막 선택은 직접 하니까 운에 맡겼다가 마음에 안 들어 다시 돌리는 일이 줄어요.",
+              '정말 아무거나 괜찮은 날이라면 조건을 비워 둔 채 바로 "3개 골라줘"를 눌러도 돼요.',
+            ],
+          },
+          {
             heading: "그래도 못 정하겠다면",
             body: [
               "세 개 중 가장 덜 싫은 걸 고르세요. 완벽한 메뉴보다 지금 정하는 게 중요해요. 먹은 걸로 기록해 두면 이틀 동안은 같은 메뉴가 다시 추천되지 않아서, 내일은 자연스럽게 다른 메뉴가 나와요.",
@@ -55,7 +63,7 @@ export const GUIDES: Guide[] = [
       en: {
         title: "How to decide on lunch in three minutes",
         description:
-          "Three simple rules to cut down the daily lunch debate, and the fastest way to decide with Gollajuke.",
+          "Three simple rules to cut down the daily lunch debate, and how narrowing it to three picks differs from spinning a roulette.",
         sections: [
           {
             heading: "Why deciding takes so long",
@@ -80,6 +88,14 @@ export const GUIDES: Guide[] = [
             ],
           },
           {
+            heading: "How is this different from a roulette?",
+            body: [
+              "A roulette picks one dish at random from a fixed list. It's fast, but if it lands on something you can't eat or had yesterday you spin again, and it never tells you why that dish.",
+              "Gollajuke works the other way round. What you can't eat and the cuisines you want to skip come out first, so those dishes never appear. From what's left it picks three from different cuisines, and each card says which of your choices actually matched (for example, how much of your budget is left). You make the final call, so there's less spinning again because the luck didn't go your way.",
+              'If anything really is fine today, leave everything blank and tap "Pick 3 for me".',
+            ],
+          },
+          {
             heading: "Still can't decide?",
             body: [
               "Pick the one you mind least. Deciding now matters more than finding the perfect meal. Mark it as eaten and the same dish won't be suggested for two days, so tomorrow naturally brings something different.",
@@ -90,7 +106,7 @@ export const GUIDES: Guide[] = [
       ja: {
         title: "ランチのメニューを3分で決めるコツ",
         description:
-          "毎日のランチの悩みを減らす3つの基準と、ゴラジュケで素早く決める手順を紹介します。",
+          "ランチの悩みを減らす3つの基準と、ルーレットで1品を引く代わりに候補を3品に絞って選ぶ手順を紹介します。",
         sections: [
           {
             heading: "迷いが長引く理由",
@@ -115,6 +131,14 @@ export const GUIDES: Guide[] = [
             ],
           },
           {
+            heading: "ルーレットで決めるのと何が違う？",
+            body: [
+              "ルーレットは決まったリストから1品をランダムに選びます。速いけれど、食べられない食材や昨日食べたメニューに当たれば回し直しで、なぜそのメニューなのかはわかりません。",
+              "ゴラジュケは順番が逆です。食べられない食材と避けたいジャンルを先に外すので、外したメニューは候補に出てきません。残りの中から異なるジャンルで3品を選び、カードごとに入力した条件のうち実際に合ったもの（例：予算からいくら余るか）を書いています。最後は自分で選ぶので、運任せにして気に入らず回し直すことが減ります。",
+              "本当になんでもいい日は、条件を空けたまま「3つ選んで」を押してもかまいません。",
+            ],
+          },
+          {
             heading: "それでも決められないなら",
             body: [
               "3つの中で一番イヤじゃないものを選びましょう。完璧なメニューより、今決めることが大切です。「食べたことにする」で記録しておけば2日間は同じメニューが出ないので、明日は自然と別のメニューになります。",
@@ -125,7 +149,7 @@ export const GUIDES: Guide[] = [
       zh: {
         title: "3 分钟内决定午饭吃什么",
         description:
-          "介绍减少每天午饭纠结的三个标准，以及用 Gollajuke 快速决定的步骤。",
+          "介绍减少午饭纠结的三个标准，以及不用转盘抽一道、而是把候选缩到 3 道再选的步骤。",
         sections: [
           {
             heading: "为什么总是纠结",
@@ -147,6 +171,14 @@ export const GUIDES: Guide[] = [
             body: [
               "在“帮我去掉”里去掉昨天吃过的和不想吃的类别，在“帮我匹配”里只选饥饿程度和预算，然后点“帮我选 3 道”。心情和同伴拿不准就保持“都可以”。",
               "3 道菜来自不同类别，很容易比较。不喜欢的菜点“换一个”，选一个原因就能马上换掉。",
+            ],
+          },
+          {
+            heading: "和用转盘抽有什么不同？",
+            body: [
+              "转盘从固定的列表里随机抽一道菜。很快，但抽到不能吃的或昨天刚吃过的就得重转，也不知道为什么是这道。",
+              "Gollajuke 的顺序正好相反。先去掉不能吃的食材和不想吃的类别，被去掉的菜根本不会出现在候选里。再从剩下的菜里挑出 3 道不同类别的，每张卡片都写着你输入的条件里实际符合的部分（比如预算还剩多少）。最后由你自己选，所以不会因为运气不好、不喜欢而一次次重转。",
+              "如果今天真的吃什么都行，什么都不选，直接点“帮我选 3 道”也可以。",
             ],
           },
           {
@@ -505,6 +537,7 @@ export const GUIDES: Guide[] = [
             heading: "표시는 참고용이에요",
             body: [
               "골라주께의 재료 정보는 일반적인 조리법을 기준으로 정리한 참고 정보예요. 같은 이름의 메뉴라도 가게마다 쓰는 재료와 양념이 다르고, 같은 주방에서 조리하면서 섞일 수도 있어요.",
+              "빼주께에서 고를 수 있는 재료는 위의 11가지뿐이에요. 메밀, 복숭아, 토마토, 참깨처럼 목록에 없는 재료는 골라주께가 빼 줄 수 없고 메뉴 백과의 주요 재료에도 나오지 않으니, 해당된다면 꼭 식당에 직접 확인해 주세요.",
             ],
           },
           {
@@ -538,6 +571,7 @@ export const GUIDES: Guide[] = [
             heading: "Our labels are for reference",
             body: [
               "Gollajuke's ingredient information is based on typical recipes and is for reference only. The same dish can use different ingredients and seasonings at each restaurant, and cross-contact can happen in a shared kitchen.",
+              "You can only leave out the 11 ingredient groups listed above. Ingredients that aren't on the list, such as buckwheat, peach, tomato or sesame, can't be filtered out and don't appear in the dish guide's main ingredients either, so if they matter to you, always check with the restaurant.",
             ],
           },
           {
@@ -571,6 +605,7 @@ export const GUIDES: Guide[] = [
             heading: "表示は参考情報です",
             body: [
               "ゴラジュケの食材情報は一般的なレシピをもとにした参考情報です。同じ名前のメニューでも店によって使う食材や調味料が異なり、同じ厨房で調理する際に混ざることもあります。",
+              "抜いてねで選べる食材は上の11種類だけです。そば、もも、トマト、ごまのようにリストにない食材はゴラジュケでは外せず、料理図鑑の主な食材にも表示されません。該当する場合は必ずお店に直接確認してください。",
             ],
           },
           {
@@ -604,6 +639,7 @@ export const GUIDES: Guide[] = [
             heading: "标注仅供参考",
             body: [
               "Gollajuke 的食材信息基于常见做法整理，仅供参考。同名的菜在不同店铺所用食材和调料可能不同，在同一厨房烹饪时也可能交叉接触。",
+              "“帮我去掉”里能选的只有上面这 11 类。荞麦、桃子、番茄、芝麻等不在列表里的食材，Gollajuke 无法帮你去掉，菜品百科的主要食材里也不会显示。如果你需要避开它们，请务必直接向餐厅确认。",
             ],
           },
           {
