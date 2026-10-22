@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CoachMarks from "@/components/CoachMarks";
 import InputPanel from "@/components/InputPanel";
-import { pageMeta } from "@/config/site";
+import { pageMeta, site } from "@/config/site";
 import { GUIDES } from "@/content/guides";
 import { PAGE_TEXT } from "@/content/pages";
 import { href, type Locale } from "@/i18n/config";
@@ -18,8 +18,22 @@ export const homeMeta = (lang: Locale) => {
 export default function HomePage({ lang }: { lang: Locale }) {
   const t = getDict(lang);
   const about = PAGE_TEXT[lang].about;
+  // Google 사이트 이름용 WebSite 데이터. 사이트 이름은 호스트마다 하나라 한국어 홈(/)에만 넣고, 다른 언어 이름은 alternateName으로 둔다.
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: t.site.name,
+    alternateName: [getDict("en").site.name, getDict("ja").site.name],
+    url: `${site.url}/`,
+  };
   return (
     <>
+      {lang === "ko" && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      )}
       <h1 className="mt-2 text-2xl font-extrabold">{t.home.title}</h1>
       <p className="mt-1 mb-5 text-muted">{t.home.lead}</p>
       <InputPanel />

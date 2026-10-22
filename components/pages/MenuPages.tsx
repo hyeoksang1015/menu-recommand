@@ -58,7 +58,7 @@ export function MenusIndexPage({ lang }: { lang: Locale }) {
     <>
       <PageHeader title={p.title} lead={p.intro} />
       <ul className="grid gap-3 sm:grid-cols-2">
-        {CATEGORIES.map((c) => {
+        {CATEGORIES.map((c, i) => {
           const sample = menusOf(c.key).find((m) => m.photo)!;
           return (
             <li key={c.key}>
@@ -66,7 +66,8 @@ export function MenusIndexPage({ lang }: { lang: Locale }) {
                 href={href(lang, `/menus/${c.key}/`)}
                 className="card block h-full hover:bg-soft"
               >
-                <MenuPhoto menu={sample} />
+                {/* 첫 카드 사진이 첫 화면의 가장 큰 요소라 지연 로딩하지 않는다. */}
+                <MenuPhoto menu={sample} priority={i === 0} />
                 <h2 className="mt-3 text-lg font-extrabold">
                   <span aria-hidden>{c.emoji}</span> {c.label[lang]}
                   <span className="ml-2 text-sm font-normal text-muted">

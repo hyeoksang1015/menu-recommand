@@ -1,4 +1,5 @@
 // 링크 공유 썸네일(Open Graph 1200×630)을 언어별로 만든다: public/og/{ko,en,ja,zh}.png
+// 같은 캐릭터로 사이트 아이콘(app/icon.png, 192×192)도 만든다. Google 검색은 SVG 아이콘을 쓰지 않아 PNG로 둔다.
 // 사용: node scripts/make_og.mjs  (폰트를 눈누 CDN에서 받으므로 인터넷 연결이 필요하다)
 // 글자를 바꾸려면 아래 TEXT를 고치고 다시 실행한 뒤 PNG를 커밋한다.
 import { mkdirSync } from "node:fs";
@@ -131,4 +132,11 @@ for (const [lang, t] of Object.entries(TEXT)) {
   await tab.screenshot({ path: `public/og/${lang}.png` });
   console.log(`public/og/${lang}.png`);
 }
+// 사이트 아이콘: 크림색 정사각형 위에 밥그릇 캐릭터. 검색 결과에서 원 안에 잘려 보여도 얼굴이 남도록 가운데에 둔다.
+await tab.setViewportSize({ width: 192, height: 192 });
+await tab.setContent(
+  `<body style="margin:0;width:192px;height:192px;display:grid;place-items:center;background:#ffefc4">${MASCOT.replace('width="380" height="356"', 'width="164" height="154"')}</body>`,
+);
+await tab.screenshot({ path: "app/icon.png" });
+console.log("app/icon.png");
 await browser.close();

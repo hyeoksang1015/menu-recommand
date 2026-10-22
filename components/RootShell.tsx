@@ -29,6 +29,12 @@ export default function RootShell({
       {/* eslint-disable-next-line @next/next/no-head-element -- 앱 라우터 루트 레이아웃 껍데기라 <head>가 맞다 */}
       <head>
         <GoogleTag />
+        {/* 손글씨 폰트(globals.css @font-face)를 받는 CDN에 미리 연결해 글꼴이 늦게 바뀌는 시간을 줄인다. */}
+        <link
+          rel="preconnect"
+          href="https://cdn.jsdelivr.net"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="flex min-h-full flex-col">
         {/* Google AdSense: 모든 콘텐츠 페이지. async 스크립트라 React가 <head>로 올려 준다. 404 화면(app/global-not-found.tsx)에는 넣지 않는다. */}

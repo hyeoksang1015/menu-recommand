@@ -217,6 +217,12 @@ test("Google tag on every page; AdSense tag in content pages but not on the 404 
       'src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4035979084834637" crossorigin="anonymous"',
     );
   }
+  // 검색 결과 아이콘(PNG)과 사이트 이름(WebSite)은 한국어 홈에 있다.
+  const home = await (await request.get("/")).text();
+  expect(home).toMatch(
+    /<link rel="icon" href="\/icon\.png[^"]*" sizes="192x192" type="image\/png"\/>/,
+  );
+  expect(home).toContain('"@type":"WebSite","name":"골라주께"');
   // 404에는 광고 스크립트를 넣지 않지만 사이트 확인 메타 태그는 둔다.
   const notFound = await (await request.get("/404.html")).text();
   expect(notFound).not.toContain("adsbygoogle");
