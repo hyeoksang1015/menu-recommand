@@ -32,6 +32,7 @@ export const DEFAULT_QUERY: Query = {
   want_hot: null,
   recent: new Set(),
   novel_weight: 1,
+  want_cook: 0,
 };
 
 // 하드 필터. O(1): 비트 AND와 비교뿐.
@@ -42,7 +43,8 @@ export function passes(m: Menu, q: Query): boolean {
     (q.max_price === null || m.price <= q.max_price) &&
     m.spice <= q.max_spice &&
     m.oily <= q.max_oily &&
-    !q.recent.has(m.id)
+    !q.recent.has(m.id) &&
+    (q.want_cook === 0 || (m.cook_mask & q.want_cook) !== 0)
   );
 }
 

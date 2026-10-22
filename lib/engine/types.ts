@@ -21,6 +21,7 @@ export interface Menu {
   heavy: number;
   oily: number;
   hot: boolean;
+  cook_mask: number; // 조리방식 비트(여러 개)
 }
 
 export interface Query {
@@ -34,6 +35,8 @@ export interface Query {
   recent: ReadonlySet<string>;
   // 기념 기분에서 novel 슬롯을 올리는 가중치(spec 7절). 기본 1.
   novel_weight: number;
+  // 원하는 조리방식 비트. 하나라도 겹치는 메뉴만 통과, 0이면 상관없음.
+  want_cook: number;
 }
 
 export type Pref = Readonly<Record<string, number>>;

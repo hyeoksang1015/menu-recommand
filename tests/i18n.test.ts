@@ -79,6 +79,27 @@ describe("helpers", () => {
       t.reasons.medium,
       "1인 예산 1만 5천 원 안이에요. 약 6,000원 남아요.",
     ]);
+    // 겨울·조리방식을 고르면 그 선택을 먼저 되짚는다.
+    const winter = {
+      ...DEFAULT_INPUTS,
+      season: "winter" as const,
+      cookings: ["stew"],
+    };
+    expect(
+      whyLines(
+        ["hot_match"],
+        m,
+        "safe",
+        winter,
+        toQuery(winter, [], 0),
+        "ko",
+        t,
+        new Set(),
+      ),
+    ).toEqual([
+      "고르신 찌개·전골 요리 중에서 골랐어요.",
+      "겨울이라 따뜻한 걸로 골랐어요.",
+    ]);
     // 거절("비쌈")로 예산이 내려갔으면 그 이유를 말한다.
     const cheaper = { ...q, max_price: 8999 };
     expect(

@@ -1,11 +1,12 @@
 import { DEFAULT_QUERY } from "@/lib/engine/engine";
 import type { Query } from "@/lib/engine/types";
-import { ALLERGENS, CATEGORIES } from "@/lib/menus";
+import { ALLERGENS, CATEGORIES, COOKINGS } from "@/lib/menus";
 
 // 홈 입력 → 엔진 Query 변환. 기분 매핑은 가설(spec 7절)이라 사용자 테스트 뒤 이 파일에서만 고친다.
 
 export type Mood = "any" | "stress" | "tired" | "normal" | "celebrate";
 export type Company = "any" | "solo" | "two" | "group";
+export type Season = "any" | "spring" | "summer" | "autumn" | "winter";
 
 // 칩 순서. 화면 문구는 i18n/ui 사전의 home.moods / home.companies 에 있다.
 export const MOOD_KEYS: Mood[] = [
@@ -16,6 +17,13 @@ export const MOOD_KEYS: Mood[] = [
   "celebrate",
 ];
 export const COMPANY_KEYS: Company[] = ["any", "solo", "two", "group"];
+export const SEASON_KEYS: Season[] = [
+  "any",
+  "spring",
+  "summer",
+  "autumn",
+  "winter",
+];
 
 // 기분이 정하는 기본값. 허기 슬라이더를 직접 움직였으면 want_heavy는 슬라이더 값을 쓴다.
 const MOOD_QUERY: Record<Mood, Partial<Query>> = {
@@ -27,9 +35,21 @@ const MOOD_QUERY: Record<Mood, Partial<Query>> = {
   celebrate: { novel_weight: 1.5 },
 };
 
+// 계절이 정하는 온도 선호. 겨울은 따뜻하게, 여름은 시원하게. 봄·가을은 둘 다 무난해서 정하지 않는다.
+// 기분(피곤 → 따뜻하게)보다 계절을 우선한다.
+const SEASON_QUERY: Record<Season, Partial<Query>> = {
+  any: {},
+  spring: {},
+  summer: { want_hot: false },
+  autumn: {},
+  winter: { want_hot: true },
+};
+
 export interface Inputs {
   hunger: number | null; // 0(가볍게)~1(든든하게), null이면 상관없어
   mood: Mood;
+  season: Season;
+  cookings: string[]; // 끌리는 조리방식. 비어 있으면 상관없어
   company: Company; // 1단계에서는 저장만 하고 필터에 쓰지 않는다(메뉴에 동행 필드가 없음).
   budget: number | null; // 원, null이면 상관없어
   banAllergens: string[];
@@ -44,6 +64,8 @@ export interface Eaten {
 export const DEFAULT_INPUTS: Inputs = {
   hunger: null,
   mood: "any",
+  season: "any",
+  cookings: [],
   company: "any",
   budget: null,
   banAllergens: [],
@@ -75,10 +97,12 @@ export function toQuery(
   return {
     ...DEFAULT_QUERY,
     ...mood,
+    ...SEASON_QUERY[inputs.season],
     ...(inputs.hunger !== null && { want_heavy: inputs.hunger }),
     max_price: inputs.budget,
     ban_allergen: maskOf(inputs.banAllergens, ALLERGENS),
     ban_category: maskOf(inputs.banCategories, CATEGORIES),
+    want_cook: maskOf(inputs.cookings, COOKINGS),
     recent: recentIds(eaten, now),
   };
 }

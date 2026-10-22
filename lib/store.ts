@@ -142,6 +142,11 @@ export const useMenuStore = create<State>()(
       version: 1,
       // 정적 HTML과 첫 렌더가 같도록 저장값은 마운트 후 StoreHydrator에서 불러온다.
       skipHydration: true,
+      // 예전에 저장한 입력에는 나중에 생긴 항목(계절·조리방식)이 없으므로 기본값 위에 덮어쓴다.
+      merge: (persisted, current) => {
+        const p = (persisted ?? {}) as Partial<State>;
+        return { ...current, ...p, inputs: { ...current.inputs, ...p.inputs } };
+      },
       partialize: (s) => ({
         inputs: s.inputs,
         pref: s.pref,

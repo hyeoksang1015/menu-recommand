@@ -62,6 +62,63 @@ test("home inputs narrow candidates and give three picks from different categori
   ).toBeVisible();
 });
 
+test("season and cooking style narrow the picks", async ({ page }) => {
+  await openHome(page);
+  const all = await count(page);
+  await page
+    .getByRole("group", { name: "계절" })
+    .getByRole("button", { name: "겨울" })
+    .click();
+  await page
+    .getByRole("group", { name: "조리방식" })
+    .getByRole("button", { name: "찌개·전골" })
+    .click();
+  const stews = await count(page);
+  expect(stews).toBeLessThan(all);
+  await page.getByRole("button", { name: "3개 골라줘" }).click();
+  await expect(cards(page).first()).toBeVisible();
+  // 모든 카드가 고른 조리방식에서 나오고, 첫 카드는 그 선택을 되짚는다.
+  expect(await count(page)).toBe(stews);
+  await expect(
+    cards(page).first().getByRole("list", { name: "추천 이유" }),
+  ).toContainText("고르신 찌개·전골 요리 중에서 골랐어요.");
+});
+
+test("inputs saved before season and cooking existed still load", async ({
+  page,
+}) => {
+  await page.addInitScript(() =>
+    localStorage.setItem(
+      "menu-recommand",
+      JSON.stringify({
+        state: {
+          inputs: {
+            hunger: null,
+            mood: "tired",
+            company: "any",
+            budget: null,
+            banAllergens: [],
+            banCategories: [],
+          },
+          pref: {},
+          seen: {},
+          eaten: [],
+          coachDone: true,
+        },
+        version: 1,
+      }),
+    ),
+  );
+  await page.goto("/");
+  await expect(
+    page
+      .getByRole("group", { name: "오늘 기분" })
+      .getByRole("button", { name: "피곤" }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "3개 골라줘" }).click();
+  await expect(cards(page)).toHaveCount(3);
+});
+
 test("rejecting a pick recomputes right away", async ({ page }) => {
   const before = await toPicks(page);
   expect(await count(page)).toBe(before);

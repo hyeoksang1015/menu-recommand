@@ -44,6 +44,7 @@ class Menu:
         heavy: How filling it is, 0 (light) to 1 (heavy).
         oily: How greasy it is, 0 to 1.
         hot: True when served hot.
+        cook_mask: Bitmask of cooking styles (soup, stew, ...).
     """
 
     id: str
@@ -56,6 +57,7 @@ class Menu:
     heavy: float
     oily: float
     hot: bool
+    cook_mask: int = 0
 
 
 @dataclass(frozen=True)
@@ -73,6 +75,8 @@ class Query:
         recent: Menu ids to exclude, such as ones eaten recently.
         novel_weight: Weight of the novelty term in the novel slot. The
             "celebration" mood raises it (spec section 7).
+        want_cook: Cooking-style bits the user wants; a menu needs at
+            least one of them. 0 means any style.
     """
 
     ban_allergen: int = 0
@@ -84,6 +88,7 @@ class Query:
     want_hot: bool | None = None
     recent: frozenset[str] = frozenset()
     novel_weight: float = 1.0
+    want_cook: int = 0
 
 
 @dataclass(frozen=True)
@@ -120,6 +125,7 @@ def passes(m: Menu, q: Query) -> bool:
         and m.spice <= q.max_spice
         and m.oily <= q.max_oily
         and m.id not in q.recent
+        and (not q.want_cook or bool(m.cook_mask & q.want_cook))
     )
 
 

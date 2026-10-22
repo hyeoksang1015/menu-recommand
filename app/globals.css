@@ -83,7 +83,7 @@ body {
     @apply border border-line bg-card text-ink hover:bg-soft;
   }
   .chip {
-    @apply inline-flex min-h-10 cursor-pointer items-center rounded-full border border-line bg-card px-4 text-sm font-semibold transition-colors hover:bg-soft aria-pressed:border-brand aria-pressed:bg-brand aria-pressed:text-white;
+    @apply inline-flex min-h-10 cursor-pointer items-center rounded-full border border-line bg-card px-4 text-sm font-semibold transition-colors hover:bg-soft aria-pressed:border-brand aria-pressed:bg-brand aria-pressed:text-white aria-pressed:hover:bg-brand-dark;
   }
   .card {
     @apply rounded-3xl border border-line bg-card p-5;

@@ -55,6 +55,13 @@ const ja = {
       normal: "ふつう",
       celebrate: "お祝い",
     },
+    season: "今の季節は？",
+    seasonAria: "季節",
+    seasons: { spring: "春", summer: "夏", autumn: "秋", winter: "冬" },
+    cooking: "どんな料理が食べたい？",
+    cookingAria: "調理法",
+    cookingNote:
+      "いくつ選んでもOK。選んだもののどれかに当てはまるメニューだけを提案します。",
     company: "誰と食べる？",
     companyAria: "同行者",
     companies: {
@@ -116,6 +123,11 @@ const ja = {
     hot: "温かくして食べる料理です。",
     cold: "冷たくして食べる料理です。",
     hotTired: "疲れているとのことなので、温かいものにしました。",
+    season: {
+      winter: "冬なので温かいものにしました。",
+      summer: "夏なので冷たいものにしました。",
+    },
+    cook: "選んだ「{cook}」から選びました。",
     heavy: "しっかりお腹にたまります。",
     light: "軽めに食べられます。",
     medium: "量は多すぎず少なすぎず。",

@@ -81,7 +81,7 @@ const ko: PageText = {
         heading: "빼주께와 맞춰주께",
         body: [
           "빼주께에서는 못 먹는 재료(우유, 달걀, 밀, 갑각류 등 11가지), 오늘은 피하고 싶은 종류, 어제 먹은 메뉴를 먼저 빼요. 여기서 뺀 메뉴는 어떤 경우에도 추천되지 않아요.",
-          '맞춰주께에서는 배고픈 정도, 기분, 같이 먹는 사람, 1인 예산을 골라요. 모든 질문에 "상관없어"가 있으니 모르는 건 넘어가도 돼요. 고르는 동안 화면 아래에 남은 후보 수가 바로 보여요.',
+          '맞춰주께에서는 배고픈 정도, 기분, 계절, 끌리는 조리방식(탕·국, 찌개·전골, 볶음, 찜·조림 등), 같이 먹는 사람, 1인 예산을 골라요. 모든 질문에 "상관없어"가 있으니 모르는 건 넘어가도 돼요. 고르는 동안 화면 아래에 남은 후보 수가 바로 보여요.',
         ],
       },
       {
@@ -236,7 +236,7 @@ const en: PageText = {
         heading: "Leave out and Match me",
         body: [
           "Under Leave out, you first remove ingredients you can't eat (11 groups such as milk, egg, wheat and shellfish), cuisines you want to skip today, and what you ate yesterday. Anything removed here is never recommended.",
-          "Under Match me, you choose your hunger, mood, company and budget per person. Every question has an Any option, so you can skip what you're unsure about. The number of matching dishes updates at the bottom of the screen as you go.",
+          "Under Match me, you choose your hunger, mood, the season, the cooking styles you feel like (soups, stews, stir-fries, braised dishes and more), company and budget per person. Every question has an Any option, so you can skip what you're unsure about. The number of matching dishes updates at the bottom of the screen as you go.",
         ],
       },
       {
@@ -392,7 +392,7 @@ const ja: PageText = {
         heading: "抜いてね・合わせてね",
         body: [
           "「抜いてね」では、食べられない食材（乳・卵・小麦・エビカニなど11種）、今日は避けたいジャンル、昨日食べたメニューを先に除きます。ここで除いたメニューはどんな場合もおすすめされません。",
-          "「合わせてね」では、空腹度、気分、一緒に食べる人、1人あたりの予算を選びます。すべての質問に「こだわらない」があるので、迷う項目は飛ばしてかまいません。選んでいる間、画面下に残りの候補数がすぐ表示されます。",
+          "「合わせてね」では、空腹度、気分、季節、食べたい調理法（スープ、チゲ・鍋、炒め物、蒸し物・煮物など）、一緒に食べる人、1人あたりの予算を選びます。すべての質問に「こだわらない」があるので、迷う項目は飛ばしてかまいません。選んでいる間、画面下に残りの候補数がすぐ表示されます。",
         ],
       },
       {
@@ -549,7 +549,7 @@ const zh: PageText = {
         heading: "帮我去掉、帮我匹配",
         body: [
           "在“帮我去掉”里，先去掉不能吃的食材（牛奶、鸡蛋、小麦、虾蟹等 11 类）、今天不想吃的类别和昨天吃过的菜。这里去掉的菜在任何情况下都不会被推荐。",
-          "在“帮我匹配”里，选择饥饿程度、心情、同伴和人均预算。每个问题都有“都可以”，拿不准的可以跳过。选择过程中，屏幕下方会立即显示剩余候选数量。",
+          "在“帮我匹配”里，选择饥饿程度、心情、季节、想吃的做法（汤、炖锅、炒菜、蒸菜·炖菜等）、同伴和人均预算。每个问题都有“都可以”，拿不准的可以跳过。选择过程中，屏幕下方会立即显示剩余候选数量。",
         ],
       },
       {

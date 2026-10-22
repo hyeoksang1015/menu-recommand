@@ -2,7 +2,7 @@ import { INTL_LOCALE, fmt, type Locale } from "@/i18n/config";
 import type { Dict } from "@/i18n/ui";
 import type { Inputs } from "@/config/mood";
 import type { Menu, Query, ReasonCode, Slot } from "@/lib/engine/types";
-import { CATEGORY_BY_KEY } from "@/lib/menus";
+import { CATEGORY_BY_KEY, COOKINGS } from "@/lib/menus";
 
 // 엔진 코드·숫자 → 화면 문구. 문구 자체는 i18n/ui 사전에 있다.
 
@@ -49,6 +49,10 @@ export function whyLines(
     switch (code) {
       case "hot_match":
         if (m.hot && inputs.mood === "tired") return once(r.hotTired, r.hot);
+        if (m.hot && inputs.season === "winter")
+          return once(r.season.winter, r.hot);
+        if (!m.hot && inputs.season === "summer")
+          return once(r.season.summer, r.cold);
         return m.hot ? r.hot : r.cold;
       case "heavy_match":
         if (inputs.hunger !== null) return once(r.asked[size], r[size]);
@@ -79,5 +83,10 @@ export function whyLines(
     }
   });
   if (slot === "novel" && inputs.mood === "celebrate") lines.push(r.celebrate);
+  // 조리방식은 사용자가 직접 고른 조건이라 맨 앞에 둔다. 이 메뉴가 해당하는 고른 방식 하나를 말한다.
+  const cook = COOKINGS.find(
+    (c) => inputs.cookings.includes(c.key) && (m.cook_mask & c.bit) !== 0,
+  );
+  if (cook) lines.unshift(once(fmt(r.cook, { cook: cook.label[lang] }), null));
   return lines.filter((l) => l !== null);
 }

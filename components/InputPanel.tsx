@@ -6,13 +6,20 @@ import { useShallow } from "zustand/react/shallow";
 import Chips from "@/components/Chips";
 import Fmt from "@/components/Fmt";
 import { useI18n } from "@/components/I18nProvider";
-import { COMPANY_KEYS, MOOD_KEYS, recentIds, type Inputs } from "@/config/mood";
+import {
+  COMPANY_KEYS,
+  MOOD_KEYS,
+  SEASON_KEYS,
+  recentIds,
+  type Inputs,
+} from "@/config/mood";
 import { fmt, href } from "@/i18n/config";
 import { passes } from "@/lib/engine/engine";
 import { budgetLabel } from "@/lib/labels";
 import {
   ALLERGENS,
   CATEGORIES,
+  COOKINGS,
   MENU_BY_ID,
   MENUS,
   menuName,
@@ -237,6 +244,33 @@ export default function InputPanel() {
             value={inputs.mood}
             onChange={(mood) => set({ mood })}
           />
+        </fieldset>
+
+        <fieldset>
+          <legend className="mb-2 font-bold">{h.season}</legend>
+          <Chips
+            label={h.seasonAria}
+            options={SEASON_KEYS.map((k) => ({
+              key: k,
+              label: k === "any" ? h.any : h.seasons[k],
+            }))}
+            value={inputs.season}
+            onChange={(season) => set({ season })}
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend className="mb-2 font-bold">{h.cooking}</legend>
+          <Chips
+            label={h.cookingAria}
+            options={[
+              anyChip,
+              ...COOKINGS.map((c) => ({ key: c.key, label: c.label[lang] })),
+            ]}
+            value={inputs.cookings.length ? inputs.cookings : [ANY]}
+            onChange={(k) => set({ cookings: toggle(inputs.cookings, k) })}
+          />
+          <p className="mt-2 text-xs text-muted">{h.cookingNote}</p>
         </fieldset>
 
         <fieldset>

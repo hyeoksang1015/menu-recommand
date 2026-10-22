@@ -207,6 +207,108 @@
    }
   }
  ],
+ "cookings": [
+  {
+   "key": "soup",
+   "bit": 1,
+   "label": {
+    "ko": "탕·국",
+    "en": "Soups",
+    "ja": "スープ・汁物",
+    "zh": "汤"
+   }
+  },
+  {
+   "key": "stew",
+   "bit": 2,
+   "label": {
+    "ko": "찌개·전골",
+    "en": "Stews & hot pots",
+    "ja": "チゲ・鍋",
+    "zh": "炖锅·火锅"
+   }
+  },
+  {
+   "key": "stirfry",
+   "bit": 4,
+   "label": {
+    "ko": "볶음",
+    "en": "Stir-fried",
+    "ja": "炒め物",
+    "zh": "炒菜"
+   }
+  },
+  {
+   "key": "braise",
+   "bit": 8,
+   "label": {
+    "ko": "찜·조림",
+    "en": "Steamed & braised",
+    "ja": "蒸し物・煮物",
+    "zh": "蒸菜·炖菜"
+   }
+  },
+  {
+   "key": "grill",
+   "bit": 16,
+   "label": {
+    "ko": "구이",
+    "en": "Grilled",
+    "ja": "焼き物",
+    "zh": "烤"
+   }
+  },
+  {
+   "key": "fried",
+   "bit": 32,
+   "label": {
+    "ko": "튀김·부침",
+    "en": "Fried",
+    "ja": "揚げ物・焼き物",
+    "zh": "炸·煎"
+   }
+  },
+  {
+   "key": "noodle",
+   "bit": 64,
+   "label": {
+    "ko": "면",
+    "en": "Noodles",
+    "ja": "麺類",
+    "zh": "面"
+   }
+  },
+  {
+   "key": "rice",
+   "bit": 128,
+   "label": {
+    "ko": "밥·덮밥",
+    "en": "Rice & rice bowls",
+    "ja": "ご飯・丼",
+    "zh": "米饭·盖饭"
+   }
+  },
+  {
+   "key": "raw",
+   "bit": 256,
+   "label": {
+    "ko": "회·샐러드",
+    "en": "Raw & salads",
+    "ja": "刺身・サラダ",
+    "zh": "生食·沙拉"
+   }
+  },
+  {
+   "key": "bread",
+   "bit": 512,
+   "label": {
+    "ko": "빵·피자·버거",
+    "en": "Bread, pizza & burgers",
+    "ja": "パン・ピザ・バーガー",
+    "zh": "面包·披萨·汉堡"
+   }
+  }
+ ],
  "menus": [
   {
    "id": "kimchi-jjigae",
@@ -222,6 +324,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Korean.cuisine-Kimchi jjigae-01.jpg",
     "author": "by avlxyz",
@@ -243,6 +346,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Doenjang-jjigae 4.jpg",
     "author": "이동원",
@@ -264,6 +368,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Korean.food-Bibimbap-02.jpg",
     "author": "abex (a flickr user)",
@@ -285,6 +390,7 @@
    "heavy": 0.4,
    "oily": 0.1,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Mul-naengmyeon 3.jpg",
     "author": "chomjong",
@@ -306,6 +412,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "KOCIS Bibim-naengmyeon Spicy Mixed Buckwheat Noodles (4594769498).jpg",
     "author": "Korea.net / Korean Culture and Information Service",
@@ -327,6 +434,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Korean stew-Sundubu jjigae-05.jpg",
     "author": "by titanium22",
@@ -348,6 +456,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Budae jjigae indonesia.jpg",
     "author": "Agus Damanik",
@@ -369,6 +478,7 @@
    "heavy": 0.7,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Korean soup-Galbitang-01.jpg",
     "author": "stu_spivack",
@@ -390,6 +500,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Seolleongtang.jpg",
     "author": "이동원",
@@ -411,6 +522,7 @@
    "heavy": 0.8,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 129,
    "photo": {
     "file": "Dwaeji-gukbap 2.jpg",
     "author": "chomjong",
@@ -432,6 +544,7 @@
    "heavy": 0.8,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 129,
    "photo": {
     "file": "Korean soup Sundae gukbap 01.jpg",
     "author": "Mar del Este",
@@ -453,6 +566,7 @@
    "heavy": 0.8,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Samgye-tang 2.jpg",
     "author": "wizdata",
@@ -474,6 +588,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Yukgaejang-Moscow.JPG",
     "author": "Lord Mountbatten",
@@ -495,6 +610,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Haejangguk (hangover soup).jpg",
     "author": "sangmins",
@@ -516,6 +632,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 3,
    "photo": {
     "file": "Korean.food-Gamjatang-01.jpg",
     "author": "comicpie (a flickr user)",
@@ -537,6 +654,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Kimchi-bokkeum-bap (Kimchi fried rice) - Kogi 2023-09-11.jpg",
     "author": "Andy Li",
@@ -558,6 +676,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Jeyuk-bokkeum 2.jpg",
     "author": "국립국어원",
@@ -579,6 +698,7 @@
    "heavy": 0.7,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Bulgogi set meal of Matsuya.jpg",
     "author": "毒島みるく",
@@ -600,6 +720,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Korean spicy stir-fried squid (6880030177).jpg",
     "author": "Chloe Lim from Seoul, South Korea",
@@ -621,6 +742,7 @@
    "heavy": 0.8,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Korean.food-Dakbokemtang-01.jpg",
     "author": "stuart_spivack (a flickr user)",
@@ -642,6 +764,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Korean cuisine-Godeungeo gui-01.jpg",
     "author": "by david&alina at Flickr",
@@ -663,6 +786,7 @@
    "heavy": 0.5,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Galchi-jorim.jpg",
     "author": "세미짱",
@@ -684,6 +808,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Korean noodles-Kongguksu-01.jpg",
     "author": "egg (Hong, Yun Seon)",
@@ -705,6 +830,7 @@
    "heavy": 0.6,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Korean.noodle-Kalguksu-01.jpg",
     "author": "by jslander",
@@ -726,6 +852,7 @@
    "heavy": 0.6,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Korean.cuisine-Sujebi-01.jpg",
     "author": "Steve Longus",
@@ -747,6 +874,7 @@
    "heavy": 0.4,
    "oily": 0.1,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Janchi-guksu.jpg",
     "author": "Chloe Lim",
@@ -768,6 +896,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Korean seafood pancake 해물파전 (5534738474).jpg",
     "author": "Matt @ PEK from Taipei, Taiwan",
@@ -789,6 +918,7 @@
    "heavy": 0.8,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Korean cuisine-Bossam-04.jpg",
     "author": "Timber Tank",
@@ -810,6 +940,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Jokbal 2.jpg",
     "author": "국립국어원",
@@ -831,6 +962,7 @@
    "heavy": 0.7,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Korean.food-Bibimbap-02.jpg",
     "author": "abex (a flickr user)",
@@ -852,6 +984,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 384,
    "photo": {
     "file": "Yukhoe Bibimbap.JPG",
     "author": "hyolee2",
@@ -873,6 +1006,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 2,
    "photo": null
   },
   {
@@ -889,6 +1023,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Jajangmyeon by KFoodaddict.jpg",
     "author": "KFoodaddict",
@@ -910,6 +1045,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Jjamppong-sujebi 2.jpg",
     "author": "대경라이프",
@@ -931,6 +1067,7 @@
    "heavy": 0.8,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Tangsuyuk (Korean Chinese sweet and sour pork).jpg",
     "author": "용스토리",
@@ -952,6 +1089,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Mapo Tofu, Rice & Noodle, 5 Rue Littré, Paris 001.jpg",
     "author": "Guilhem Vellut from Paris, France",
@@ -973,6 +1111,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 64,
    "photo": null
   },
   {
@@ -989,6 +1128,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Jajang-bap.jpg",
     "author": "경빈마마",
@@ -1010,6 +1150,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 129,
    "photo": {
     "file": "Jjamppong-deopbap.jpg",
     "author": "대경라이프",
@@ -1031,6 +1172,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Korean Chinese fried rice 1.jpg",
     "author": "chomjong",
@@ -1052,6 +1194,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Homemade Japchae with mixed capsicum, mushroom, meat, carrot with rice noodles 03.jpg",
     "author": "Afifa Afrin",
@@ -1073,6 +1216,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Ulmyeon.jpg",
     "author": "Galaxea",
@@ -1094,6 +1238,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Green pepper steak (青椒肉絲) (26880875325).jpg",
     "author": "pelican from Tokyo, Japan",
@@ -1115,6 +1260,7 @@
    "heavy": 0.7,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Kkanpunggi 1.jpg",
     "author": "chomjong",
@@ -1136,6 +1282,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "You-lin-ji Japan.jpg",
     "author": "MaedaAkihiko",
@@ -1157,6 +1304,7 @@
    "heavy": 0.5,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Korean.cuisine-Gunmandu-01.jpg",
     "author": "by AZAdam",
@@ -1178,6 +1326,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Xiao Long Bao by Junhao!.jpg",
     "author": "Junhao!",
@@ -1199,6 +1348,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Malatang from Hope Tree (20220226172344).jpg",
     "author": "N509FZ",
@@ -1220,6 +1370,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Malaxiangguo in China.jpg",
     "author": "Qinrong0115",
@@ -1241,6 +1392,7 @@
    "heavy": 0.7,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Guobaorou at Zhenbutong, Changchun (20220826174428).jpg",
     "author": "N509FZ",
@@ -1262,6 +1414,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Uykuluk (skewers).jpg",
     "author": "E4024",
@@ -1283,6 +1436,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "担担面 Dandan noodles.jpg",
     "author": "Sharon Ang",
@@ -1304,6 +1458,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Shrimp Fried Rice (Taiwan).jpg",
     "author": "Ralff Nestor Nacor",
@@ -1325,6 +1480,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Yusanseul-deopbap.jpg",
     "author": "chomjong",
@@ -1346,6 +1502,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Hunan cuisine, stir-fried tomato with eggs.jpg",
     "author": "Huangdan2060",
@@ -1367,6 +1524,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": null
   },
   {
@@ -1383,6 +1541,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Kkansyo-saeu DSC00978.jpg",
     "author": "최광모",
@@ -1404,6 +1563,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Gul-jjamppong.jpg",
     "author": "Linusblanket17",
@@ -1425,6 +1585,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 64,
    "photo": null
   },
   {
@@ -1441,6 +1602,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Naeng-jjamppong 2.jpg",
     "author": "대경라이프",
@@ -1462,6 +1624,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Nurungji-tang.jpg",
     "author": "Jirka Matousek",
@@ -1483,6 +1646,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Dim Sum platter from Wedding Banquet Specialist.jpg",
     "author": "Peachyeung316",
@@ -1504,6 +1668,7 @@
    "heavy": 0.7,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Beef Noodles soup from Jinyi Beef Noodle Soup Inn in Shenzhen.jpg",
     "author": "Peachyeung316",
@@ -1525,6 +1690,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 384,
    "photo": {
     "file": "Assorted Shrimp Sushi.jpg",
     "author": "Ceeseven",
@@ -1546,6 +1712,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Tonkatsu of Kimukatsu.jpg",
     "author": "Minseong Kim",
@@ -1567,6 +1734,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Kake udon by Joe Jones in Tokyo.jpg",
     "author": "Joe Jones from Tokyo",
@@ -1588,6 +1756,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Tonkotsu ramen in Tokyo.jpg",
     "author": "Syced",
@@ -1609,6 +1778,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Shoyu Ramen.jpg",
     "author": "Guilhem Vellut",
@@ -1630,6 +1800,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Miso ramen (M) - Goemon Ramen Bar 2025-12-10.jpg",
     "author": "Andy Li",
@@ -1651,6 +1822,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Tsukemen (Dipping Ramen) - Goemon Ramen Bar 2023-07-16.jpg",
     "author": "Andy Li",
@@ -1672,6 +1844,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Gyuu-don 001.jpg",
     "author": "Ocdp",
@@ -1693,6 +1866,7 @@
    "heavy": 0.7,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Oyakodon 003.jpg",
     "author": "Ocdp",
@@ -1714,6 +1888,7 @@
    "heavy": 0.9,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 160,
    "photo": {
     "file": "Katsudon 001.jpg",
     "author": "Ocdp",
@@ -1735,6 +1910,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 384,
    "photo": {
     "file": "Kaisendon 001.jpg",
     "author": "https://www.pxfuel.com/ja/free-photo-ojihe",
@@ -1756,6 +1932,7 @@
    "heavy": 0.5,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 384,
    "photo": {
     "file": "Rice bowl topped with salmon and salmon egg (14904439935).jpg",
     "author": "pelican from Tokyo, Japan",
@@ -1777,6 +1954,7 @@
    "heavy": 0.8,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 160,
    "photo": {
     "file": "Tendon 002.jpg",
     "author": "Ocdp",
@@ -1798,6 +1976,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 144,
    "photo": {
     "file": "Tokyo Chikuyotei Unadon01s2100.jpg",
     "author": "663highland",
@@ -1819,6 +1998,7 @@
    "heavy": 0.3,
    "oily": 0.1,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Zaru soba by spinachdip.jpg",
     "author": "spinachdip from Minamikiso, Nagano",
@@ -1840,6 +2020,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Okonomiyaki 001.jpg",
     "author": "ume-y",
@@ -1861,6 +2042,7 @@
    "heavy": 0.4,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Takoyaki by yomi955.jpg",
     "author": "heiwa4126",
@@ -1882,6 +2064,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Assorted Sashimi (6639227195).jpg",
     "author": "Naotake Murayama from San Francisco, CA, USA",
@@ -1903,6 +2086,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 384,
    "photo": {
     "file": "Chirashi-zushi.jpg",
     "author": "Arashiyama",
@@ -1924,6 +2108,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Beef curry rice 003.jpg",
     "author": "Ocdp",
@@ -1945,6 +2130,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 160,
    "photo": {
     "file": "Katsu-curry 001.jpg",
     "author": "Ocdp",
@@ -1966,6 +2152,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 68,
    "photo": {
     "file": "Pork yakisoba and tofu yakisoba, Korpan, Brighton.jpg",
     "author": "Andy Li",
@@ -1987,6 +2174,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Omurice by Taimeiken.jpg",
     "author": "Kanesue",
@@ -2008,6 +2196,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Hayashi rice.jpg",
     "author": "Hiratake at Japanese Wikipedia",
@@ -2029,6 +2218,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 160,
    "photo": {
     "file": "Tori Karaage Don With Onsen Tamago by Banej.jpg",
     "author": "Banej",
@@ -2050,6 +2240,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Cooking yakitori.jpg",
     "author": "竹麦魚(Searobin)",
@@ -2071,6 +2262,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Shabu Shabu photo Don Ramey Logan.jpg",
     "author": "Don Ramey Logan",
@@ -2092,6 +2284,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Sukiyaki 01.jpg",
     "author": "ajari",
@@ -2113,6 +2306,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 66,
    "photo": {
     "file": "Nabeyaki udon.jpg",
     "author": "Blue Lotus from Tokyo",
@@ -2134,6 +2328,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 128,
    "photo": {
     "file": "Onigiri udon (41001742365).jpg",
     "author": "daisuke1230",
@@ -2155,6 +2350,7 @@
    "heavy": 0.4,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Hiyashi chuka by woinary at 551 Horai in Osaka Intl Airport.jpg",
     "author": "woinary from Osaka International Airport",
@@ -2176,6 +2372,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Ebi Fry 001.jpg",
     "author": "Ocdp",
@@ -2197,6 +2394,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Pasta with cream sauce bacon and mushroom.jpg",
     "author": "Geoffreyrabbit",
@@ -2218,6 +2416,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Liat Portal for Foodie Disorder - Spaghetti with Tomato Sauce.jpg",
     "author": "HaJunkiyada",
@@ -2239,6 +2438,7 @@
    "heavy": 0.2,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Caesar Salad - Purezza 2023-11-22.jpg",
     "author": "Andy Li",
@@ -2260,6 +2460,7 @@
    "heavy": 0.5,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Spaghetti aglio e olio KB.jpg",
     "author": "Bairuilong",
@@ -2281,6 +2482,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Espaguetis carbonara.jpg",
     "author": "Javier Somoza",
@@ -2302,6 +2504,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Rose Pasta.jpg",
     "author": "SHIN MIN KYEONG",
@@ -2323,6 +2526,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Spaghetti alle vongole.jpg",
     "author": "Flickr user: , retouched by AM",
@@ -2344,6 +2548,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Spicy Seafood Spaghetti (7994894586).jpg",
     "author": "Sodanie Chea from Norwalk, Ca, United States",
@@ -2365,6 +2570,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Mentaiko spaghetti by kaex0r.jpg",
     "author": "kaex0r",
@@ -2386,6 +2592,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Mushroom and Leek Risotto (49535206656).jpg",
     "author": "spurekar",
@@ -2407,6 +2614,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "XO Steak and French Fries.jpg",
     "author": "Yotam Nachum",
@@ -2428,6 +2636,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Hamburg-Steak.jpg",
     "author": "MaedaAkihiko",
@@ -2449,6 +2658,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Dongaseu 4.jpg",
     "author": "chomjong",
@@ -2470,6 +2680,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Margherita Originale.JPG",
     "author": "Mario56",
@@ -2491,6 +2702,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Gorgonzola pizza.jpg",
     "author": "La yeon Kim",
@@ -2512,6 +2724,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Meaty Lasagna 8of8 (8736299782).jpg",
     "author": "Breville USA",
@@ -2533,6 +2746,7 @@
    "heavy": 0.4,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Cobb salad from Silver Diner.jpg",
     "author": "Ser Amantio di Nicolao",
@@ -2554,6 +2768,7 @@
    "heavy": 0.3,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Chicken breast and salad - Massachusetts.jpg",
     "author": "Daderot",
@@ -2575,6 +2790,7 @@
    "heavy": 0.4,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 384,
    "photo": {
     "file": "Philadelphia Poke Bowl - Happy Maki 2026-09-08.jpg",
     "author": "Andy Li",
@@ -2596,6 +2812,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": false,
+   "cook_mask": 512,
    "photo": {
     "file": "Club-sandwich.jpg",
     "author": "Memm",
@@ -2617,6 +2834,7 @@
    "heavy": 0.7,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Brunch plate, Berlin.jpg",
     "author": "Gerda Arendt",
@@ -2638,6 +2856,7 @@
    "heavy": 0.5,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "French toast 001.jpg",
     "author": "Ocdp",
@@ -2659,6 +2878,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 513,
    "photo": {
     "file": "Bread Bowl & Clam Chowder Soup (29842842338).jpg",
     "author": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA",
@@ -2680,6 +2900,7 @@
    "heavy": 0.7,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Fish and chips plate with peas.jpg",
     "author": "Grendelkhan",
@@ -2701,6 +2922,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Gnocchis with Truffes cream - El Olivo 2025-03-23.jpg",
     "author": "Andy Li",
@@ -2722,6 +2944,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Paella de fruit de mer.jpg",
     "author": "Wilfredor",
@@ -2743,6 +2966,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Burrito.JPG",
     "author": "samuelfernandezrivera",
@@ -2764,6 +2988,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "001 Tacos de carnitas, carne asada y al pastor.jpg",
     "author": "Larry Miller",
@@ -2785,6 +3010,7 @@
    "heavy": 0.6,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "At Long Island 2023 267.jpg",
     "author": "Photograph by Mike Peel (www.mikepeel.net).",
@@ -2806,6 +3032,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 64,
    "photo": {
     "file": "Spaghetti Bolognese - Figaros, Brighton 2023-10-06.jpg",
     "author": "Andy Li",
@@ -2827,6 +3054,7 @@
    "heavy": 0.4,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Gambas al ajillo, 2024.jpg",
     "author": "Juan Emilio Prades Bel",
@@ -2848,6 +3076,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Korean.snacks-Tteokbokki-08.jpg",
     "author": "by jetalone (flickr)",
@@ -2869,6 +3098,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 128,
    "photo": {
     "file": "Gimbap (pixabay).jpg",
     "author": "changupn",
@@ -2890,6 +3120,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "A spicy ramyeon.jpg",
     "author": "BrithnyBiong",
@@ -2911,6 +3142,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 68,
    "photo": {
     "file": "Rabokki - SOJU 2024-06-02.jpg",
     "author": "Andy Li",
@@ -2932,6 +3164,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Cheese-tteok-bokki.jpg",
     "author": "insatiablemunch",
@@ -2953,6 +3186,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Shrimp rosé tteokbokki.jpg",
     "author": "Sharphyun",
@@ -2974,6 +3208,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 4,
    "photo": null
   },
   {
@@ -2990,6 +3225,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Gungmul-tteok-bokki 1.jpg",
     "author": "lazy fri13th",
@@ -3011,6 +3247,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Korean blood sausage-Sundae-01.jpg",
     "author": "SauceSupreme",
@@ -3032,6 +3269,7 @@
    "heavy": 0.5,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": null
   },
   {
@@ -3048,6 +3286,7 @@
    "heavy": 0.3,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Korean fishcake bunsik eoumuk 01.jpg",
     "author": "Hankook12",
@@ -3069,6 +3308,7 @@
    "heavy": 0.5,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 128,
    "photo": {
     "file": "키토 김밥.jpg",
     "author": "Kcjsew",
@@ -3090,6 +3330,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 128,
    "photo": null
   },
   {
@@ -3106,6 +3347,7 @@
    "heavy": 0.3,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 128,
    "photo": {
     "file": "Mayak-gimbap (31896881761).jpg",
     "author": "bryan... from Taipei, Taiwan",
@@ -3127,6 +3369,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Jjolmyeon by keizie.jpg",
     "author": "keizie",
@@ -3148,6 +3391,7 @@
    "heavy": 0.4,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 64,
    "photo": {
     "file": "Bibim-guksu.jpg",
     "author": "JeongHO Suh (daecheonnet)",
@@ -3169,6 +3413,7 @@
    "heavy": 0.6,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Tteokmanduguk (rice cake dumpling soup).jpg",
     "author": "방신애",
@@ -3190,6 +3435,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 65,
    "photo": null
   },
   {
@@ -3206,6 +3452,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 65,
    "photo": null
   },
   {
@@ -3222,6 +3469,7 @@
    "heavy": 0.4,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Gilgeori toast 5.jpg",
     "author": "gildedgingerbread",
@@ -3243,6 +3491,7 @@
    "heavy": 0.2,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Korean snack-Hotteok-01.jpg",
     "author": "by yearofeats",
@@ -3264,6 +3513,7 @@
    "heavy": 0.4,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Corn dog 001.jpg",
     "author": "Ocdp",
@@ -3285,6 +3535,7 @@
    "heavy": 0.2,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Gyeranppang (egg bread) (Seoul street food).jpg",
     "author": "tragrpx",
@@ -3306,6 +3557,7 @@
    "heavy": 0.4,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 8,
    "photo": {
     "file": "Jjin-mandu 1.jpg",
     "author": "chomjong",
@@ -3327,6 +3579,7 @@
    "heavy": 0.2,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Tteok-kkochi 2.jpg",
     "author": "Lou Stejskal",
@@ -3348,6 +3601,7 @@
    "heavy": 0.3,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Gimmari 김말이C1.jpg",
     "author": "Unknown",
@@ -3369,6 +3623,7 @@
    "heavy": 0.3,
    "oily": 0.3,
    "hot": false,
+   "cook_mask": 128,
    "photo": {
     "file": "Kantofu Inarizushi.jpg",
     "author": "Ocdp",
@@ -3390,6 +3645,7 @@
    "heavy": 0.5,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Dak-gangjeong 3.jpg",
     "author": "hyun chun kim",
@@ -3411,6 +3667,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Mandu-ramyeon and gimbap.jpg",
     "author": "Jude Lee",
@@ -3432,6 +3689,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Omurice 1.jpg",
     "author": "Michael Sean Gallagher",
@@ -3453,6 +3711,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": false,
+   "cook_mask": 160,
    "photo": null
   },
   {
@@ -3469,6 +3728,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Món ăn Đông Hà, Tết 2022 (phở Lý Quốc sư ở công viên Cọ Dầu) (2).jpg",
     "author": "Phương Huy",
@@ -3490,6 +3750,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 68,
    "photo": {
     "file": "Phat Thai kung Chang Khien street stall.jpg",
     "author": "Takeaway",
@@ -3511,6 +3772,7 @@
    "heavy": 0.5,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 512,
    "photo": {
     "file": "Vietnamese Bánh mì (Banh Mi) Sandwich.jpg",
     "author": "Jimmy Chen",
@@ -3532,6 +3794,7 @@
    "heavy": 0.5,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 80,
    "photo": {
     "file": "Bún chả Hàng Mành.jpg",
     "author": "Larry",
@@ -3553,6 +3816,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Bún bò Huế minh28397.jpg",
     "author": "Minh28397",
@@ -3574,6 +3838,7 @@
    "heavy": 0.3,
    "oily": 0.1,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Vietnamese fried spring rolls in Ho Chi Minh City, Vietnam.jpg",
     "author": "Vyacheslav Argenberg",
@@ -3595,6 +3860,7 @@
    "heavy": 0.4,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Tom Yum Goong Noodle Soup - Nok Nok Kitchen at The Cow 2024-03-28.jpg",
     "author": "Andy Li",
@@ -3616,6 +3882,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Thai green chicken curry and roti.jpg",
     "author": "Takeaway",
@@ -3637,6 +3904,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Beef Massaman curry with brown rice.jpg",
     "author": "Vee Satayamas",
@@ -3658,6 +3926,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Khao Pad (Rosa's Fried Rice) with Chicken - Rosa's Thai 2025-07-22.jpg",
     "author": "Andy Li",
@@ -3679,6 +3948,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Kao Rad Pad Kra-pao - Unithai 2023-07-08.jpg",
     "author": "Andy Li",
@@ -3700,6 +3970,7 @@
    "heavy": 0.2,
    "oily": 0.1,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Som Tam green papaya salad, Bangkok, Thailand.jpg",
     "author": "Vyacheslav Argenberg",
@@ -3721,6 +3992,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 132,
    "photo": {
     "file": "Nasi goreng indonesia.jpg",
     "author": "Helito",
@@ -3742,6 +4014,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 68,
    "photo": {
     "file": "Mi Goreng GM.jpg",
     "author": "Gunawan Kartapranata",
@@ -3763,6 +4036,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Thai laksa dish at Yim Thai Yeronga, Queensland.jpg",
     "author": "Chris Olszewski",
@@ -3784,6 +4058,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Sate Ayam Panggang.jpg",
     "author": "Meandkancil2020",
@@ -3805,6 +4080,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Naan-and-Curry-1.jpg",
     "author": "Evelyn-rose",
@@ -3826,6 +4102,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Chicken makhani.jpg",
     "author": "stu_spivack",
@@ -3847,6 +4124,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Shrimp Biriyani.JPG",
     "author": "Jyothis",
@@ -3868,6 +4146,7 @@
    "heavy": 0.6,
    "oily": 0.4,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Tandoori chicken Indian.jpg",
     "author": "pelican",
@@ -3889,6 +4168,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 128,
    "photo": {
     "file": "Chicken, Rice & Peanut Sauce at Nong's Khao Man Gai, Portland, Oregon, 2025.jpg",
     "author": "Another Believer",
@@ -3910,6 +4190,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 68,
    "photo": {
     "file": "Char kway teow (kuetiau goreng) of Dann Char Kuey Teow at Permatang Tok Jaya, SPU 20240915 183329.jpg",
     "author": "Wiki Farazi",
@@ -3931,6 +4212,7 @@
    "heavy": 0.6,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Bánh xèo 1.jpg",
     "author": "Kent Wang from Austin, TX",
@@ -3952,6 +4234,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 136,
    "photo": {
     "file": "Lurou fan(Taiwanese cuisine).jpg",
     "author": "Jzest",
@@ -3973,6 +4256,7 @@
    "heavy": 0.5,
    "oily": 0.2,
    "hot": true,
+   "cook_mask": 65,
    "photo": {
     "file": "Chicken Pho, Pho 21, Montparnasse, Paris 001.jpg",
     "author": "Guilhem Vellut from Paris, France",
@@ -3994,6 +4278,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 528,
    "photo": {
     "file": "Kebab Gerashi.jpg",
     "author": "Amin Noubahar",
@@ -4015,6 +4300,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": false,
+   "cook_mask": 544,
    "photo": {
     "file": "Falafel Melt Wrap - We Love Falafel 2023-09-27.jpg",
     "author": "Andy Li",
@@ -4036,6 +4322,7 @@
    "heavy": 0.4,
    "oily": 0.5,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Hummus plate ni.jpg",
     "author": "pita pita granada",
@@ -4057,6 +4344,7 @@
    "heavy": 0.4,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Vietnamese fried spring rolls in Ho Chi Minh City, Vietnam.jpg",
     "author": "Vyacheslav Argenberg",
@@ -4078,6 +4366,7 @@
    "heavy": 0.5,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 1,
    "photo": {
     "file": "Tom kha gai2.jpg",
     "author": "lydiajoy1",
@@ -4099,6 +4388,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 144,
    "photo": {
     "file": "Com-Tam-2008.jpg",
     "author": "Kham Tran",
@@ -4120,6 +4410,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Cheeseburger and Fries 2.jpg",
     "author": "Kurt Kaiser",
@@ -4141,6 +4432,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Korean fried chicken 240206.jpg",
     "author": "Startandstar",
@@ -4162,6 +4454,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Pepperoni Pizza from Fellini’s Pizza.jpg",
     "author": "BullDawg2021",
@@ -4183,6 +4476,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Yangnyeom Chicken Korean fried chicken.jpg",
     "author": "Startandstar",
@@ -4204,6 +4498,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Soy Garlic Chicken Meal, Feb 2025.jpg",
     "author": "Ralff Nestor Nacor",
@@ -4225,6 +4520,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Padak.jpg",
     "author": "Choi2451",
@@ -4246,6 +4542,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Roast Chicken - Kitchen Cafe 2023-06-10.jpg",
     "author": "Andy Li",
@@ -4267,6 +4564,7 @@
    "heavy": 0.8,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Boneless chicken wings and fries.jpg",
     "author": "Packer1028",
@@ -4288,6 +4586,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Korean fried chicken yangnyeom.jpg",
     "author": "Yosomono",
@@ -4309,6 +4608,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 544,
    "photo": {
     "file": "Chicken cheese burger and Mexican vegetarian burger - Grubbs.jpg",
     "author": "Andy Li",
@@ -4330,6 +4630,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 544,
    "photo": {
     "file": "Shrimp Burger.jpg",
     "author": "Ceeseven",
@@ -4351,6 +4652,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Bulgogi burger 1.jpg",
     "author": "star5112",
@@ -4372,6 +4674,7 @@
    "heavy": 1.0,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Sriracha Double Smash Burger full meal.jpg",
     "author": "JIP",
@@ -4393,6 +4696,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Combination pizza (2).jpg",
     "author": "jeffreyw",
@@ -4414,6 +4718,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Potato pizza.jpg",
     "author": "Jirka Matousek",
@@ -4435,6 +4740,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Bulgogi pizza 1.jpg",
     "author": "Eric",
@@ -4456,6 +4762,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Hawaiian pizza 1.jpg",
     "author": "@joefoodie from USA",
@@ -4477,6 +4784,7 @@
    "heavy": 0.5,
    "oily": 0.4,
    "hot": false,
+   "cook_mask": 512,
    "photo": {
     "file": "Submarine sandwich sub subway.jpg",
     "author": "Pixabay",
@@ -4498,6 +4806,7 @@
    "heavy": 0.5,
    "oily": 0.6,
    "hot": false,
+   "cook_mask": 512,
    "photo": {
     "file": "Handmade Chicken Shawarma Wrap - Lavash.jpg",
     "author": "Andy Li",
@@ -4519,6 +4828,7 @@
    "heavy": 0.5,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Liat Portal for Foodie Disorder - Dinosaur Shaped Chicken Nuggets with Fresh Salad.jpg",
     "author": "HaJunkiyada",
@@ -4540,6 +4850,7 @@
    "heavy": 0.6,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Chili Dog.jpg",
     "author": "Svh242 at English Wikipedia",
@@ -4561,6 +4872,7 @@
    "heavy": 0.6,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "French fries and fried chicken wings, Everything with Fries, Holland Village, Singapore - 20121021.jpg",
     "author": "Jacklee",
@@ -4582,6 +4894,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Coast Guard buffalo chicken wings.jpg",
     "author": "Coast Guard photo/ Petty Officer 2nd Class Jetta H. Disco",
@@ -4603,6 +4916,7 @@
    "heavy": 0.6,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 544,
    "photo": {
     "file": "Fish burger, Broad Arrow Tavern.jpg",
     "author": "Chuq",
@@ -4624,6 +4938,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Argentine chicken burger sandwiches with lettuce, tomato, fried egg, and mozzarella cheese on Don Yeyo buns.jpg",
     "author": "Horacio Cambeiro",
@@ -4645,6 +4960,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 544,
    "photo": {
     "file": "Burger King Spicy Chicken Sandwich (12181050703).jpg",
     "author": "theimpulsivebuy",
@@ -4666,6 +4982,7 @@
    "heavy": 0.8,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "만석닭강정.jpg",
     "author": "LR0725",
@@ -4687,6 +5004,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Wikimania 2016 Deryck day 0 - 07 calzone.jpg",
     "author": "Deryck Chan",
@@ -4708,6 +5026,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Garlic Parmesan Fried Chicken Meal.jpg",
     "author": "Ralff Nestor Nacor",
@@ -4729,6 +5048,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 32,
    "photo": {
     "file": "Korean fried chicken with cheese flavor (Chikin).jpg",
     "author": "Fumikas Sagisavas",
@@ -4750,6 +5070,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 512,
    "photo": {
     "file": "Lotteria teriyaki burger (3).jpg",
     "author": "Baoothersks",
@@ -4771,6 +5092,7 @@
    "heavy": 0.9,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Samgyeopsal (pork belly).jpg",
     "author": "idkjm123",
@@ -4792,6 +5114,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 20,
    "photo": {
     "file": "Korean cuisine-Dakgalbi-01.jpg",
     "author": "by shizu k (shezzz) at Flickr",
@@ -4813,6 +5136,7 @@
    "heavy": 0.9,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Moksal-gui.jpg",
     "author": "happy11u",
@@ -4834,6 +5158,7 @@
    "heavy": 0.8,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Grilling pork meat described as ネックピートロ.jpg",
     "author": "Syced",
@@ -4855,6 +5180,7 @@
    "heavy": 0.9,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Dwaeji-galbi-gui.jpg",
     "author": "lazy fri13th",
@@ -4876,6 +5202,7 @@
    "heavy": 0.9,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Korean beef short ribs.jpg",
     "author": "Tim Evanson",
@@ -4897,6 +5224,7 @@
    "heavy": 0.7,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Chadolbagi-gui.jpg",
     "author": "lazy fri13th",
@@ -4918,6 +5246,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Grilled Sirloin Steak with Vegetables.jpg",
     "author": "Ceeseven",
@@ -4939,6 +5268,7 @@
    "heavy": 0.4,
    "oily": 0.2,
    "hot": false,
+   "cook_mask": 256,
    "photo": {
     "file": "Malgogi-yukhoe 2.jpg",
     "author": "사람냄새",
@@ -4960,6 +5290,7 @@
    "heavy": 0.8,
    "oily": 0.9,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Korean.food-Makchang-04.jpg",
     "author": "by ~Mers",
@@ -4981,6 +5312,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Makchang-gui.jpg",
     "author": "Michael Sean Gallagher",
@@ -5002,6 +5334,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Korean.food-Galbi-03.jpg",
     "author": "ayustety (a flickr user)",
@@ -5023,6 +5356,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Grilled Chicken Sandwich from McDonald's Dongzhimenwai Store (20191222163031).jpg",
     "author": "N509FZ",
@@ -5044,6 +5378,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Korean grilled eel-Jangeo gui-01.jpg",
     "author": "Richy!",
@@ -5065,6 +5400,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "2026-05-24 01 Grilled Spot prawns (Pandalus platyceros) - Victoria BC CAN.jpg",
     "author": "Gordon Leggett",
@@ -5086,6 +5422,7 @@
    "heavy": 0.5,
    "oily": 0.3,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Grilled littleneck clams - Cambridge, MA.jpg",
     "author": "Daderot",
@@ -5107,6 +5444,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": null
   },
   {
@@ -5123,6 +5461,7 @@
    "heavy": 0.8,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Liat Portal for Foodie Disorder – Lamb chops with asparagus.jpg",
     "author": "HaJunkiyada",
@@ -5144,6 +5483,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 2,
    "photo": {
     "file": "Gopchang-jeongol.jpg",
     "author": "lazy fri13th",
@@ -5165,6 +5505,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Korean.cuisine-Tteokgalbi-01.jpg",
     "author": "by Rhett Sutphin",
@@ -5186,6 +5527,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 20,
    "photo": {
     "file": "Gochujang-bulgogi 1.jpg",
     "author": "대경라이프",
@@ -5207,6 +5549,7 @@
    "heavy": 0.8,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 16,
    "photo": null
   },
   {
@@ -5223,6 +5566,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 4,
    "photo": {
     "file": "Korean cuisine-Osam bulgogi-01.jpg",
     "author": "by aka_maya at Flickr",
@@ -5244,6 +5588,7 @@
    "heavy": 0.6,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 4,
    "photo": null
   },
   {
@@ -5260,6 +5605,7 @@
    "heavy": 0.5,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Kkeopdegi-gui.jpg",
     "author": "lazy fri13th",
@@ -5281,6 +5627,7 @@
    "heavy": 0.8,
    "oily": 0.7,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "The Great Eldorado BBQ, Brews & Blues Festival 2019 - Stierch 08.jpg",
     "author": "Missvain",
@@ -5302,6 +5649,7 @@
    "heavy": 0.9,
    "oily": 0.8,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "BBQ RIBS pork side ribs.jpg",
     "author": "WorldwrestlingfederationVKM",
@@ -5323,6 +5671,7 @@
    "heavy": 0.4,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Dak-kkochi 1.jpg",
     "author": "향긋한 커피매니아",
@@ -5344,6 +5693,7 @@
    "heavy": 0.6,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Salmon steak with with Beurre Maitre d'Hotel and spinach.jpg",
     "author": "Kimberly Vardeman from Lubbock, TX, USA",
@@ -5365,6 +5715,7 @@
    "heavy": 0.7,
    "oily": 0.6,
    "hot": true,
+   "cook_mask": 16,
    "photo": null
   },
   {
@@ -5381,6 +5732,7 @@
    "heavy": 0.7,
    "oily": 0.5,
    "hot": true,
+   "cook_mask": 16,
    "photo": {
     "file": "Bassak-bulgogi.jpg",
     "author": "행복한 초록개구리",

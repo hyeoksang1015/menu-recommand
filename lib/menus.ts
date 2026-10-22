@@ -21,6 +21,7 @@ const MenuSchema = z.object({
   heavy: unit,
   oily: unit,
   hot: z.boolean(),
+  cook_mask: z.number().int().positive(),
   photo: z
     .object({ file: text, author: text, license: text, license_url: text })
     .nullable(),
@@ -37,6 +38,13 @@ const DataSchema = z
       }),
     ),
     allergens: z.array(
+      z.object({
+        key: z.string(),
+        bit: z.number().int().positive(),
+        label: Labels,
+      }),
+    ),
+    cookings: z.array(
       z.object({
         key: z.string(),
         bit: z.number().int().positive(),
@@ -68,6 +76,7 @@ export type Category = z.infer<typeof DataSchema>["categories"][number];
 export const {
   categories: CATEGORIES,
   allergens: ALLERGENS,
+  cookings: COOKINGS,
   menus: MENUS,
 } = DataSchema.parse(raw);
 export const CATEGORY_BY_KEY = new Map(CATEGORIES.map((c) => [c.key, c]));

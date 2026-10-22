@@ -221,13 +221,13 @@ export const GUIDES: Guide[] = [
           {
             heading: "비 오는 날과 추운 날",
             body: [
-              "비가 오거나 쌀쌀하면 해물파전이나 칼국수, 수제비처럼 따뜻한 밀가루 음식이 생각나는 사람이 많아요. 국물 요리 전체가 잘 어울리고, 배달을 시킨다면 국물이 덜 식는 찌개류가 좋아요.",
+              '비가 오거나 쌀쌀하면 해물파전이나 칼국수, 수제비처럼 따뜻한 밀가루 음식이 생각나는 사람이 많아요. 국물 요리 전체가 잘 어울리고, 배달을 시킨다면 국물이 덜 식는 찌개류가 좋아요. 골라주께에서 계절을 "겨울"로 고르면 따뜻한 메뉴 쪽으로 기울고, 조리방식에서 "탕·국"이나 "찌개·전골"을 고르면 국물 요리만 남겨요.',
             ],
           },
           {
             heading: "더운 날",
             body: [
-              '더운 날엔 물냉면, 콩국수, 자루소바, 냉짬뽕처럼 차가운 면이 입맛을 살려요. 기름진 음식이 부담스럽다면 "다른 거"에서 "느끼함"을 눌러 보세요. 그보다 덜 기름진 메뉴로만 다시 골라 줘요.',
+              '더운 날엔 물냉면, 콩국수, 자루소바, 냉짬뽕처럼 차가운 면이 입맛을 살려요. 기름진 음식이 부담스럽다면 "다른 거"에서 "느끼함"을 눌러 보세요. 그보다 덜 기름진 메뉴로만 다시 골라 줘요. 계절을 "여름"으로 고르면 시원하게 먹는 메뉴 쪽으로 추천이 기울어요.',
             ],
           },
           {
@@ -264,13 +264,13 @@ export const GUIDES: Guide[] = [
           {
             heading: "Rainy and cold days",
             body: [
-              "On rainy or chilly days, many Koreans crave warm flour-based dishes like seafood pancake, kalguksu and sujebi. Any soup works well, and for delivery, stews keep their heat better.",
+              "On rainy or chilly days, many Koreans crave warm flour-based dishes like seafood pancake, kalguksu and sujebi. Any soup works well, and for delivery, stews keep their heat better. In Gollajuke, choosing Winter as the season leans the picks toward warm dishes, and choosing Soups or Stews & hot pots as the cooking style keeps only dishes with broth.",
             ],
           },
           {
             heading: "Hot days",
             body: [
-              "On hot days, cold noodles such as mul naengmyeon, kongguksu, zaru soba and cold jjamppong bring back your appetite. If greasy food feels heavy, tap Something else and then Too greasy. We'll only pick dishes lighter than that one.",
+              "On hot days, cold noodles such as mul naengmyeon, kongguksu, zaru soba and cold jjamppong bring back your appetite. If greasy food feels heavy, tap Something else and then Too greasy. We'll only pick dishes lighter than that one. Choosing Summer as the season leans the picks toward dishes served cold.",
             ],
           },
           {
@@ -307,13 +307,13 @@ export const GUIDES: Guide[] = [
           {
             heading: "雨の日・寒い日",
             body: [
-              "雨の日や肌寒い日には、海鮮チヂミやカルグクス、スジェビのような温かい粉もの料理が恋しくなる人が多いです。スープ料理全般がよく合い、デリバリーならスープが冷めにくいチゲ類がおすすめです。",
+              "雨の日や肌寒い日には、海鮮チヂミやカルグクス、スジェビのような温かい粉もの料理が恋しくなる人が多いです。スープ料理全般がよく合い、デリバリーならスープが冷めにくいチゲ類がおすすめです。ゴラジュケで季節を「冬」にすると温かいメニュー寄りになり、調理法で「スープ・汁物」や「チゲ・鍋」を選ぶとスープ料理だけが残ります。",
             ],
           },
           {
             heading: "暑い日",
             body: [
-              "暑い日は水冷麺、コングクス、ざるそば、冷やしチャンポンのような冷たい麺が食欲を取り戻してくれます。脂っこいものが重く感じたら「ほかのにして」で「脂っこい」を押してみてください。それより脂の少ないメニューだけで選び直します。",
+              "暑い日は水冷麺、コングクス、ざるそば、冷やしチャンポンのような冷たい麺が食欲を取り戻してくれます。脂っこいものが重く感じたら「ほかのにして」で「脂っこい」を押してみてください。それより脂の少ないメニューだけで選び直します。季節を「夏」にすると、冷たくして食べるメニュー寄りのおすすめになります。",
             ],
           },
           {
@@ -349,13 +349,13 @@ export const GUIDES: Guide[] = [
           {
             heading: "下雨天和冷天",
             body: [
-              "下雨或天凉时，很多人会想吃海鲜葱饼、刀切面、面片汤这类热乎的面食。各种汤菜都很合适，点外卖的话，炖锅类更不容易变凉。",
+              "下雨或天凉时，很多人会想吃海鲜葱饼、刀切面、面片汤这类热乎的面食。各种汤菜都很合适，点外卖的话，炖锅类更不容易变凉。在 Gollajuke 里把季节选成“冬天”，推荐会偏向热乎的菜；做法选“汤”或“炖锅·火锅”，就只留下带汤的菜。",
             ],
           },
           {
             heading: "炎热的时候",
             body: [
-              "天热时，水冷面、豆浆面、荞麦冷面、冷炒码面等凉面能让人重拾胃口。觉得油腻食物有负担，可以在“换一个”里点“太油腻”，就只会从更清淡的菜里重新挑选。",
+              "天热时，水冷面、豆浆面、荞麦冷面、冷炒码面等凉面能让人重拾胃口。觉得油腻食物有负担，可以在“换一个”里点“太油腻”，就只会从更清淡的菜里重新挑选。把季节选成“夏天”，推荐会偏向凉着吃的菜。",
             ],
           },
           {

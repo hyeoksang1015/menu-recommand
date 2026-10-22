@@ -21,6 +21,7 @@ VALID = {
     "heavy": "0.5",
     "oily": "0.3",
     "hot": "1",
+    "cook": "stew|rice",
 }
 
 
@@ -46,6 +47,7 @@ class ParseRowsTest(unittest.TestCase):
         self.assertEqual(menus[0]["category_bit"], 1)
         self.assertEqual(menus[0]["allergen_mask"], 0b1010)
         self.assertIs(menus[0]["hot"], True)
+        self.assertEqual(menus[0]["cook_mask"], 0b10000010)
 
     def test_spice_out_of_range(self) -> None:
         """Spice 7 fails with the CSV line number."""
@@ -64,6 +66,8 @@ class ParseRowsTest(unittest.TestCase):
             {"heavy": "1.5"},
             {"oily": "-0.1"},
             {"hot": "yes"},
+            {"cook": "stew|baked"},
+            {"cook": ""},
             {"name": ""},
             {"name_ja": ""},
         ):

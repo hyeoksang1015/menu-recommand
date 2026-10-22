@@ -39,6 +39,7 @@ def menu(
     oily: float = 0.5,
     hot: bool = True,
     allergens: int = 0,
+    cook: int = 0,
 ) -> Menu:
     """Build a menu for hand-written fixtures.
 
@@ -51,6 +52,7 @@ def menu(
         oily: Greasiness.
         hot: Served hot.
         allergens: Allergen bitmask.
+        cook: Cooking-style bitmask.
 
     Returns:
         The menu.
@@ -66,6 +68,7 @@ def menu(
         heavy,
         oily,
         hot,
+        cook,
     )
 
 
@@ -77,12 +80,14 @@ def tiny_menus() -> list[Menu]:
         only three categories exist.
     """
     return [
-        menu("t1", 0, heavy=0.8),
-        menu("t2", 1, heavy=0.8),
-        menu("t3", 0, heavy=0.9, price=15000, oily=0.9),
-        menu("t4", 2, heavy=0.2, hot=False, spice=4, allergens=0b1),
-        menu("t5", 1, heavy=0.5, hot=False, price=6000, oily=0.2),
-        menu("t6", 2, heavy=0.8, spice=0, allergens=0b10),
+        menu("t1", 0, heavy=0.8, cook=0b1),
+        menu("t2", 1, heavy=0.8, cook=0b11),
+        menu("t3", 0, heavy=0.9, price=15000, oily=0.9, cook=0b10),
+        menu(
+            "t4", 2, heavy=0.2, hot=False, spice=4, allergens=0b1, cook=0b100
+        ),
+        menu("t5", 1, heavy=0.5, hot=False, price=6000, oily=0.2, cook=0b1),
+        menu("t6", 2, heavy=0.8, spice=0, allergens=0b10, cook=0b110),
     ]
 
 
@@ -103,6 +108,8 @@ def tiny_queries() -> list[tuple[Query, dict[str, float], dict[str, int]]]:
         (Query(max_spice=0, ban_allergen=0b10), {}, {}),
         (Query(recent=frozenset({"t1", "t2"})), {"a": -0.3}, {}),
         (Query(want_hot=False, novel_weight=1.5), {}, {"t5": 1}),
+        (Query(want_cook=0b1), {}, {}),
+        (Query(want_cook=0b110, want_hot=True), {}, {}),
     ]
 
 

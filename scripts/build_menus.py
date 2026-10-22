@@ -56,6 +56,28 @@ ALLERGENS: list[tuple[str, tuple[str, ...]]] = [
     ("beef", ("소고기", "Beef", "牛肉", "牛肉")),
     ("chicken", ("닭고기", "Chicken", "鶏肉", "鸡肉")),
 ]
+# Cooking styles a menu can have (several, joined with |). Users pick the
+# ones they feel like; a menu passes when it has any of them.
+COOKINGS: list[tuple[str, tuple[str, ...]]] = [
+    ("soup", ("탕·국", "Soups", "スープ・汁物", "汤")),
+    ("stew", ("찌개·전골", "Stews & hot pots", "チゲ・鍋", "炖锅·火锅")),
+    ("stirfry", ("볶음", "Stir-fried", "炒め物", "炒菜")),
+    ("braise", ("찜·조림", "Steamed & braised", "蒸し物・煮物", "蒸菜·炖菜")),
+    ("grill", ("구이", "Grilled", "焼き物", "烤")),
+    ("fried", ("튀김·부침", "Fried", "揚げ物・焼き物", "炸·煎")),
+    ("noodle", ("면", "Noodles", "麺類", "面")),
+    ("rice", ("밥·덮밥", "Rice & rice bowls", "ご飯・丼", "米饭·盖饭")),
+    ("raw", ("회·샐러드", "Raw & salads", "刺身・サラダ", "生食·沙拉")),
+    (
+        "bread",
+        (
+            "빵·피자·버거",
+            "Bread, pizza & burgers",
+            "パン・ピザ・バーガー",
+            "面包·披萨·汉堡",
+        ),
+    ),
+]
 COLUMNS = [
     "id",
     *NAME_COLUMNS,
@@ -66,9 +88,11 @@ COLUMNS = [
     "heavy",
     "oily",
     "hot",
+    "cook",
 ]
 CATEGORY_BIT = {key: 1 << i for i, (key, _, _) in enumerate(CATEGORIES)}
 ALLERGEN_BIT = {key: 1 << i for i, (key, _) in enumerate(ALLERGENS)}
+COOK_BIT = {key: 1 << i for i, (key, _) in enumerate(COOKINGS)}
 
 
 def labels(names: tuple[str, ...]) -> dict[str, str]:
@@ -136,6 +160,12 @@ def parse_rows(
         hot = row["hot"].strip()
         if hot not in ("0", "1"):
             problems.append(f"hot must be 0 or 1: {row['hot']}")
+        cook_mask = 0
+        for name in filter(None, row["cook"].split("|")):
+            if name.strip() not in COOK_BIT:
+                problems.append(f"unknown cook {name!r}")
+            else:
+                cook_mask |= COOK_BIT[name.strip()]
         if problems:
             errors.extend(f"line {line}: {p}" for p in problems)
             continue
@@ -151,6 +181,7 @@ def parse_rows(
                 "heavy": heavy,
                 "oily": oily,
                 "hot": hot == "1",
+                "cook_mask": cook_mask,
             }
         )
     return menus, errors
@@ -258,6 +289,10 @@ def main() -> int:
         "allergens": [
             {"key": k, "bit": ALLERGEN_BIT[k], "label": labels(names)}
             for k, names in ALLERGENS
+        ],
+        "cookings": [
+            {"key": k, "bit": COOK_BIT[k], "label": labels(names)}
+            for k, names in COOKINGS
         ],
         "menus": menus,
     }
