@@ -31,7 +31,7 @@ function GuideList({ lang, except }: { lang: Locale; except?: string }) {
             <h2 className="text-lg font-extrabold">
               {g.emoji} {g.text[lang].title}
             </h2>
-            <p className="mt-1 text-sm leading-6 text-muted">
+            <p className="mt-1 text-sm leading-relaxed text-muted">
               {g.text[lang].description}
             </p>
           </Link>

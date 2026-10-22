@@ -45,7 +45,7 @@ export default function BrowseGrid() {
   return (
     <>
       <h1 className="mt-2 text-2xl font-extrabold">{t.browse.title}</h1>
-      <p className="mt-1 mb-5 min-h-6 text-muted">
+      <p className="mt-1 mb-5 min-h-9 text-muted">
         {hydrated && (
           <Fmt
             template={t.browse.count}

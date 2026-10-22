@@ -12,8 +12,8 @@ import {
 } from "@/lib/menus";
 
 // 저장값을 불러오기 전 자리표시와 실제 카드의 높이를 맞춰 화면 밀림(CLS)을 막는다.
-// 모바일(412px)에서 잰 실제 카드 높이(이유 문장 4줄 기준 약 580px).
-export const CARD_HEIGHT = "min-h-[37rem]";
+// 모바일(412px)에서 잰 실제 카드 높이(글자 1.5배, 이유 문장 4줄 기준 최대 약 760px).
+export const CARD_HEIGHT = "min-h-[48rem]";
 
 // 4:3 음식 사진. 사진이 없는 메뉴(Commons에 맞는 사진이 없던 것)는 카테고리 이모지로 채운다.
 // 사진은 빌드 전에 480×360 webp로 줄여 두었으므로 next/image 최적화 없이 <img>로 바로 쓴다.
@@ -110,7 +110,7 @@ export default function PickCard({
           </span>
         </h2>
         <MenuBadges menu={menu} />
-        <div className="rounded-2xl bg-paper/70 p-3 text-sm leading-6">
+        <div className="rounded-2xl bg-paper/70 p-3 text-sm leading-relaxed">
           <p className="text-muted">{t.slotWhy[slot]}</p>
           {reasons.length > 0 && (
             <ul aria-label={t.picks.reasonsAria}>

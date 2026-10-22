@@ -46,7 +46,7 @@ export function ContactPage({ lang }: { lang: Locale }) {
     <article>
       <PageHeader title={c.title} />
       {c.body.map((p) => (
-        <p key={p.slice(0, 32)} className="mt-3 leading-7 text-muted">
+        <p key={p.slice(0, 32)} className="mt-3 leading-relaxed text-muted">
           {p}
         </p>
       ))}

@@ -6,7 +6,7 @@ export function PageHeader({ title, lead }: { title: string; lead?: string }) {
   return (
     <header className="mt-2 mb-6">
       <h1 className="text-2xl font-extrabold">{title}</h1>
-      {lead && <p className="mt-2 leading-7 text-muted">{lead}</p>}
+      {lead && <p className="mt-2 leading-relaxed text-muted">{lead}</p>}
     </header>
   );
 }
@@ -22,7 +22,7 @@ export function Sections({
         <section key={s.heading} className="mt-8">
           <h2 className="text-lg font-bold">{s.heading}</h2>
           {s.body.map((p) => (
-            <p key={p.slice(0, 32)} className="mt-3 leading-7 text-muted">
+            <p key={p.slice(0, 32)} className="mt-3 leading-relaxed text-muted">
               {p}
             </p>
           ))}

@@ -18,7 +18,7 @@ export default function AboutPage({ lang }: { lang: Locale }) {
     <article>
       <PageHeader title={a.title} />
       {a.intro.map((p) => (
-        <p key={p.slice(0, 32)} className="mt-3 leading-7 text-muted">
+        <p key={p.slice(0, 32)} className="mt-3 leading-relaxed text-muted">
           {p}
         </p>
       ))}
@@ -29,7 +29,7 @@ export default function AboutPage({ lang }: { lang: Locale }) {
           {a.faq.map((f) => (
             <div key={f.q} className="card">
               <dt className="font-bold">{f.q}</dt>
-              <dd className="mt-2 leading-7 text-muted">{f.a}</dd>
+              <dd className="mt-2 leading-relaxed text-muted">{f.a}</dd>
             </div>
           ))}
         </dl>

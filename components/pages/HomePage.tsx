@@ -29,7 +29,7 @@ export default function HomePage({ lang }: { lang: Locale }) {
       <InputPanel />
       <CoachMarks />
       {/* 추천 도구 아래에 서비스 설명을 짧게 둔다. 긴 글은 소개·가이드 페이지에 있다. */}
-      <section className="mt-12 space-y-3 text-sm leading-6 text-muted">
+      <section className="mt-12 space-y-3 text-sm leading-relaxed text-muted">
         <h2 className="text-base font-bold text-ink">
           {about.sections[1].heading}
         </h2>

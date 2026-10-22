@@ -72,7 +72,7 @@ export default function PicksView() {
   return (
     <MotionConfig reducedMotion="user">
       <h1 className="mt-2 text-2xl font-extrabold">{t.picks.title}</h1>
-      <p className="mt-1 mb-5 min-h-6 text-muted" aria-live="polite">
+      <p className="mt-1 mb-5 min-h-[4.5rem] text-muted" aria-live="polite">
         {ready && (
           <>
             <Fmt

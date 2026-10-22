@@ -61,7 +61,7 @@ export function MenusIndexPage({ lang }: { lang: Locale }) {
                     {fmt(p.count, { count: menusOf(c.key).length })}
                   </span>
                 </h2>
-                <p className="mt-1 line-clamp-3 text-sm leading-6 text-muted">
+                <p className="mt-1 line-clamp-3 text-sm leading-relaxed text-muted">
                   {CATEGORY_TEXT[c.key][lang].intro[0]}
                 </p>
               </Link>
@@ -95,13 +95,13 @@ export function MenuCategoryPage({
       </p>
       <PageHeader title={`${c.emoji} ${c.label[lang]}`} />
       {text.intro.map((para) => (
-        <p key={para.slice(0, 32)} className="mt-3 leading-7 text-muted">
+        <p key={para.slice(0, 32)} className="mt-3 leading-relaxed text-muted">
           {para}
         </p>
       ))}
       <section className="card mt-6">
         <h2 className="font-bold">{p.tipsTitle}</h2>
-        <ul className="mt-2 list-disc space-y-2 pl-5 leading-7 text-muted">
+        <ul className="mt-2 list-disc space-y-2 pl-5 leading-relaxed text-muted">
           {text.tips.map((tip) => (
             <li key={tip.slice(0, 32)}>{tip}</li>
           ))}
@@ -124,14 +124,14 @@ export function MenuCategoryPage({
                   {m.hot ? t.menu.hot : t.menu.cold}
                 </span>
               </div>
-              <p className="mt-2 text-xs leading-5 text-muted">
+              <p className="mt-2 text-xs leading-snug text-muted">
                 {p.allergens}:{" "}
                 {allergens.length
                   ? allergens.map((a) => a.label[lang]).join(", ")
                   : p.noAllergens}
               </p>
               {m.photo && (
-                <p className="mt-1 text-[11px] leading-4 text-muted">
+                <p className="mt-1 text-xs leading-snug text-muted">
                   {p.photoBy}:{" "}
                   <a
                     href={commonsUrl(m.photo.file)}

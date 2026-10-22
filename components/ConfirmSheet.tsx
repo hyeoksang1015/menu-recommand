@@ -110,7 +110,7 @@ export default function ConfirmSheet({
             </button>
           </div>
           <p
-            className="mt-3 min-h-5 text-center text-sm text-muted"
+            className="mt-3 min-h-8 text-center text-sm text-muted"
             role="status"
           >
             {status}

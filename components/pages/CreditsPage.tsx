@@ -23,7 +23,7 @@ export default function CreditsPage({ lang }: { lang: Locale }) {
           <h2 className="text-lg font-bold">
             {c.emoji} {c.label[lang]}
           </h2>
-          <ul className="mt-2 space-y-1.5 text-sm leading-6 text-muted">
+          <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-muted">
             {MENUS.filter((m) => m.category === c.key).map((m) => (
               <li key={m.id}>
                 <span className="font-semibold text-ink">

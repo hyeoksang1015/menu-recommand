@@ -206,6 +206,13 @@ test("Google tag on every page; AdSense tag in content pages but not on the 404 
     const head = html.slice(0, html.indexOf("</head>"));
     expect(head, path).toContain(META);
     expect(head.split(GTAG).length - 1, path).toBe(1);
+    const lang = path.startsWith("/en/") ? "en" : "ko";
+    expect(head, path).toContain(
+      `<meta property="og:image" content="https://menu-recommand-b9q.pages.dev/og/${lang}.png"/>`,
+    );
+    expect(head, path).toContain(
+      '<meta name="twitter:card" content="summary_large_image"/>',
+    );
     expect(head, path).toContain(
       'src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4035979084834637" crossorigin="anonymous"',
     );

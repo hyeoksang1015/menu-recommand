@@ -7,9 +7,24 @@
     format("woff2");
   font-weight: 400;
   font-display: swap;
+  /* 한글·라틴만 이 폰트로 쓴다. 폰트에 든 가나·한자는 폭이 넓어 일본어·중국어가 띄엄띄엄 보이므로 각 언어 글꼴로 넘긴다. */
+  unicode-range:
+    U+0000-024F, U+2000-206F, U+20A9, U+1100-11FF, U+3130-318F, U+A960-A97F,
+    U+AC00-D7AF, U+D7B0-D7FF;
+}
+
+/* 일본어·중국어 화면은 가나·한자를 그 언어 글꼴로 보여 준다(맑은 고딕의 가나·한자도 폭이 넓다). */
+:root:lang(ja) {
+  --font-sans:
+    "DearFromsol", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+}
+:root:lang(zh) {
+  --font-sans:
+    "DearFromsol", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 
 /* 색·간격 토큰. 화면 코드에서는 이 이름(bg-brand, p-gutter 등)만 쓴다.
+   글자 크기(--text-*)는 Tailwind 기본값의 1.5배다. 손글씨 폰트라 기본 크기에서는 작아 보인다. 줄 간격은 기본 비율을 그대로 쓴다.
    팔레트 #086288 · #4D8DBA · #97D7FF · #FFEFC4. 흰 글씨는 #086288 위에만 올린다(#4D8DBA는 대비 3.6:1이라 장식용). */
 @theme {
   --color-paper: #ffefc4;
@@ -23,17 +38,33 @@
   --color-soft: #e4f4ff;
   --color-line: #c3e6fb;
   --spacing-gutter: 1rem;
+  --text-xs: 1.125rem;
+  --text-sm: 1.3125rem;
+  --text-base: 1.5rem;
+  --text-lg: 1.6875rem;
+  --text-xl: 1.875rem;
+  --text-2xl: 2.25rem;
+  --text-5xl: 4.5rem;
+  --text-6xl: 5.625rem;
   --font-sans:
     "DearFromsol", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic",
     system-ui, sans-serif;
 }
 
 body {
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
   background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-sans);
   word-break: keep-all;
   overflow-wrap: anywhere;
+}
+
+/* keep-all은 띄어쓰기로 끊는 한국어용이다. 일본어·중국어는 글자 단위로 줄을 바꾼다. */
+:root:lang(ja) body,
+:root:lang(zh) body {
+  word-break: normal;
 }
 
 :focus-visible {
