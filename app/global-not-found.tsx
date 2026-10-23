@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ClarityTag from "@/components/ClarityTag";
 import GoogleTag from "@/components/GoogleTag";
 import { adsenseVerification } from "@/config/site";
 import { PAGE_TEXT } from "@/content/pages";
@@ -19,6 +20,7 @@ export default function GlobalNotFound() {
     <html lang="ko" className="h-full antialiased">
       <head>
         <GoogleTag />
+        <ClarityTag />
       </head>
       <body className="flex min-h-full flex-col items-center justify-center px-gutter py-16">
         <main className="w-full max-w-md space-y-8 text-center">

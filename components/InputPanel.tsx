@@ -117,7 +117,8 @@ export default function InputPanel() {
         lead={h.excludeLead}
         coach="exclude"
       >
-        <fieldset>
+        {/* data-clarity-mask: 못 먹는 재료(알레르기) 선택은 건강 정보라 Clarity 화면 녹화에서 가린다. */}
+        <fieldset data-clarity-mask="true">
           <legend className="mb-2 text-sm font-semibold">{h.allergens}</legend>
           <Chips
             label={h.allergens}

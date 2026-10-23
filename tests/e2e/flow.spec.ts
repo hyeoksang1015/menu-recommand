@@ -249,6 +249,7 @@ test("English pages and the language switcher", async ({ page }) => {
 const META =
   '<meta name="google-adsense-account" content="ca-pub-4035979084834637"/>';
 const GTAG = 'src="https://www.googletagmanager.com/gtag/js?id=G-5MZDBV6NJ1"';
+const CLARITY = '"clarity", "script", "z17h67pkmg"';
 
 test("Google tag on every page; AdSense tag in content pages but not on the 404 page", async ({
   request,
@@ -263,6 +264,7 @@ test("Google tag on every page; AdSense tag in content pages but not on the 404 
     const head = html.slice(0, html.indexOf("</head>"));
     expect(head, path).toContain(META);
     expect(head.split(GTAG).length - 1, path).toBe(1);
+    expect(head.split(CLARITY).length - 1, path).toBe(1);
     const lang = path.startsWith("/en/") ? "en" : "ko";
     expect(head, path).toContain(
       `<meta property="og:image" content="https://menu-recommand-b9q.pages.dev/og/${lang}.png"/>`,
@@ -285,6 +287,7 @@ test("Google tag on every page; AdSense tag in content pages but not on the 404 
   expect(notFound).not.toContain("adsbygoogle");
   expect(notFound.slice(0, notFound.indexOf("</head>"))).toContain(META);
   expect(notFound.slice(0, notFound.indexOf("</head>"))).toContain(GTAG);
+  expect(notFound.slice(0, notFound.indexOf("</head>"))).toContain(CLARITY);
   expect(await (await request.get("/ads.txt")).text()).toContain(
     "google.com, pub-4035979084834637, DIRECT, f08c47fec0942fa0",
   );

@@ -129,7 +129,7 @@ const ko: PageText = {
     title: "개인정보처리방침",
     description:
       "골라주께가 어떤 정보를 어디에 저장하고, 광고 쿠키를 어떻게 쓰는지 설명합니다.",
-    updated: "시행일: 2026년 10월 19일",
+    updated: "시행일: 2026년 10월 23일",
     sections: [
       {
         heading: "1. 수집하는 정보",
@@ -150,6 +150,7 @@ const ko: PageText = {
           "Google은 광고 쿠키를 사용해 사용자가 이 사이트와 인터넷의 다른 사이트를 방문한 기록에 기반한 광고를 보여 줄 수 있어요. 맞춤 광고는 Google 광고 설정(https://adssettings.google.com)에서 끌 수 있고, www.aboutads.info에서 다른 제3자 공급업체의 맞춤 광고 쿠키도 끌 수 있어요.",
           "Google이 파트너 사이트의 데이터를 어떻게 사용하는지는 https://policies.google.com/technologies/partner-sites 에서 확인할 수 있어요.",
           "이용 현황을 파악하려고 모든 페이지에서 Google 애널리틱스를 사용해요. 방문한 페이지, 머문 시간, 대략적인 지역, 기기·브라우저 정보 등이 Google에 전달되고, 이를 위해 Google 애널리틱스 쿠키(_ga 등)가 저장될 수 있어요. 기기에 저장된 입력 조건과 먹은 기록은 보내지 않아요. 수집을 원하지 않으면 Google 애널리틱스 차단 브라우저 부가기능(https://tools.google.com/dlpage/gaoptout)을 쓰거나 브라우저에서 쿠키를 차단할 수 있어요.",
+          "사이트를 더 쓰기 편하게 고치려고 모든 페이지에서 Microsoft Clarity를 사용해요. 클릭·스크롤·마우스 움직임과 화면 모습이 기록되어 Microsoft에 전달되고, 이를 위해 Clarity 쿠키가 저장될 수 있어요. 화면 기록에는 화면에 보이는 선택(기분, 예산 등)이 담길 수 있지만, 못 먹는 재료 선택은 기록에서 가려요. 자세한 내용은 Microsoft 개인정보처리방침(https://privacy.microsoft.com/privacystatement)에서 볼 수 있고, 브라우저에서 쿠키를 차단하면 수집되지 않아요.",
         ],
       },
       {
@@ -284,7 +285,7 @@ const en: PageText = {
     title: "Privacy policy",
     description:
       "What Gollajuke stores, where it is stored, and how advertising cookies are used.",
-    updated: "Effective date: October 19, 2026",
+    updated: "Effective date: October 23, 2026",
     sections: [
       {
         heading: "1. Information we collect",
@@ -305,6 +306,7 @@ const en: PageText = {
           "Google's use of advertising cookies enables it and its partners to serve ads based on your visits to this site and other sites on the internet. You can opt out of personalized advertising in Google Ads Settings (https://adssettings.google.com), and opt out of other third-party vendors' cookies at www.aboutads.info.",
           "Learn how Google uses data from partner sites at https://policies.google.com/technologies/partner-sites.",
           "To understand how the site is used, every page uses Google Analytics. Pages visited, time spent, approximate location, and device and browser information are sent to Google, and Google Analytics cookies (such as _ga) may be stored for this. The conditions and meal history saved on your device are not sent. To opt out, use the Google Analytics Opt-out Browser Add-on (https://tools.google.com/dlpage/gaoptout) or block cookies in your browser.",
+          "To make the site easier to use, every page uses Microsoft Clarity. Clicks, scrolling, mouse movement and what the screen looks like are recorded and sent to Microsoft, and Clarity cookies may be stored for this. Recordings can include choices visible on screen (such as mood or budget), but your choice of ingredients you can't eat is masked. See the Microsoft Privacy Statement (https://privacy.microsoft.com/privacystatement) for details; blocking cookies in your browser stops the collection.",
         ],
       },
       {
@@ -440,7 +442,7 @@ const ja: PageText = {
     title: "プライバシーポリシー",
     description:
       "ゴラジュケがどの情報をどこに保存し、広告 Cookie をどう使うかを説明します。",
-    updated: "施行日：2026年10月19日",
+    updated: "施行日：2026年10月23日",
     sections: [
       {
         heading: "1. 収集する情報",
@@ -461,6 +463,7 @@ const ja: PageText = {
           "Google は広告 Cookie を使用することにより、ユーザーが当サイトやインターネット上の他のサイトにアクセスした情報に基づいて広告を配信できます。パーソナライズ広告は Google 広告設定（https://adssettings.google.com）で無効にでき、www.aboutads.info で他の第三者配信事業者の Cookie も無効にできます。",
           "Google がパートナーサイトのデータをどのように使用するかは https://policies.google.com/technologies/partner-sites で確認できます。",
           "利用状況を把握するため、すべてのページで Google アナリティクスを使用しています。閲覧したページ、滞在時間、おおよその地域、端末・ブラウザの情報などが Google に送信され、そのために Google アナリティクスの Cookie（_ga など）が保存される場合があります。端末に保存された入力条件や食事の記録は送信しません。収集を望まない場合は、Google アナリティクス オプトアウト アドオン（https://tools.google.com/dlpage/gaoptout）を使うか、ブラウザで Cookie をブロックしてください。",
+          "サイトを使いやすく改善するため、すべてのページで Microsoft Clarity を使用しています。クリック・スクロール・マウスの動きと画面の様子が記録されて Microsoft に送信され、そのために Clarity の Cookie が保存される場合があります。画面の記録には画面に表示された選択（気分や予算など）が含まれることがありますが、食べられない食材の選択は記録から隠しています。詳しくは Microsoft のプライバシーに関する声明（https://privacy.microsoft.com/privacystatement）をご覧ください。ブラウザで Cookie をブロックすると収集されません。",
         ],
       },
       {
@@ -597,7 +600,7 @@ const zh: PageText = {
     title: "隐私政策",
     description:
       "说明 Gollajuke 保存哪些信息、保存在哪里，以及如何使用广告 Cookie。",
-    updated: "生效日期：2026 年 10 月 19 日",
+    updated: "生效日期：2026 年 10 月 23 日",
     sections: [
       {
         heading: "1. 收集的信息",
@@ -618,6 +621,7 @@ const zh: PageText = {
           "Google 使用广告 Cookie，使其及其合作伙伴能够根据你访问本网站和互联网上其他网站的记录投放广告。你可以在 Google 广告设置（https://adssettings.google.com）中关闭个性化广告，也可以在 www.aboutads.info 关闭其他第三方供应商的 Cookie。",
           "关于 Google 如何使用合作伙伴网站的数据，请参阅 https://policies.google.com/technologies/partner-sites。",
           "为了解网站的使用情况，所有页面都使用 Google Analytics。你访问的页面、停留时间、大致地区以及设备和浏览器信息会发送给 Google，为此可能会存储 Google Analytics Cookie（如 _ga）。保存在设备上的输入条件和就餐记录不会被发送。如不希望被收集，可以使用 Google Analytics 停用浏览器插件（https://tools.google.com/dlpage/gaoptout），或在浏览器中阻止 Cookie。",
+          "为了让网站更好用，所有页面都使用 Microsoft Clarity。点击、滚动、鼠标移动和页面画面会被记录并发送给 Microsoft，为此可能会存储 Clarity Cookie。画面记录中可能包含屏幕上显示的选择（如心情、预算），但不能吃的食材的选择会在记录中被遮挡。详情请参阅 Microsoft 隐私声明（https://privacy.microsoft.com/privacystatement）。在浏览器中阻止 Cookie 即可停止收集。",
         ],
       },
       {

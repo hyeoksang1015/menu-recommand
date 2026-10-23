@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import ClarityTag from "@/components/ClarityTag";
 import GoogleTag from "@/components/GoogleTag";
 import { I18nProvider } from "@/components/I18nProvider";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -29,6 +30,7 @@ export default function RootShell({
       {/* eslint-disable-next-line @next/next/no-head-element -- 앱 라우터 루트 레이아웃 껍데기라 <head>가 맞다 */}
       <head>
         <GoogleTag />
+        <ClarityTag />
         {/* 손글씨 폰트(globals.css @font-face)를 받는 CDN에 미리 연결해 글꼴이 늦게 바뀌는 시간을 줄인다. */}
         <link
           rel="preconnect"
